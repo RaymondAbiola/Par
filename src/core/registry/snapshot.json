@@ -1,0 +1,7042 @@
+{
+  "generatedAt": "2026-09-13T23:08:23.127Z",
+  "listings": [
+    {
+      "ticker": "AAL",
+      "name": "American Airlines Group",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "9wYZetvT8J2ptfsRca5gzLBGvcUug38mp9yT3xaondo",
+          "symbol": "AALon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "AAOI",
+      "name": "Applied Optoelectronics",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "YuFZvc8JCN3a6BUAqwnbY4AnhuVEXD4V7QnBTmwondo",
+          "symbol": "AAOIon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsGHwSbPaUJu6r5dtJLHXkXenPgCQf4Sx2hb4e2sbCZ",
+          "symbol": "AAOIx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "AAON",
+      "name": "AAON",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "nwPWRVFCbU3cdXWdJsuwomC5u459xPFdP2vYsmVondo",
+          "symbol": "AAONon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "123mYEnRLM2LLYsJW3K6oyYh8uP1fngj732iG638ondo",
+          "symbol": "AAPLon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsbEhLAtcf6HdfpFZ5xEMdqW8nfAvcsP5bdudRLJzJp",
+          "symbol": "AAPLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ABBV",
+      "name": "AbbVie",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "MFerpBVGKZh2jXN7cbJdXRXQTp6j6pbSnSZrfWrondo",
+          "symbol": "ABBVon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XswbinNKyPmzTa5CskMbCPvMW6G5CMnZXZEeQSSQoie",
+          "symbol": "ABBVx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "128qNYovdGv2YqayErcJgU7gDwbNVX1VuoxbtWz8ondo",
+          "symbol": "ABNBon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XscSc1zjbVizEnhCzzehJ9fzztm3WRKdn9pjmriKDuN",
+          "symbol": "ABNBx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ABT",
+      "name": "Abbott",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "129gRoHKhVg7CvPMrqVsEB4uYZo6zV4yDZX6NBg9ondo",
+          "symbol": "ABTon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsHtf5RpxsQ7jeJ9ivNewouZKJHbPxhPoEy6yYvULr7",
+          "symbol": "ABTx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ACHR",
+      "name": "Archer Aviation",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "KcCVQxG9LhFYP5o9DWFKTFgFShPPQkDEemVbiFyondo",
+          "symbol": "ACHRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ACLS",
+      "name": "Axcelis Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jDoTgDRKSgVzkKdkaHZL3DiVmDM4YtYWwRG6Tgfondo",
+          "symbol": "ACLSon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ACMR",
+      "name": "ACM Research",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "nkbH2doD7nU4CkKVwzmd6UV4d2AaGy24NHzsh6tondo",
+          "symbol": "ACMRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "12LxMMJYVSf4LoeqjFE47BQQNRciaH9E3nbDfjH4ondo",
+          "symbol": "ACNon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs5UJzmCRQ8DWZjskExdSQDnbE6iLkRu2jjrRAB1JSU",
+          "symbol": "ACNx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "12Rh6JhfW4X5fKP16bbUdb4pcVCKDHFB48x8GG33ondo",
+          "symbol": "ADBEon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsDZMGEU8zadWFCkTtPBoPWYcUX3JHVmghnwf2Mve2q",
+          "symbol": "ADBEx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "LmTMwmZLNZszn3qpjmnbhfP12U4qWDivaEBwSBSondo",
+          "symbol": "ADIon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs3CytsvJshAYy1TQjq2o2yVWCyEGinNpvkB6f3Qs31",
+          "symbol": "ADIx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "AEHR",
+      "name": "Aehr Test Systems",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ZWUSgDGQTQPGJyipzgJKcPhxgZzSBi4q6dqQbgCondo",
+          "symbol": "AEHRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "AG",
+      "name": "First Majestic Silver",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "hrZ5vs6c6v1iWyvEXjGSHs3sQuuj58VzXikNyRWondo",
+          "symbol": "AGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "AGG",
+      "name": "iShares Core US Aggregate Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "13qTjKx53y6LKGGStiKeieGbnVx3fx1bbwopKFb3ondo",
+          "symbol": "AGGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "AI",
+      "name": "C3.ai",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Xs7QhN79WzM4hjfHbu2W46ZRkdyumim3ooJHhPxenoU",
+          "symbol": "AIx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "AIP",
+      "name": "Arteris",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jmnrdSzu293vKTWyEx3A2ZRVxxytJKW1wD3CLzkondo",
+          "symbol": "AIPon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "AIQ",
+      "name": "Global X Artificial Intelligence & Technology ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "uwh6Z6c2F8WZfUSK1A8VBfA9AwJKN5T2bvQwVFLondo",
+          "symbol": "AIQon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ALAB",
+      "name": "Astera Labs",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "cskxd6aqyqJMYgLZmFYfYecWkjasRJDEtm1QVxsondo",
+          "symbol": "ALABon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsuJLDjTibUFnh1gNgnXeDSjQTVffnaWFKzUht5rVvc",
+          "symbol": "ALABx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "B5KufqHkskgGYwMXtL8FSHgREAkMQvE3ykhH5Kmondo",
+          "symbol": "ALBon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsGea4488p7ydWQTQMYxtvCXDJiAJwgt4HsoKiKrGa3",
+          "symbol": "ALBx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ALOY",
+      "name": "REalloys",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ndHvUEgrvZquSR6wZv2cG1AiBr7e7HGuWvfPULcondo",
+          "symbol": "ALOYon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "7eRX747PSbVtGVx3qD5UFdkNM2BfTy86ikUiCMhondo",
+          "symbol": "AMATon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsQZdaWUAGC4R3fgD2N1fupKvJfJq6YM51ccnsLUWFA",
+          "symbol": "AMATx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "AMC",
+      "name": "AMC Entertainment",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "C9xNaNujcF1a5fidWAAFReFYqhLRVbyk4yPyGqzondo",
+          "symbol": "AMCon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "AMD",
+      "name": "AMD",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "14diAn5z8kjrKwSC8WLqvBqqe5YmihJhjxRxd8Z6ondo",
+          "symbol": "AMDon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsXcJ6GZ9kVnjqGsjBnktRcuwMBmvKWh8S93RefZ1rF",
+          "symbol": "AMDx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "AME",
+      "name": "AMETEK",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ko48myqhBuXyL9WAp6pTzHWsdKsGKSditJVoGTSondo",
+          "symbol": "AMEon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsVNxwvuQghf6TYBmCck75ddYD3KiWozujR8C67bPXC",
+          "symbol": "AMEx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "SS6AEWhzRrxhL2cXzKKjhFt3rCzmHHGKmFyugDTondo",
+          "symbol": "AMGNon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsgKwBMbv8LDzEYRgbKtyqsub6QB56PQVzgTGbiGaNe",
+          "symbol": "AMGNx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "AMKR",
+      "name": "Amkor Technology",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "nvvoP8gFyY2aZp6Cxu9Qq4MQqGrMebjtCxWrYfbondo",
+          "symbol": "AMKRon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsqbg1tmAvNT5332hhX4hMSznqf2NJ1tz2cNWmAkRD3",
+          "symbol": "AMKRx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "14Tqdo8V1FhzKsE3W2pFsZCzYPQxxupXRcqw9jv6ondo",
+          "symbol": "AMZNon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs3eBt7uRfJX8QUs4suhyU8p2M6DoUDrJyWBa8LLZsg",
+          "symbol": "AMZNx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Cq6QtvHpXbJWtFaiMhUDtHy8YVZ95gcD1oZ1cohondo",
+          "symbol": "ANETon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsrsM2RgtYxXqxmy4iWgxQJUkkHG1U5wzi74sVNUW8m",
+          "symbol": "ANETx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "AOSL",
+      "name": "Alpha and Omega Semiconductor",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "b98FynyBEkdhP4Y3QUvKG36nms4oMsxEZUrCBMvondo",
+          "symbol": "AOSLon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "APH",
+      "name": "Amphenol",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "fFTZ9Jckm2X811mdqRBS4ckMz5bRAJVjH4Jwofwondo",
+          "symbol": "APHon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsvqNba1k4wF5ZEZ6Nrx8AXUDkKzAFuj4HaVDEemyYH",
+          "symbol": "APHx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "APLD",
+      "name": "Applied Digital",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "B6WqvLGXdGqpw7qgxeb5EGiRZEYo2apWpQybjYuondo",
+          "symbol": "APLDon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs2ZEuDVSQkNnXHqfqEYKVShLHpecyKfdfpEYwiHtQE",
+          "symbol": "APLDx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "14VXAhoa1R74vi1ZuiQyGLJrnDMfoFBPJSCpGVz3ondo",
+          "symbol": "APOon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsosRSUc3n5pod3YNNyQ7go6811xWYd3YME2uEQohEx",
+          "symbol": "APOx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "14Z8rQQe2Aza33YgEUmj3g3QGNz8DXLiFPuCnsD1ondo",
+          "symbol": "APPon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsPdAVBi8Zc1xvv53k4JcMrQaEDTgkGqKYeh7AYgPHV",
+          "symbol": "APPx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ARGT",
+      "name": "Global X MSCI Argentina ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "rki25TZmDh94spjeoyyGWjkVEYSzcVvaAbddXGuondo",
+          "symbol": "ARGTon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings plc",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "15SsCZqCsM9fZGhTmP4rdJTPT9WGZKazDSsgeQ8ondo",
+          "symbol": "ARMon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XswUFSYE5CWsZM3X3yo6e2pZvxcAzx912DonGvgUFka",
+          "symbol": "ARMx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ARQQ",
+      "name": "Arqit Quantum",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "crakmaGKTuVRYqSBsFsuqio5CmpEQnpibDrVLbDondo",
+          "symbol": "ARQQon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding NV",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "1eLZPRsn8bAKmoxsqDMH9Q2m2k7GMNp6RLSQGm8ondo",
+          "symbol": "ASMLon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XshuHQ6o6SVpUNawvnnTMxsZ4tacZsNgVCLorv7TkFq",
+          "symbol": "ASMLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ASTS",
+      "name": "AST SpaceMobile",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "B6ry9goGNvVbhq7gWHzs3p6emJ1gLaMhu4By9TTondo",
+          "symbol": "ASTSon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsR4LAtaBgTKTRUhiijY1ba13nx4bepeEcag2Pr4dZ1",
+          "symbol": "ASTSx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ATKR",
+      "name": "Atkore",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ZsCDHjWFyndwgbHMs4AHYwJZQMgmAn72ESQj2b5ondo",
+          "symbol": "ATKRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "AUR",
+      "name": "Aurora Innovation",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "eGbh3V9R5ujWYwKJZAyM4Eg3sfzLhwKyr4bGbTsondo",
+          "symbol": "AURon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs7x2HYEazWDXpYQYPBiRYh6o2AbkYrdrFwaBfBxyaU",
+          "symbol": "AURx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "1FWZtdWN7y38BSXGzbs8D6Shk88oL9atDNgbVz9ondo",
+          "symbol": "AVGOon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsgSaSvNSqLTtFuyWPBhK9196Xb9Bbdyjj4fH3cPJGo",
+          "symbol": "AVGOx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "AXP",
+      "name": "American Express",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "1WxT6NdK7uqpfXuKpALxL2n3f7Rq61XXeHA8UM4ondo",
+          "symbol": "AXPon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "AXTI",
+      "name": "AXT",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Z1K14ngynqmrmfRSC2dRZGs1ghmnDKiiahjaM2condo",
+          "symbol": "AXTIon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XswiwGt897dzZU8eHoojgUu2ka34brmPGvWeVHcHho9",
+          "symbol": "AXTIx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "BABA",
+      "name": "Alibaba",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "1zvb9ELBFShBCWKEk5jRTJAaPAwtVt7quEXx1X4ondo",
+          "symbol": "BABAon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BAI",
+      "name": "iShares A.I. Innovation and Tech Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "gKkrSgVjRjdQX4LFErBka1izQhoW2VHXFcCS5Vbondo",
+          "symbol": "BAIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BBAI",
+      "name": "BigBear.ai Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "YXE7mph6XhsgnyezkMEcTuohSuWhbLWfwx2Hh6mondo",
+          "symbol": "BBAIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "bBMTGF7atoCizHMT3KCeqJzqR2gXFSUXr53AEDgondo",
+          "symbol": "BEon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsmGSEqT6VXpVis3aVBDxaNwPgHNXbkjkVUCncsLkNB",
+          "symbol": "BEx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "BIDU",
+      "name": "Baidu",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "54CoRF2FYMZNJg9tS36xq5BUcLZ7rju1r59jGc2ondo",
+          "symbol": "BIDUon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BIL",
+      "name": "SPDR Bloomberg 1-3 Month T-Bill ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "wtwpt5yJbButAhjpYhtg4uvUgCQN4LVgvLq2AxEondo",
+          "symbol": "BILon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BILI",
+      "name": "Bilibili",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "14kLsQVmc64qZexYuR4XGop9y8BeMkd77pJUm1Rhondo",
+          "symbol": "BILIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BINC",
+      "name": "iShares Flexible Income Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "mhZ69E1vDnAsQJXAwarLYSX5tmgeMajXBJ2rXAcondo",
+          "symbol": "BINCon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BKCH",
+      "name": "Global X Blockchain ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "uyWDgDZqL6x2V86i7vwJTKPuyg2u79UYaBe5yt7ondo",
+          "symbol": "BKCHon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BLCR",
+      "name": "iShares Large Cap Core Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "g3jQMP79SxnH1KisVw3C4SBpa8gSbPAocNJruJFondo",
+          "symbol": "BLCRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BLK",
+      "name": "Blackrock, Inc.",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "5H1VpMzRuoNtRbPTRCz35ETtEUtnkt8hJuQb9v7ondo",
+          "symbol": "BLKon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BLSH",
+      "name": "Bullish",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "A9PFmw9Hu8zzxDUoU351pio1E1XWBWBfWnjT9qoondo",
+          "symbol": "BLSHon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BMNR",
+      "name": "BitMine Immersion Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "MYXqkDYbzr7vjXAz2BapR4AiYRXzoikGirrLoRzondo",
+          "symbol": "BMNRon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsrBCwaH8c46xiqXBChzobgufRKxQxAWUWbndgBNzFn",
+          "symbol": "BMNRx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "BNO",
+      "name": "US Brent Oil Fund",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "BAU83kqEqhyiexfAMQhZZE5KnGogSqh17fJc44Sondo",
+          "symbol": "BNOon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BOT",
+      "name": "RoboStrategy",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "b8UDyp3Yx19rcdaBUNegoojyUdhPpiPQ46bFrtQQQon",
+          "symbol": "BOTon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsi8P9r7ZWDBBnBj9JTfnKWqyKNV19X2CQPWQsGdjnS",
+          "symbol": "BOTx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "BOTZ",
+      "name": "Global X Robotics & Artificial Intelligence ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "soLM6jRVdG1PdurSAQDz5qRtwWxXPM6EBvwrkBjondo",
+          "symbol": "BOTZon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BRHY",
+      "name": "iShares High Yield Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "fznj92AnTcQ6mAFvt68JgLJS5pHag5uPmJ7LmSLondo",
+          "symbol": "BRHYon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BRLN",
+      "name": "iShares Floating Rate Loan Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "fcfpT8y5fpEBJjqmjKLpscZYzVjxR95ErJsb31jondo",
+          "symbol": "BRLNon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BRTR",
+      "name": "iShares Total Return Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "gPwmyo4BM4qgYYCTVgA4eJmzsnYNVMUJYBecYkCondo",
+          "symbol": "BRTRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BTDR",
+      "name": "Bitdeer Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "kBUAHgGHFthfnwarWxqYxHqVDnqqieJkXb6kvroondo",
+          "symbol": "BTDRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BTG",
+      "name": "B2Gold",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "cBnVXDyZgaaLZM18wAmqsUKnRUFAEJWbq6VuUoaondo",
+          "symbol": "BTGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BTGO",
+      "name": "BitGo Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "bgJWGuQxyoyFeXwzYZKBmoujVdatGFYPNFnv1a6ondo",
+          "symbol": "BTGOon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsvHMmbDcd14DHHW16PkxPGW7ks77ehxUv1E9Zmxgj4",
+          "symbol": "BTGOx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "BWET",
+      "name": "Breakwave Tanker Shipping ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "m7mWfvhyPikY3esNwTk8U1JRbcBijmzHgqiqx3xondo",
+          "symbol": "BWETon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "BZ",
+      "name": "Kanzhun",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "doPqjCxi6UkANkvMz5fSuYGEo5PGppVpTZMeB5vondo",
+          "symbol": "BZon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CAMT",
+      "name": "Camtek",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ZcS6FuJ1nAjgwJejUsxkasM6JpEDkdowVyohBCzondo",
+          "symbol": "CAMTon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CAPR",
+      "name": "Capricor Therapeutics",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "BS8zoc6pmALQnBhBDFak6eFhgGHjpebnHzsxApgondo",
+          "symbol": "CAPRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "AErxJJxGbc9cZzZoZepN62BNfg5RXns8tmEc3Zpondo",
+          "symbol": "CATon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsRvd1meWQ9kW1SrZPa1jokQqmBoPWWjd6wGTgdp5E6",
+          "symbol": "CATx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "CBRS",
+      "name": "Cerebras Systems",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "c7KEKjzaTQYpTrHM2db8yq3bikPpcXrHgBV8Qcgondo",
+          "symbol": "CBRSon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xstq9oUsBPd8LSyivHhnt8P8t9xK5RYoM9P6izLczvm",
+          "symbol": "CBRSx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "CCJ",
+      "name": "Cameco",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "fVPj4hHHVEeUrzVnad5fvxFEPGAXD5X6wkw1Xjdondo",
+          "symbol": "CCJon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "7NWHifsBnn9DimUeNnsHdEXkTZhXmJTiXxcCngBondo",
+          "symbol": "CEGon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xssu2cDLdZXZYrq17frTVrb3meumRCAzEf7pXyxoWVN",
+          "symbol": "CEGx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "CEVA",
+      "name": "CEVA",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "nLTgFdT7x37oXMbZoZxbQ1787qSPVRLXo7JPRkLondo",
+          "symbol": "CEVAon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CIBR",
+      "name": "First Trust NASDAQ Cybersecurity ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "BVdL3WUxtxUD4vXRWwqChJLbGxvfzZjBGPp63Wtondo",
+          "symbol": "CIBRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "cY3kDrNWP6DUZcWSQmA6Y4Nf7q5qS5kZ8zF9iLnondo",
+          "symbol": "CIENon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsE5qZhg6oL1ypWwtwXPQtW1EpFSvRmLXk9ceX9TtZx",
+          "symbol": "CIENx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "CIFR",
+      "name": "Cipher Mining",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "WNZBSkNBNP3Ct1pcFn6Fu4sZQFhnu48EsM9voCEondo",
+          "symbol": "CIFRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CLF",
+      "name": "Cleveland-Cliffs",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "fTuoE9pWbVK7EUpUEENBn8Vu226T7kF3YJBTRLPondo",
+          "symbol": "CLFon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CLOA",
+      "name": "iShares AAA CLO Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "t71FyTYHVkPAb5g48adDHmkVxXYbUuP2eq6jDZLondo",
+          "symbol": "CLOAon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CLOI",
+      "name": "VanEck CLO ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "ucQ3VfWAx9pkCN4Kg84zE56FtB4FJN2kQH4ArYYondo",
+          "symbol": "CLOIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CLS",
+      "name": "Celestica",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "eL1buL9zFxFhfRbjMfyPu2q9HSAJkUUnHVUgkPdondo",
+          "symbol": "CLSon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "5owVsVFSHACQuippFYdLp3qWRobp2EGcwxMmsr6ondo",
+          "symbol": "CMGon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsR1ktNCRYDoDNxhaSxF6NX2HyT4ACSQBgPRLpXTWmm",
+          "symbol": "CMGx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "R2uDbMtmHq5xSS5SserrovdRKdpiqnVBCd2AHLhondo",
+          "symbol": "COFon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xstd4ems8vhfGwTngpXCzgnSvJ4oD7E5gExUue2KEZX",
+          "symbol": "COFx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "BXMkru8ded26p71gJ3AMMwJmwZaYYfQjRo8vbZzondo",
+          "symbol": "COHRon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsipFyePxrgwZJrX4s26RJ25cqwpkfn6ec8JLy26w5b",
+          "symbol": "COHRx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "COHU",
+      "name": "Cohu",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jYMxpcgARQCdvQ15H1vvRCnBUbUEEQgSnS6SsfTondo",
+          "symbol": "COHUon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "5u6KDiNJXxX4rGMfYT4BApZQC5CuDNrG6MHkwp1ondo",
+          "symbol": "COINon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs7ZdzSHLU9ftNJsii5fCeJhoRWSC32SQGzGQtePxNu",
+          "symbol": "COINx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "X68p9qTpEMkR1TLpXUP2ZJo8PG4Qge2Y2ZLdjA2ondo",
+          "symbol": "COPon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs58CxmUcgT17reeVV64se747XuRfjsJQnpb8DX9TDq",
+          "symbol": "COPx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "COPX",
+      "name": "Global X Copper Miners ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "X7j77hTmjZJbepkXXBcsEapM8qNgdfihkFj6CZ5ondo",
+          "symbol": "COPXon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsybfiKkD4UmjkAGT2uR8X2sq9AWFtvGJM2KTffoALZ",
+          "symbol": "COPXx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "CORO",
+      "name": "iShares International Country Rotation Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "gNhrgh21pQozQoc7YtvhdKF7eJnSKwWa9dzHnaxondo",
+          "symbol": "COROon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CORZ",
+      "name": "Core Scientific",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "f4ucqqnktrkdDAnwqcAAiA9Lggz6NAHJ3zFwipnondo",
+          "symbol": "CORZon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsBGEXxbBcuu8Nrokj14G8v4ezT3JYWWLneTzXK8t6Z",
+          "symbol": "CORZx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "6btaz134wjHkR8sqhAYrtSM6tavftfxnRvnyMd8ondo",
+          "symbol": "COSTon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CPER",
+      "name": "US Copper Index Fund",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "hpkpc1Xenv5oEpVefk3woWjZa9rxaJxaEaVVA4Fondo",
+          "symbol": "CPERon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CPNG",
+      "name": "Coupang",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "NKyzy31w2J7odLb2CW3Ft4fpKXkW3LBt1pvpkVLondo",
+          "symbol": "CPNGon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsoVbMATH8hMemisZZvGCc9YEkve3Yiirr2VtinKTuw",
+          "symbol": "CPNGx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "CRCL",
+      "name": "Circle Internet Group",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "6xHEyem9hmkGtVq6XGCiQUGpPsHBaoYuYdFNZa5ondo",
+          "symbol": "CRCLon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsueG8BtpquVJX9LVLLEGuViXUungE6WmK5YZ3p3bd1",
+          "symbol": "CRCLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "CRDO",
+      "name": "Credo Technology Group Holding",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "d4Rc6KvP3nQT8zC86Z31zM1DJCSfUD6y424cKnZondo",
+          "symbol": "CRDOon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "7D7ukbcnUNYt7Et5vtsDZhAy28MKu9pkHka1Hp9ondo",
+          "symbol": "CRMon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsczbcQ3zfcgAEt9qHQES8pxKAVG5rujPSHQEXi4kaN",
+          "symbol": "CRMx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "cdKfoNjbXgnSuxvoajhtH3uixfZhq1YXhQsS1Rwondo",
+          "symbol": "CRWDon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs7xXqkcK7K8urEqGg52SECi79dRp2cEKKuYjUePYDw",
+          "symbol": "CRWDx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "CRWV",
+      "name": "CoreWeave",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "BfPGpgNyxe6rjAru1EJarjSBAcCABuMF5L32v7nondo",
+          "symbol": "CRWVon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs3trfdPXSZuxBJsgau6HRfu8SdrCirkwHpPNgSpJz9",
+          "symbol": "CRWVx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "CSCO",
+      "name": "Cisco Systems",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "7DWcZE1uVc8m2mf9pV8KNov28ET7HsvHkhrhgr9ondo",
+          "symbol": "CSCOon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsr3pdLQyXvDJBFgpR5nexCEZwXvigb8wbPYp4YoNFf",
+          "symbol": "CSCOx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "FGmUDXqA3AbWfo5b3NUcsvwoUFCF4tr9ea6uercondo",
+          "symbol": "CVNAon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs8YT2AdFmjuG2HFjcvVTpXPwneiKNHMrR49muHY7z9",
+          "symbol": "CVNAx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "7tgKziACteG26VjV5xKufojKxwTgCFyTwmWUmz5ondo",
+          "symbol": "CVXon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsNNMt7WTNA2sV3jrb1NNfNgapxRF5i4i6GcnTRRHts",
+          "symbol": "CVXx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "83P1gCFBZfGRCwJuBt9juxJKEsZwejJoG66eTZ6ondo",
+          "symbol": "DASHon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsuW1yxtbifjEYojFLmoavTWBT7hsuUXXeReAWK9X91",
+          "symbol": "DASHx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "DBC",
+      "name": "Invesco DB Commodity Index Tracking Fund",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "td1aY5AvYQuwGD75qNq9aPipMexraN9mQXJwqifondo",
+          "symbol": "DBCon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "CqQyAZjB9LGFTG95eiadGTkfhd9QA12ProeKsQmondo",
+          "symbol": "DEon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsh3Lt6pLpH65udstiFuZThJ6gyQTL6ryVXtNwEy5zd",
+          "symbol": "DEx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Xsu7Tc5J2fVUE4H5vYAiSr34cvLJeCsYPMjAYnayQn6",
+          "symbol": "DELLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "DGRW",
+      "name": "WisdomTree US Quality Dividend Growth Fund",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "gnoSQSNTNZHViqVfxCcPDVxcRA29mrJL7C6JqYLondo",
+          "symbol": "DGRWon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "DGXX",
+      "name": "Digi Power X",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jwCKwGoJfx1p4K5XCwqPrq1xyJU1g26Tmf6UcDcondo",
+          "symbol": "DGXXon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "DIS",
+      "name": "Disney",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "mJf1xT3suXtkXBCfZcE9oUUuyxkvSgqYBWiX7v1ondo",
+          "symbol": "DISon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsg93jDV656ULQ5u9yT2x5DS9b4xGD8aDCtfESSW6Bb",
+          "symbol": "DISx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "DNN",
+      "name": "Denison Mines",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "12J2LD3tuLfdiVKnWZMHRMrbnXDY9rM4yqVLUa5yondo",
+          "symbol": "DNNon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "DRAM",
+      "name": "Roundhill Memory ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "oXeD5ZesXfJQ3mxtuZdMaccUsWrE8r1SnpYRP2Bondo",
+          "symbol": "DRAMon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsESMQjWyDczCfiJ3QDjZEiaKwp1uXYp3TMZ6viuLcm",
+          "symbol": "DRAMx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "DRS",
+      "name": "Leonardo DRS",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "gtKc3PtKfUH7vbvYLJ1HCRXCpQK1Wpgevn8e6gUondo",
+          "symbol": "DRSon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsf3NfLggzL9WXy4yaxJB3866ehq7y7sQxohwAkNiEu",
+          "symbol": "DRSx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "DTCR",
+      "name": "Global X Data Center & Digital Infrastructure ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "t29YBAB7g6xzgRJkzmc5NkQ7YRjE3NF8mhsLgppondo",
+          "symbol": "DTCRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "DYNF",
+      "name": "iShares US Equity Factor Rotation Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "g7vMfs5FrR8JjieeGC3c9sJaYPp4G3jGPfF4tkyondo",
+          "symbol": "DYNFon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ECH",
+      "name": "iShares MSCI Chile ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "BmXVAFyfpW7VuVYeWDtbFtLx7sek2mZt3BEsGgAondo",
+          "symbol": "ECHon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ECO",
+      "name": "Okeanis Eco Tankers",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "mnYetf4bWKX8HihNk1XLNYj8BPPy9PdkDFPV97Zondo",
+          "symbol": "ECOon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "EEM",
+      "name": "iShares MSCI Emerging Markets ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "916SDKz7y5ZcEZC9CtnQ5Djs1Y8Yv3UAPb6bak8ondo",
+          "symbol": "EEMon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "EFA",
+      "name": "iShares MSCI EAFE ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "AbvryMGnaba9oADMZk8Vp2Av6MtczsncGyfWaC4ondo",
+          "symbol": "EFAon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "EFV",
+      "name": "iShares MSCI EAFE Value ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "uzQx2MnWr7drR5gdNXssJrFKQkLFSdw4EpfaQ5Nondo",
+          "symbol": "EFVon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "EMR",
+      "name": "Emerson Electric",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "nNyVbs9Qty6wU2YcP5KFh4SUxNWTdPtL2W1bTMrondo",
+          "symbol": "EMRon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xskqq9tKh2gc1PBJHf2q6jMgBpt3AojT3HVkWhjoY5h",
+          "symbol": "EMRx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ENB",
+      "name": "Enbridge",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "aqEnHXRnXEQwDXEiFSEU4xHziw3Fco4b5JPkTtnondo",
+          "symbol": "ENBon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ENLV",
+      "name": "Enlivex Therapeutics",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "BncvtBGs4JqgYZwUoq3EN9q9HUFqJKTfWpvCsHCondo",
+          "symbol": "ENLVon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ENPH",
+      "name": "Enphase Energy",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Bp26APthMuM46gMFTo5KYpo7b92GN2xSCor7f9oondo",
+          "symbol": "ENPHon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ENTG",
+      "name": "Entegris",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "awCwGaVNbYJH2SyQJzgE3mB54gxa6SQEZSKZaHQondo",
+          "symbol": "ENTGon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsD6kFBZCYumf4awQ9tgFFh8m2HGJBtTFdLYt7HcwRr",
+          "symbol": "ENTGx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "EQIX",
+      "name": "Equinix",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "aheEdmuryJU8ymy8LjYheZH5i2BW1UMsfuWQKD2ondo",
+          "symbol": "EQIXon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsBo6pg8N9kk7YnL69NnBBSZBWDkF1gHWjTAXpYuAVo",
+          "symbol": "EQIXx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "EQT",
+      "name": "EQT",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "bWrYATfytuRwGoDbpxy16aQbMbCZDv8DURuLCAhondo",
+          "symbol": "EQTon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsvS1ZY358vAjNJ7s3fz13s64ZqYF36rgUDR8yVJkuA",
+          "symbol": "EQTx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ETHA",
+      "name": "iShares Ethereum Trust ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "LitNUakTges74cjDJm6HHfFNKGPdySkp3MWSYzYondo",
+          "symbol": "ETHAon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "BpYiU1dBXU1fdB64jbR93wHEw3Y47QeRLZvUyLQondo",
+          "symbol": "ETNon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs8S5L4HkJpeBWF1J4oyUX6rVwGHmG7GZ7PiChPt7nY",
+          "symbol": "ETNx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "EUHY",
+      "name": "iShares Euro High Yield Corporate Bond USD Hedged ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "teUYhoQUgqsFp9ZwYBUHfuUHdVvbNx9N8spESGqondo",
+          "symbol": "EUHYon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "EWJ",
+      "name": "iShares MSCI Japan ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "C6c7VcxuUYcV5YTsky5HM4PUmfwHTwsDD5DNwwPondo",
+          "symbol": "EWJon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "EWY",
+      "name": "iShares MSCI South Korea ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "C8pSaSgjkiTWixS3GM6Hxd6HKnKrgAbY9WDgfVeondo",
+          "symbol": "EWYon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XswenHXJtDWYMh89uRYx2tZcABxwXSn7j3jidDPS1Yo",
+          "symbol": "EWYx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "EWZ",
+      "name": "iShares MSCI Brazil ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "CBKcmEvVg5EgE3W5hVSPcBYWh6TFVjQwbmYod9Pondo",
+          "symbol": "EWZon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "EXOD",
+      "name": "Exodus Movement",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "CJRoTbu98waCCuLFfLuJ2kXawLk889fqW4UAAbwondo",
+          "symbol": "EXODon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "EXTR",
+      "name": "Extreme Networks",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "js1cCZRNx8ircYiQJuhBNMnsA9owr6ZLYx6z2uNondo",
+          "symbol": "EXTRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FCEL",
+      "name": "FuelCell Energy",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "dYDS22uTX8CtiyixnXY9fMVGAkxbemVAjbCaWVbondo",
+          "symbol": "FCELon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "CY8ttw5rYCT6fFBJwqXofefqa7Ji9E8zfLmhRLmondo",
+          "symbol": "FCXon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsT9Z9BYM5Bp2JAuKVgw1XLdENGyvQwC5C2gAuzeKyY",
+          "symbol": "FCXx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "FFOG",
+      "name": "Franklin Focused Growth ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "CYAwMGyuNSDu7NpuccNwcxMNS5Bu9akxU2Jooyiondo",
+          "symbol": "FFOGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FGDL",
+      "name": "Franklin Responsibly Sourced Gold ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "CYqLHM92EhmF83iNgfN4A1j2ckjsHigRvXu7xHCondo",
+          "symbol": "FGDLon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XspurdrAqbRJMQfAUEfh88QxE3XbSWxQGu3GneJR6e3",
+          "symbol": "FGDLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "FIG",
+      "name": "Figma",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "aLDdFsr3VTUQaHFK6yNvQxztvxQ8nxW4AMuSGC7ondo",
+          "symbol": "FIGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FIGR",
+      "name": "Figure Technology Solutions",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ZmHxc6Gt27RJKxD2ay6UL4n9yQ7mKAq4XZQUeVhondo",
+          "symbol": "FIGRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FLEX",
+      "name": "Flex",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "iicfp8Efr4WfGAP9gXmYzdxmNFi1LV3iVudAmCnondo",
+          "symbol": "FLEXon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FLHY",
+      "name": "Franklin High Yield Corporate ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "CZ3FxxSto7tsjkSkqMek1C5p3RCFFmkwKqW57nbondo",
+          "symbol": "FLHYon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FLNC",
+      "name": "Fluence Energy",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "bzoe1epsQLx65zmez4pWfBumYzpaFwRTvnmCjZVondo",
+          "symbol": "FLNCon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsc5BxL1ucvrQNXZqW3CT8M9gWTko1LPSLLkSVzGe9h",
+          "symbol": "FLNCx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "FLQL",
+      "name": "Franklin US Large Cap Multifactor Index ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "CZ9GBn1okotqKNUUqoxk4PF2JVi59bw5GWvVo6Dondo",
+          "symbol": "FLQLon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FN",
+      "name": "Fabrinet",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "cfxyRHXjqoKN6hF3oEGu1bpEEFGcEiVXoNG4UUCondo",
+          "symbol": "FNon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsJ6W21MaWMQCqhRLbLTD82427vcMVzxULkomGRg4gJ",
+          "symbol": "FNx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "FORM",
+      "name": "FormFactor",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ZDnkXeN5awDioQjP691XFLdgZwDAv19g3fCr9KWondo",
+          "symbol": "FORMon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FPS",
+      "name": "Forgent Power Solutions",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "m3XghfWMqmVE81LKLVxd1FVCKjqYAUxH8bMHGhzondo",
+          "symbol": "FPSon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FSOL",
+      "name": "Fidelity Solana Fund",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "BJhPr9SM7uZTZXHeSLYmUk7CjGQq1esFkVxPF5tondo",
+          "symbol": "FSOLon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FTGC",
+      "name": "First Trust Global Tactical Commodity Strategy Fund",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "ivBnfPTyuHDNWmMSnbavckhJK6SHZW8h77nZKsEondo",
+          "symbol": "FTGCon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FUTU",
+      "name": "Futu Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Ao5rKFRQ54W3DKSAtqfhBRPNHewwWRLNLao2JL9ondo",
+          "symbol": "FUTUon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "FXI",
+      "name": "iShares China Large-Cap ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "CeFbGYXDmkyfo1TXXzzZ512mtnCCewNohu6V15vondo",
+          "symbol": "FXIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "GD",
+      "name": "General Dynamics",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "hESwwvKsJH4p7Xib5rrM921Ng19cwcQGtxyrgSJondo",
+          "symbol": "GDon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsgk6nv6V81zQms4mcvUiEtLDdVueXfWPRCaxayqkSN",
+          "symbol": "GDx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "GE",
+      "name": "General Electric",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "aTBfDuLRqYHBiG82bHA7DzwjSDTFre2dRtGH3S5ondo",
+          "symbol": "GEon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsfsBjSZoXXKJsxoSt8TyLYsjhBAKFaDPZTCQbFRirP",
+          "symbol": "GEx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "GEMI",
+      "name": "Gemini Space Station",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "NrTdGMA3ujUvWXkwXyZKnhoByb32KTjRh5Vo47yondo",
+          "symbol": "GEMIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "CgZSv89BL58ybWfWobANKEU8nV9jYfFw23G2DZEondo",
+          "symbol": "GEVon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XswXzAsMV9kebQjCVtr1btvrQgQ7C4C9kKgH4QYAVzw",
+          "symbol": "GEVx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "GFS",
+      "name": "GlobalFoundries",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "etnBzce6pkJq67QUv78PefkVyCEaA6YBE4hvx1Gondo",
+          "symbol": "GFSon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsrTYnfAtuMDpQQgZtpQZreJWtjaRnRCTBeekcQi8AS",
+          "symbol": "GFSx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "GGOV",
+      "name": "iShares Global Government Bond USD Hedged Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "tzuC3sZnHg7spuAFhdCqivx9qtJg15qUBUpCJx1ondo",
+          "symbol": "GGOVon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "GLD",
+      "name": "SPDR Gold Shares",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "hWfiw4mcxT8rnNFkk6fsCQSxoxgZ9yVhB6tyeVcondo",
+          "symbol": "GLDon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsv9hRk1z5ystj9MhnA7Lq4vjSsLwzL2nxrwmwtD3re",
+          "symbol": "GLDx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "GLTR",
+      "name": "abrdn Physical Precious Metals Basket Shares ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "CgnZbDNzBfaLyJqUtd4esKLShRp7RznQuwP4uQaondo",
+          "symbol": "GLTRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "YQzNQh2YSFQ6nh91E8Ja71U6JuZDLap5jJCsELGondo",
+          "symbol": "GLWon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsg3UgvjxpUgV3WZx9Wt9deLx7qvKYp6ZLY6xMY2Dfq",
+          "symbol": "GLWx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "GLXY",
+      "name": "Galaxy Digital",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "CkWmEM2J79k6AjAwyQVHXteFucAL1zQrKLxLqJHondo",
+          "symbol": "GLXYon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs3c2aZenyRQwXjki5MDxJEJ2km27ef2rWQMFWx7QKJ",
+          "symbol": "GLXYx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "GME",
+      "name": "GameStop",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "aznKt8v32CwYMEcTcB4bGTv8DXWStCpHrcCtyy7ondo",
+          "symbol": "GMEon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsf9mBktVB9BSU5kf4nHxPq5hCBJ2j2ui3ecFGxPRGc",
+          "symbol": "GMEx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "GNRC",
+      "name": "Generac Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "eqzwohR9oCR6sravF4y5HyUwyvCDbnfSYqiiFrXondo",
+          "symbol": "GNRCon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsAiJ9xc1eBoVEz4npaJqySHLrpCoyo1oFfJJpYSXPW",
+          "symbol": "GNRCx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet Inc. Class C",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jcA9zXHWuTuDFDDDDYJTNhersed1B5etkuB6X9Eondo",
+          "symbol": "GOOGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Class A",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "bbahNA5vT9WJeYft8tALrH1LXWffjwqVoUbqYa1ondo",
+          "symbol": "GOOGLon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsCPL9dNWBMvFtTmwcCA5v3xWPSMEBCszbQdiLLq6aN",
+          "symbol": "GOOGLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "m9GcsVgdjaL3KsdtSFHimnhtsUMpTHkjtwEG4Tzondo",
+          "symbol": "GRABon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "GRND",
+      "name": "Grindr",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Gc1aT3ay7FXL3qdAW7cNSXYPDsGavy7qiACuxwxondo",
+          "symbol": "GRNDon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "GS",
+      "name": "Goldman Sachs",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "BchJRy2snmhJZf3rQ9LJ3ePs2BGfYgfvQNo31d2ondo",
+          "symbol": "GSon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsgaUyp4jd1fNBCxgtTKkW64xnnhQcvgaxzsbAq5ZD1",
+          "symbol": "GSx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "iFcwEB2LfeYLWKgZ2vogEzC5dP7s7xbhVX81XFwondo",
+          "symbol": "HALon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsYq2q3UxkwdHmhxJf5wbuXfDWuy5mYP5xsDBVEDK8Q",
+          "symbol": "HALx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "HD",
+      "name": "Home Depot",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "MtEXKVN3Pcggy8MPA3eJr15H6SK3RXheScqj9qtondo",
+          "symbol": "HDon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XszjVtyhowGjSC5odCqBpW1CtXXwXjYokymrk7fGKD3",
+          "symbol": "HDx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "HII",
+      "name": "Huntington Ingalls Industries",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "h73FNVBDq95fqGBy5eunHm2FVfu2jWZNkeXHDieondo",
+          "symbol": "HIIon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsqxvS2n4fRh41imCC68Z6NmDHk2SPXkGXrekg9o9kd",
+          "symbol": "HIIx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "HIMS",
+      "name": "Hims & Hers Health",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "bdh3njeo19d2TBLAKTGvCWdSoArfVw8uZBAJHY4ondo",
+          "symbol": "HIMSon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsprHSJzwz3qmHcEf7j7WcUk6hMUL4sPLuAdWaSY1oh",
+          "symbol": "HIMSx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "HIMX",
+      "name": "Himax Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "aCx5G8ewGTSzozEn8KmSsr9cvfyFWzGnr22GjFXondo",
+          "symbol": "HIMXon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "HIVE",
+      "name": "HIVE Digital Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "kTMQKHhnWPTvZsfiZfcdeHdG6dMgZV27wXSiC3Yondo",
+          "symbol": "HIVEon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "HLIT",
+      "name": "Harmonic",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "o3pnLke4uti6hY3LTfb2wVBpHeWG7znjJHj6VXtondo",
+          "symbol": "HLITon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "BVdXGvmgi6A9oAiwWvBvP76fyTqcCNRJMM7zMN6ondo",
+          "symbol": "HOODon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsvNBAYkrDRNhA7wPHQfX3ZUXZyZLdnCQDfHZ56bzpg",
+          "symbol": "HOODx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "axbgKgUMscTJ34DjA69kBJuf6UYq4Pzb8B8numYondo",
+          "symbol": "HPEon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xszp97B7zgeyNUFkymHdxXp3Y5KTZ1rzd2bAL9TW34t",
+          "symbol": "HPEx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "HSAI",
+      "name": "Hesai Group",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "nagL8iWMNLZVuKFk3bUGDaHyT5ZY4bNfUzsdtGHondo",
+          "symbol": "HSAIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "HTZ",
+      "name": "Hertz Global Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "QApMAZTHvfhX2dTDzM8AMyAHVyhmPVwj4oY8Jveondo",
+          "symbol": "HTZon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "HUBB",
+      "name": "Hubbell",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ZmiDoowvkpp1Qgx4mmY3qtsHbNV1oE12ApKCbZNondo",
+          "symbol": "HUBBon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsCz2AUyFUuadE9zxfs7ywkbMvaQNeVTeNBK15L43Qc",
+          "symbol": "HUBBx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "HUT",
+      "name": "Hut 8",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "f7iz4BQsnjw95EUyFiBKAnKgo7oBrycfzQdtmDwondo",
+          "symbol": "HUTon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsG5QyZTQnVSpsXRpD92K5ZGoxXjsmfTyx7fW7r18DV",
+          "symbol": "HUTx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "HYDB",
+      "name": "iShares High Yield Systematic Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "71VH3YQkjqqGxzwYvGhsCsJNQYzkMo9Rg72aVxqondo",
+          "symbol": "HYDBon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "HYG",
+      "name": "iBoxx $ High Yield Corporate Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "c5ug15fwZRfQhhVa6LHscFY33ebVDHcVCezYpj7ondo",
+          "symbol": "HYGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "HYGW",
+      "name": "iShares High Yield Corporate Bond Buywrite Strategy ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "ZKzkbFi4n3NQmRA9i5T7jVPSN2XERwxfHUf4p2pondo",
+          "symbol": "HYGWon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "HYS",
+      "name": "PIMCO 0-5 Year High Yield Corporate Bond Index ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "CsN1Tyz467bSFLPGd6MJyZhPNtwDaWZtX8ixHWyondo",
+          "symbol": "HYSon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IALT",
+      "name": "iShares Systematic Alternatives Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "gfKuBLive7Q35MYgxPgNx7qx524zQJ9RiDZJFZoondo",
+          "symbol": "IALTon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IAU",
+      "name": "iShares Gold Trust",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "M77ZvkZ8zW5udRbuJCbuwSwavRa7bGAZYMTwru8ondo",
+          "symbol": "IAUon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IBIT",
+      "name": "iShares Bitcoin Trust ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "6JLG8iUkAuqiBhL3j2ckDMDf5oWAa6awmyaWezKondo",
+          "symbol": "IBITon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IBM",
+      "name": "IBM",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "C8bZkgSxXkyT1RgxByp2teJ24hgimPLoyEYoNa9ondo",
+          "symbol": "IBMon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XspwhyYPdWVM8XBHZnpS9hgyag9MKjLRyE3tVfmCbSr",
+          "symbol": "IBMx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ICHR",
+      "name": "Ichor Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ZTABSukbFUFcuCYpMFHxN18aB4kPL2NkpZpgnXPondo",
+          "symbol": "ICHRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IDEF",
+      "name": "iShares Defense Industrials Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "th3tot4SRq6jgEyJ568NEh42MM82RSJ3NkiWeNzondo",
+          "symbol": "IDEFon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IEF",
+      "name": "iShares 7-10 Year Treasury Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "D4uWxzR5StYC6sTRhVts8Eboy3pmVtHeNC62dnQondo",
+          "symbol": "IEFon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IEFA",
+      "name": "iShares Core MSCI EAFE ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "C9J9vZ8N79GzzxFoRkPWCkGtMKU8akg4FhUk4r9ondo",
+          "symbol": "IEFAon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IEI",
+      "name": "iShares 3-7 Year Treasury Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "wuzf2FDZTRbRY3ZnndMeQ38Wk9YTDGGXTA63nUyondo",
+          "symbol": "IEIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IEMG",
+      "name": "iShares Core MSCI EAFE ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "cdVNL7wK8mf1UCDqM6zdrziRv4hmvqWhXeTcck2ondo",
+          "symbol": "IEMGon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsFnZawJdLdXfBSEt5Vw29K5vdBiHotdPLjUPafpfHs",
+          "symbol": "IEMGx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "IGEB",
+      "name": "iShares Investment Grade Systematic Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "feZXF2iFspS6QKE4LSXeSESRXgrtvzbE3dZSyydondo",
+          "symbol": "IGEBon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IGV",
+      "name": "iShares Expanded Tech-Software ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "jYxKRFuXr6PEkzPpf1wWF7DhLL4gxGJ95Pv2NGrondo",
+          "symbol": "IGVon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IJH",
+      "name": "iShares Core S&P MidCap ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "cfPLN9WXD2BTkbZhRZMVXPmVSiRo44hJWRtnaC8ondo",
+          "symbol": "IJHon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IJS",
+      "name": "iShares S&P Small-Cap 600 Value ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "v34vtrbcjDswpFDixpVFThmUWeM1RTZwtWcp5FBondo",
+          "symbol": "IJSon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "INCE",
+      "name": "Franklin Income Equity Focus ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "D8KT4Jd8qiKKTfkM8ejSKCpWGR1o3GFvnQGp5ERondo",
+          "symbol": "INCEon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "INDA",
+      "name": "iShares MSCI India ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "DBNwt3FoYCKQWdfzxKFNZ4mzuz4Jz1iRzFf7HFzondo",
+          "symbol": "INDAon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "INOD",
+      "name": "Innodata",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "nTUjRdtzGCy8FXHK8w1n11pHABX6Dc7L7WSpzdBondo",
+          "symbol": "INODon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "INRO",
+      "name": "iShares US Industry Rotation Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "g4kT9HEg7rN4e5ZaEGHmzpkdM8qMbsZSHJojKeCondo",
+          "symbol": "INROon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "INSW",
+      "name": "International Seaways",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "mV5mof9x8nDirrHwT7g16MarvHbnRvz2zN2S4Cspyon",
+          "symbol": "INSWon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "cJpUMp5R7rZ6fGeLHbHhrRuJzK9mkyKDjZqNpT3ondo",
+          "symbol": "INTCon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XshPgPdXFRWB8tP1j82rebb2Q9rPgGX37RuqzohmArM",
+          "symbol": "INTCx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "CozoH5HBTyyeYSQxHcWpGzd4Sq5XBaKzBzvTtN3ondo",
+          "symbol": "INTUon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsfodJMz7SyMNsSgATVDcbuMiQDqQoAiRTL1xuyHNUn",
+          "symbol": "INTUx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "IONQ",
+      "name": "IonQ",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "DDZQijTbaSd3Kas1r1bgCnHPayk8vTP8SfZWp5Tondo",
+          "symbol": "IONQon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsqFgFeprZEpayi92MTQGheZiNFmTi2TRJRmrHjCzMx",
+          "symbol": "IONQx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "IRDM",
+      "name": "Iridium Communications",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "go6DXMdM5zHTC9G16BwAYA8rKwGRhy9M5uudNdBondo",
+          "symbol": "IRDMon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IREN",
+      "name": "IREN",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "13QHuepdhtJ3urNsV9i1hdL8nQoca2G7ZaLzb5FYondo",
+          "symbol": "IRENon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xshh1dRsnxatP45yBfrzU9MrvrFCvxHQGTrWjgdA81E",
+          "symbol": "IRENx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "1MGRpPrkhEsCm2GCWD3rsvEU77xTTLAzfKXeFgFondo",
+          "symbol": "ISRGon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsgBcHP3frsQGHr5EoDdoPZMANk52Y4JPg5BYx98NwL",
+          "symbol": "ISRGx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ITA",
+      "name": "iShares US Aerospace and Defense ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "DDcAL93Urf7KrPntvKULnZoFs4Wdee1LkkJqLpjondo",
+          "symbol": "ITAon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsXoAR52Q2NYFkYiNqhCq4FauvyA1tdRsrmEYNf9fuh",
+          "symbol": "ITAx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ITOT",
+      "name": "iShares Core S&P Total US Stock Market ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "CPWkMURVvcnX8hGjqCTb8i5LkzV3VSvyk7SeJi8ondo",
+          "symbol": "ITOTon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IVV",
+      "name": "iShares Core S&P 500 ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "CqW2pd6dCPG9xKZfAsTovzDsMmAGKJSDBNcwM96ondo",
+          "symbol": "IVVon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IWF",
+      "name": "iShares Russell 1000 Growth ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "dSHPFuMMjZqt7xDYGWrexXTSkdEZAiZngqymQF2ondo",
+          "symbol": "IWFon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IWM",
+      "name": "iShares Russell 2000 ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "dvj2kKFSyjpnyYSYppgFdAEVfgjMEoQGi9VaV23ondo",
+          "symbol": "IWMon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsbELVbLGBkn7xfMfyYuUipKGt1iRUc2B7pYRvFTFu3",
+          "symbol": "IWMx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "IWN",
+      "name": "iShares Russell 2000 Value ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "DX7g7WNjDpVzNK9CG81v7wb6ZbiNzYfkdzH2Xs5ondo",
+          "symbol": "IWNon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "IYW",
+      "name": "iShares US Technology ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "vr8RQPDmYQBruiYsFSV3KZyoWFEsEejxzMCdWrBondo",
+          "symbol": "IYWon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "JAAA",
+      "name": "Janus Henderson AAA CLO ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "KZtqx9BJbpcGY7vdzhqPXM3ECKChxE5YhXaDiwRondo",
+          "symbol": "JAAAon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsEYQJtVa51Ww3y28jV1FwheMgmDj8BpxYiCPThcLWW",
+          "symbol": "JAAAx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "JBL",
+      "name": "Jabil",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "igWFQo1W64cQN6QUWYRXhM1UvpPuYTYtLELbDYqqqon",
+          "symbol": "JBLon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsnZQ49Abxr3RJgRSxYd4azhUg4MQVT3amiyaq84oA1",
+          "symbol": "JBLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "JD",
+      "name": "JD.com",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "E1aUS5nyv7kaBzdQzPVJW5zfaMgoUJpKYzdnFS2ondo",
+          "symbol": "JDon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "KUXt7LzHWSQXp5eyqMZRxWjAP6yM8BUh4LRHwiwondo",
+          "symbol": "JNJon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsGVi5eo1Dh2zUpic4qACcjuWGjNv8GCt3dm5XcX6Dn",
+          "symbol": "JNJx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "JPM",
+      "name": "JPMorgan Chase",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "E5Gczsavxcomqf6Cw1sGCKLabL1xYD2FzKxVoB4ondo",
+          "symbol": "JPMon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsMAqkcKsUewDrzVkait4e5u4y8REgtyS7jWgCpLV2C",
+          "symbol": "JPMx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "KEEL",
+      "name": "Keel Infrastructure",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "kSbeWEe64qpoVb1ZSVxgRnekZ1PwGNJkLyL5gJWondo",
+          "symbol": "KEELon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "KEYS",
+      "name": "Keysight Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jYcn4hHgyq1fS46YgecQY9N1gLU3sAxKA3DZVAPondo",
+          "symbol": "KEYSon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsXzXSMoSdF3gczdPhECXHN3TwfkUpNkthUvpEJVbDn",
+          "symbol": "KEYSx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "149o8ppQf9SzKCKXZ4v3dzHkwumvtQSRzSEkr29uondo",
+          "symbol": "KLACon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsw2uU1i8tHjbgstUbtt3m6kg7BS7AgG5aj8z7ddmmN",
+          "symbol": "KLACx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "KO",
+      "name": "Coca-Cola",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "e6G4pfFcrdKxJuZ4YXixRFfMbpMvgXG2Mjcus71ondo",
+          "symbol": "KOon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsaBXg8dU5cPM6ehmVctMkVqoiRG2ZjMo1cyBJ3AykQ",
+          "symbol": "KOx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "KOPN",
+      "name": "Kopin",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "eSu547weHVErV8nax42PyJzPT8JodhBfXLDp5vyondo",
+          "symbol": "KOPNon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "KWEB",
+      "name": "KraneShares CSI China Internet ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "DVPSYdqWPLvNa8afnEqa3B9eDfTTWpGyUZeXvdMondo",
+          "symbol": "KWEBon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "LASR",
+      "name": "nLIGHT",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Z8aFb6uQJgwFJ4KYKrT8n53aP66xqihodfAu4AKondo",
+          "symbol": "LASRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "LECO",
+      "name": "Lincoln Electric",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "kmppRwWb2odH6D4JWj8Lq9WshMyyUeCYssWQFhiondo",
+          "symbol": "LECOon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs7wdJdbcu1oR36AvumDgFLPiHmhpF9GEHQT6h16zAf",
+          "symbol": "LECOx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "LEMB",
+      "name": "iShares J.P. Morgan EM Local Currency Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "teZfcA6zpP476eKzED1daqBWDtuwbk9e2Ejk2cpondo",
+          "symbol": "LEMBon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "LI",
+      "name": "Li Auto",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "v12TwfofSbvVqQ5N5KGG4d3J8rtEi4BjGfn2apyondo",
+          "symbol": "LIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "LIN",
+      "name": "Linde plc",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Edik9MoFp8LAXS9HNu2gRFyihwYqDqv4ZmNmVT9ondo",
+          "symbol": "LINon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsSr8anD1hkvNMu8XQiVcmiaTP7XGvYu7Q58LdmtE8Z",
+          "symbol": "LINx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "LIT",
+      "name": "Global X Lithium & Battery Tech ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "syb82jXkHWbcWgxoRqrvAcoCdsAb3y1fnCYo561ondo",
+          "symbol": "LITon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "YrquZHx3f6sXsnZZAQiVsyQfvHwLmn2XTkDiZ1uondo",
+          "symbol": "LITEon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsexQ9qqNbDkLE6XwCN9ceVhLo8Lxc7UheVR6eBkKyo",
+          "symbol": "LITEx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "LLY",
+      "name": "Eli Lilly",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "eGGxZwNSfuNKRqQLKaz2hc4QkA2mau7skyxPdj7ondo",
+          "symbol": "LLYon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsnuv4omNoHozR6EEW5mXkw8Nrny5rB3jVfLqi6gKMH",
+          "symbol": "LLYx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "EoReHwUnGGekbXFHLj5rbCVKiwWqu32GrETMfw4ondo",
+          "symbol": "LMTon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XssULacY8D3z3a8HoQuLid8wdJHcZLGpSST9MkNFzox",
+          "symbol": "LMTx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "LOW",
+      "name": "Lowe's",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "edLdFJVVR532qhcrNTJjLAmhmyV7NsctbWVokMBondo",
+          "symbol": "LOWon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsixDLxXcKZBcRBddYiPZjB9FJcKMTLd4B7VBeKo3pB",
+          "symbol": "LOWx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "LPTH",
+      "name": "LightPath Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "dhEXYTmQKbYBH3wbWTMqeZZpADSRprM4jiGYbUMondo",
+          "symbol": "LPTHon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "wFJoeEYpKg9oRhyJy6BWTT3J95gmXBLvoeikDQNondo",
+          "symbol": "LRCXon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsSN912SN4Whn2xn59vWZHt1uLbw9WnoNGp5MigmHFf",
+          "symbol": "LRCXx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "LSCC",
+      "name": "Lattice Semiconductor",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "nDetEKBEk9chztCXSYNrU5F63s2RCEQCxT7BhxDondo",
+          "symbol": "LSCCon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsjaZAWtPNA1ZWqbPZxaDWtx1h9L23ucmRquwuSHQuf",
+          "symbol": "LSCCx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "LUNR",
+      "name": "Intuitive Machines",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "DiDWPZ7vQXfpaeQ8BX68XuDYeiQLv7diDxdeUpaondo",
+          "symbol": "LUNRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "LWLG",
+      "name": "Lightwave Logic",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "dKGNHXGsZL4GZ4UBTCjpPbaMerqe1EdZ7aFdCxHondo",
+          "symbol": "LWLGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "MA",
+      "name": "Mastercard",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "XsApJFV9MAktqnAc6jqzsHVujxkGm9xcSUffaBoYLKC",
+          "symbol": "MAx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MARA",
+      "name": "MARA Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ETCJUmuhs5aY62xgEVWCZ5JR8KPdeXUaJz3LuC5ondo",
+          "symbol": "MARAon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsguBZPkM9BDmxspmWe29EmrYZBv21ENcC27Pqh7grB",
+          "symbol": "MARAx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MBLY",
+      "name": "Mobileye Global",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "eCSPcjdpdKL1546PU3RM6BXkebuKn8iH4iuMcTBondo",
+          "symbol": "MBLYon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "MCD",
+      "name": "McDonald's",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "EUbJjmDt8JA222M91bVLZs211siZ2jzbFArH9N3ondo",
+          "symbol": "MCDon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsqE9cRRpzxcGKDXj1BJ7Xmg4GRhZoyY1KpmGSxAWT2",
+          "symbol": "MCDx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MEI",
+      "name": "Methode Electronics",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jiwgLgWJ8f6aEsM6hcSCrXLNnGpYfjmCVbqqAcwondo",
+          "symbol": "MEIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "MELI",
+      "name": "MercadoLibre",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "EWwdgGshGngcMpDV34pWZRSu5bkAuiKuKTTHKQ8ondo",
+          "symbol": "MELIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "fDxs5y12E7x7jBwCKBXGqt71uJmCWsAQ3Srkte6ondo",
+          "symbol": "METAon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsa62P5mvPszXL1krVUnU5ar38bBSVcWAB6fmPCo5Zu",
+          "symbol": "METAx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MKSI",
+      "name": "MKS Inc.",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ZNkQTVtc4WRMQfVCC23PmwYX41577tPcvs2AiXAondo",
+          "symbol": "MKSIon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsVDmkYEQ3wwLkXKdkRmic3HroSbReejAcnY9eNmrRW",
+          "symbol": "MKSIx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MP",
+      "name": "MP Materials",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "XwFm5GiKPVTvPiEbQpdc6vJbFEpsUXRMf6TcSxnondo",
+          "symbol": "MPon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsFARXCfXKCdu6BxV2WACBt3Dk88nxLujoqPzyyBib9",
+          "symbol": "MPx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "bn1fb8dwzafGePqNPrM8m8cbAKQiFqeEPuZkPySondo",
+          "symbol": "MRKon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsnQnU7AdbRZYe2akqqpibDdXjkieGFfSkbkjX1Sd1X",
+          "symbol": "MRKx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "14VP7DvCAdBCc5XGNZkPt6zhtPzJrWWS64Koxtxyondo",
+          "symbol": "MRNAon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsViHjyRbiSBskjizb1gszGTmZqtAH8TuqwJ7sB5AcP",
+          "symbol": "MRNAx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "FovBwhoV5KQjZCdhoM6jgXYwXLX3F8vgAfvmLH7ondo",
+          "symbol": "MRVLon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsuxRGDzbLjnJ72v74b7p9VY6N66uYgTCyfwwRjVCJA",
+          "symbol": "MRVLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "FRmH6iRkMr33DLG6zVLR7EM4LojBFAuq6NtFzG6ondo",
+          "symbol": "MSFTon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XspzcW1PRtgf6Wj92HCiZdjzKCyFekVD8P5Ueh3dRMX",
+          "symbol": "MSFTx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MSTR",
+      "name": "MicroStrategy",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "FSz4ouiqXpHuGPcpacZfTzbMjScoj5FfzHkiyu2ondo",
+          "symbol": "MSTRon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsP7xzNPvEHS1m6qfanPUGjNmdnmsLKEoNAnHjdxxyZ",
+          "symbol": "MSTRx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MTSI",
+      "name": "MACOM Technology Solutions Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "dAc8yWUrVra9v2PGsn3LT18oybsM62ysQ4ikWcpondo",
+          "symbol": "MTSIon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsGkSoEbLmqH2GCixj1MdGYHDbRaJdgnnDPrYhMuLxA",
+          "symbol": "MTSIx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MTZ",
+      "name": "MasTec",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "R3ywbVQ5t8LNmjQsn2Ngv43dSqyZscQwNag9G3Eondo",
+          "symbol": "MTZon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsvBVwk5d7eU6prsSxHJPu2adEm5q6wx55mbhov2UnF",
+          "symbol": "MTZx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Fz9edBpaURPPzpKVRR1A8PENYDEgHqwx5D5th28ondo",
+          "symbol": "MUon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsQLZycSZ7QnBBdBXQaTbQdiUcbRqjNJgyBGAMzhHav",
+          "symbol": "MUx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "MXL",
+      "name": "MaxLinear",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "aGn43ed4kjATwbVqsAuwAT24XcG9xABCcyQsFpqondo",
+          "symbol": "MXLon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "MYRG",
+      "name": "MYR Group",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "auLvQAhUzPuy2SQBSq2T6AofPGNkR4nZ83P8pjuondo",
+          "symbol": "MYRGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "NAT",
+      "name": "Nordic American Tankers",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "mmy8WbFRNrjoDsPGqpYmzQAVu7PfGhMCdSRLxZLondo",
+          "symbol": "NATon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "NBIS",
+      "name": "Nebius Group",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "DiRshqNDE68bWbGdLHm1GwQ76MvWQG3af6w1NdQondo",
+          "symbol": "NBISon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsii5eERa2sKFyTHQqdYxpxL5xoUSLVurzHeqBEMBho",
+          "symbol": "NBISx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "NEAR",
+      "name": "iShares Short Duration Bond Active ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "bD6TafGhPo8NaeKEyge1DrZGAPB5wxK3x4fCpqjondo",
+          "symbol": "NEARon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "NEE",
+      "name": "NextEra Energy",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "t7eN6cGwRMFaZvsNW2SmVwkedmHtDdrxA4ycNE5ondo",
+          "symbol": "NEEon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs4f5EbxL1bB89N7ADF7smF8fXxifJa3t6SexZufBWA",
+          "symbol": "NEEx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Dig28Tf1ufhCBAsjTmFkXCgcNgMqDMYj5A2rDQmondo",
+          "symbol": "NEMon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XssuE11NLek5vAeHNS2Jm8PFvT4PE7dtnpZwasWTGDT",
+          "symbol": "NEMx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "NET",
+      "name": "Cloudflare",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ZtAY65FCh3YB9H1wkbjRxxY5nXt9VfuTTz3Mzbuondo",
+          "symbol": "NETon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsR3LAMkzuPP8DnfYaiB2grTWqkBVy286gjJVErK1bi",
+          "symbol": "NETx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "g4KnPrxPLeeKkwvDmZFMtYQPM64eHeShbD55vK6ondo",
+          "symbol": "NFLXon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsEH7wWfJJu2ZT3UCFeVfALnVA6CP5ur7Ee11KmzVpL",
+          "symbol": "NFLXx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "NIKL",
+      "name": "Sprott Nickel Miners ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "V8LRV7kWjrx6Prke9oHEHNUiR122BVtyuPciTCTondo",
+          "symbol": "NIKLon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "NIO",
+      "name": "NIO",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "yQ37dFiGAbzrb2FRAEhGNzRy5zFfoYGWYhAepFEondo",
+          "symbol": "NIOon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "NKE",
+      "name": "Nike",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "g646pcdG2Rt5DH9WZzL7VVnVDWCCMTTrnktwE74ondo",
+          "symbol": "NKEon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsGYpMvKbVt6ViHqRd7cF3s746dAMFBQWcC49hB9VVP",
+          "symbol": "NKEx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "NNE",
+      "name": "NANO Nuclear Energy",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "bz2iUTXWkutnfwG32ziABcTzXoM91sdcgdiJJJdondo",
+          "symbol": "NNEon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Dm6FpQ76SsbVmAZ4NvD2mjZP7cxbw1CASr4WwCiondo",
+          "symbol": "NOCon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs1eyZcwrzzYW3hDjfpm7PiJrC9RyFszsHpqfTeUTCE",
+          "symbol": "NOCx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "NOK",
+      "name": "Nokia",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "amE2ANm5dyG6RTkJHdtzvWcuR8ChBZCEm5Jiqwdondo",
+          "symbol": "NOKon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "G7pTVoSECz5RQWubEnTP7AC83KHUsSyoiqYR1R2ondo",
+          "symbol": "NOWon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsBnEFd2EtpwBRNVfN8qLZcVUnuqXRaGCSEEFChLfxL",
+          "symbol": "NOWx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "NTES",
+      "name": "NetEase",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "YeK2TdPtGLAme3Phg4pb1GBN2YxKgX5UNVyD4asondo",
+          "symbol": "NTESon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "NUE",
+      "name": "Nucor",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "mvAUPvwKPW4rbbTXkqCvcZEG45XCeRHSVcLVym8ondo",
+          "symbol": "NUEon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsvdeDvbEfZkvfEUixS9SydEfJopFFD6NJjXZN1haYr",
+          "symbol": "NUEx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "gEGtLTPNQ7jcg25zTetkbmF7teoDLcrfTnQfmn2ondo",
+          "symbol": "NVDAon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+          "symbol": "NVDAx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "NVMI",
+      "name": "Nova",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "nupQ2BuCfoVeCHVLRDhTjLJanaf5cxZ81KVFqs6ondo",
+          "symbol": "NVMIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "NVO",
+      "name": "Novo Nordisk",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "GeV7S8vjP8qdYZpdGv2Xi6e7MUMCk8NAAp2z7g5ondo",
+          "symbol": "NVOon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsfAzPzYrYjd4Dpa9BU3cusBsvWfVB9gBcyGC87S57n",
+          "symbol": "NVOx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "NVT",
+      "name": "nVent Electric",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Z7G1bRFYH47se4g1ppqSgtMzeJs4JjzzFPmt7iAondo",
+          "symbol": "NVTon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "NVTS",
+      "name": "Navitas Semiconductor",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "fXXYmrdSAwVmtNo1ZwrkxVep7BxTsusGzmUZJSPondo",
+          "symbol": "NVTSon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "OIH",
+      "name": "VanEck Oil Services ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "DnvbCqRuUYssmKVRBRNwkUnptHitH4ZZTt1KVuZondo",
+          "symbol": "OIHon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "OII",
+      "name": "Oceaneering International",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "gfTDvjLp8K5gNDFaLMvoTZWJJY6PmVQfdPaUU7eondo",
+          "symbol": "OIIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "OKLO",
+      "name": "Oklo",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "m6oDLvJT7rY7M1TxuLWP3pWmAPg2cCWDQR1NKiEondo",
+          "symbol": "OKLOon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsJb1p4Ks6VFggq68JyMz7S3kdRfkqh4wA6EMyxi4DD",
+          "symbol": "OKLOx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ON",
+      "name": "ON Semiconductor",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "13qtwy5fZi9Przz14pzo9xqFSr8QHmLyUpUCvP1xondo",
+          "symbol": "ONon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsTzZxvfNdVESw8oEn7cNPnfQ4SGk7ncBSezfU6dxa7",
+          "symbol": "ONx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ONDS",
+      "name": "Ondas Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "7qy1j4Mechfyr6uAST3djH4vk4kiEYC2cjEytXdondo",
+          "symbol": "ONDSon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsgc9YTqdAH1GzDLBGQcScCMgkKsVBn4hBmqtNRospY",
+          "symbol": "ONDSx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "ONTO",
+      "name": "Onto Innovation",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "aHFrgfBHMGEScG8j64cN324jeoQ4EVXLmiHxtuPondo",
+          "symbol": "ONTOon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsu33VJj7s2tMUZfAQ8bbGgpDEnfXdCsKHSC4p6C5tS",
+          "symbol": "ONTOx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "OPEN",
+      "name": "Opendoor Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ou1uE526v7zmUYP2qCb2LJgfXAyWAtWS9SETtr8ondo",
+          "symbol": "OPENon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsGtpmjhmC8kyjVSWL4VicGu36ceq9u55PTgF8bhGv6",
+          "symbol": "OPENx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "OPRA",
+      "name": "Opera",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "gbHFTMkuMQUy5xrgoCBdaQ2XYvNyjWAYcnRPh9Condo",
+          "symbol": "OPRAon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ORBX",
+      "name": "Global X Space Tech ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "t5XWftMCacS1p3xrg14ARaxgEvEM5R241kxHGqrondo",
+          "symbol": "ORBXon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "GmDADFpfwjfzZq9MfCafMDTS69MgVjtzD7Fd9a4ondo",
+          "symbol": "ORCLon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsjFwUPiLofddX5cWFHW35GCbXcSu1BCUGfxoQAQjeL",
+          "symbol": "ORCLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "OSCR",
+      "name": "Oscar Health",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ThwGDsXZ6iKubWuEQjmDxGwF3bUERDGbBXvcbjFondo",
+          "symbol": "OSCRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "OUST",
+      "name": "Ouster",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "aV3R9NPU6TkyA6r9NPF5bmAw5XXsjUU7r2whgBqondo",
+          "symbol": "OUSTon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "OXY",
+      "name": "Occidental Petroleum",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "1GNFMryQ6c9ZpMhgNimmsbtgYM21qnBJgRAFoNiondo",
+          "symbol": "OXYon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsRNiTxDeRvxTEMTV5BC98N7cTZXxjNdLnudR8YeB2b",
+          "symbol": "OXYx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "PALL",
+      "name": "abrdn Physical Palladium Shares ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "P7hTXnKk2d2DyqWnefp5BSroE1qjjKpKxg9SxQqondo",
+          "symbol": "PALLon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsTTtPA5V19YwHKDv4xeVXNM6kdsQNJvg3MyWkRUckt",
+          "symbol": "PALLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "M7hVQomhw4Q2D2op3HvBrZjHu9SryjNvD5haEZ1ondo",
+          "symbol": "PANWon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsQ6NfzzLH8nspjrB9X8R2K64Zz7Tnxqu12juDiMPMW",
+          "symbol": "PANWx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "PAVE",
+      "name": "Global X US Infrastructure Development ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "DsLQ18ooPjiHYuiuQ5Jz8PNCpVaKe3FhAYpvMxWondo",
+          "symbol": "PAVEon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "PBR",
+      "name": "Petrobras",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "GRciFCqJ5y2hbiD6U5mGkohY65BZTXGuGUrCqf7ondo",
+          "symbol": "PBRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "PCG",
+      "name": "PG&E",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "UP5s1srLaHDc4SwJqLPa3A48x5R7ofN3hZWxWEZondo",
+          "symbol": "PCGon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsPq3VY73br4wpgi2a4b3jAdvuhstpknXVJ2fA4vNmk",
+          "symbol": "PCGx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "PDBC",
+      "name": "Invesco Optimum Yld Dvsfd Cmd Str No K-1 ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "M6agiXbNgy8Xon9ngiW4ZDPbMFcNCTMkMMkshZyondo",
+          "symbol": "PDBCon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "PDD",
+      "name": "PDD Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "PnjETBCLC318DRejo9cMQKAmET9PvW8AEFGWMNtondo",
+          "symbol": "PDDon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "PENG",
+      "name": "Penguin Solutions",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "dWFwjcUKdc7bPH9GEebpJVmEmUjvQTgEWGVR9WYondo",
+          "symbol": "PENGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "gud6b3fYekjhMG5F818BALwbg2vt4JKoow59Md9ondo",
+          "symbol": "PEPon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsv99frTRUeornyvCfvhnDesQDWuvns1M852Pez91vF",
+          "symbol": "PEPx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "PFE",
+      "name": "Pfizer",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Gwh9fPsX1qWATXy63vNaJnAFfwebWQtZaVmPko6ondo",
+          "symbol": "PFEon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsAtbqkAP1HJxy7hFDeq7ok6yM43DQ9mQ1Rh861X8rw",
+          "symbol": "PFEx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "PG",
+      "name": "Procter & Gamble",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "GZ8v4NdSG7CTRZqHMgNsTPRULeVi8CpdWd9wZY8ondo",
+          "symbol": "PGon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsYdjDjNUygZ7yGKfQaB6TxLh2gC6RRjzLtLAGJrhzV",
+          "symbol": "PGx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "PINS",
+      "name": "Pinterest",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "sxyg1VTSzy5zYANUK7hntNtmFAWoXGJq95AcHuVondo",
+          "symbol": "PINSon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XswgfhwvyLQ6ZdNsrwBGkBVpqXzQPpDykCDBmiti1o5",
+          "symbol": "PINSx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "PL",
+      "name": "Planet Labs",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "aq2zXUHqx7Zk6HSJH2GYsNajQJZj9f3dV7gAzfuondo",
+          "symbol": "PLon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsMJtFbb8BwzQtck3oRXyAfs7SAPRuTXnSEDNd7BAVz",
+          "symbol": "PLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "HfsnTS5qtdStwec9DfBrunRqnAMYMMz1kjv9Hu9ondo",
+          "symbol": "PLTRon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsoBhf2ufR8fTyNSjqfU71DYGaE6Z3SUGAidpzriAA4",
+          "symbol": "PLTRx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "PLUG",
+      "name": "Plug Power",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "TnfswqdE1jAJ8sfnf5J7kSVLEH1cfpAYZ8MWmKfondo",
+          "symbol": "PLUGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "POWI",
+      "name": "Power Integrations",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ZifkbVBh94FSETjAfoLw587nxmGsYtXayAAUQgzondo",
+          "symbol": "POWIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "POWL",
+      "name": "Powell Industries",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "fRFzaZfGSXPf2r4oBgBBXpisRovMaJZjv1aCQBsondo",
+          "symbol": "POWLon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "PPLT",
+      "name": "abrdn Physical Platinum Shares ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "DwRtkbsaQMGAS3oMeEGYh6M5vH4X9WECsQgqHjAondo",
+          "symbol": "PPLTon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xst6eFD4YT6sz9RLMysN9SyvaZWtraSdVJQGu5ZkAme",
+          "symbol": "PPLTx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "PRIM",
+      "name": "Primoris Services",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "kcc5QzXDCQ61qQ5Nbpi2RppnRSzhG1XQNXkjXwoondo",
+          "symbol": "PRIMon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "PSQ",
+      "name": "ProShares Short QQQ",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "qKtU9A7ij34XmtxaSzYfxCpkgAZzzFsqnUb2kW2ondo",
+          "symbol": "PSQon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "PURR",
+      "name": "Hyperliquid Strategies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "rsiKbHCdsvmExvDfkYWypAXFsqKz6V8XuoxbkHtondo",
+          "symbol": "PURRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "f1yQz2fo7S24NqrsfaWDkmQ8xoa8yU72c9rEEBdondo",
+          "symbol": "PWRon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsLR2VCGNzYVLfJGEwwNZsRYDZBGyBnoQH5rPGvwodA",
+          "symbol": "PWRx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "hM7B3UQTTR81mS27SxDDPzBbjejmo8fnpFjzgv9ondo",
+          "symbol": "PYPLon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XshWQWYVp5ff8CrAEsGmLVKD47nBWi3Ygn5v8wXK27G",
+          "symbol": "PYPLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "QBTS",
+      "name": "D-Wave Quantum",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "hqJXutLF6f7DxStrWCrnZDfXzbNTZmvi3KheVi6ondo",
+          "symbol": "QBTSon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "QCOM",
+      "name": "Qualcomm",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "hrmX7MV5hifoaBVjnrdpz698yABxrbBNAcWtWo9ondo",
+          "symbol": "QCOMon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsUUG8bjFN2KvzLTpzavvEKdAjMAeLTZiTeAQJ9uhvB",
+          "symbol": "QCOMx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "QLTA",
+      "name": "iShares Aaa - A Rated Corporate Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "fkznXN9GALK7f9zVr2RwRHWCPhwoima4zB3JbbNondo",
+          "symbol": "QLTAon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "QQQ",
+      "name": "Invesco QQQ",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "HrYNm6jTQ71LoFphjVKBTdAE4uja7WsmLG8VxB8ondo",
+          "symbol": "QQQon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs8S1uUs1zvS2p7iwtsG3b6fkhpvmwz4GYU3gWAmWHZ",
+          "symbol": "QQQx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "QTUM",
+      "name": "Defiance Quantum ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "iJAAwDNzJHbgKm5pksL3kXHc3zZewYm37dsZNCPondo",
+          "symbol": "QTUMon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "QUBT",
+      "name": "Quantum Computing",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "E4YowrHx5wm4RtSjfuvTqtNH3Wf7NEj5tYZGD9Bondo",
+          "symbol": "QUBTon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsRJiWgqGJrDaidERfWfdZkaxdA4VPjVEqN6XFctpp3",
+          "symbol": "QUBTx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "QYLD",
+      "name": "Global X NASDAQ 100 Covered Call ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "ueEYw3Djy9GVu9mrP6jum8qNpxshgcy7gMfmntWondo",
+          "symbol": "QYLDon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "RDDT",
+      "name": "Reddit",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "HXFrTf9v9NdjGUTnx4sojR3Cf92hoBsQFUxKTN7ondo",
+          "symbol": "RDDTon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsXEEJX7WoXfre8ZqYx1M1yXnEwd1Ww3YhvfESA2DzE",
+          "symbol": "RDDTx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "RDW",
+      "name": "Redwire",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "E6KSaqjvqe2HiUpbEweRxLK4RimQddigm95H9Jaondo",
+          "symbol": "RDWon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "E86mX2yb3HLbJM6gRtZQ6dCYmLh6MSDZadu9SCPondo",
+          "symbol": "REGNon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsWkTtvUXJgrvxvgGuHRRqk6iwDuviEQZw4uJFUUGgX",
+          "symbol": "REGNx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "REMX",
+      "name": "VanEck Rare Earth and Strategic Metals ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "tiitb2Z1HtpB2DpVr6V7tdCFS3jmTinLeuGj9EVondo",
+          "symbol": "REMXon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "RGTI",
+      "name": "Rigetti Computing",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "dwEPNKQab3iwRmjGvZPXhAmws1W5NsQGwuXwi8oondo",
+          "symbol": "RGTIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "RIOT",
+      "name": "Riot Platforms",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "i6f3DvZBuLpnGSqS8x6WPeStJ7jNe5KewD6afD5ondo",
+          "symbol": "RIOTon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs31mE5EiqjSHEaiX9QDKCN6NvSGCqpJ6f1FNq2wri5",
+          "symbol": "RIOTx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "RIVN",
+      "name": "Rivian Automotive",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "AXRsYFt7TXNQ3DcY6BkvRgPV6VsYMURyDtaeudjondo",
+          "symbol": "RIVNon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsoxDMY8s3ZV7zD4Yd87wAvURyxA8VXkd7w6HNuQkzj",
+          "symbol": "RIVNx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "RKLB",
+      "name": "Rocket Lab",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "E9VQY3VnrpVSekFByzRmfeK1kxgM3UiKCoVVbdUondo",
+          "symbol": "RKLBon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsKSh3QDynp6oms9yHjZXbZo3pKzUBoqUFKPHS2g9Bh",
+          "symbol": "RKLBx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "RMBS",
+      "name": "Rambus",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jjnSEAsi8UbCez7x9XCbWntLWRHBdc2tWSdC3uoondo",
+          "symbol": "RMBSon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "ROK",
+      "name": "Rockwell Automation",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "e83tWWrVsVk1hRGNz5BCwNr9TMBNWixmoUhWgYcondo",
+          "symbol": "ROKon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsnR8Rtrd8yFDGP3g2HwLdGiw58UcXjggXzgkL3pNYz",
+          "symbol": "ROKx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "RTX",
+      "name": "RTX",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "12BvLZtzjdssAycxPeBQUjukhmgQpULAvy6SroYdondo",
+          "symbol": "RTXon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsN53tgjZA4QU8iuedPNHxxCbDqKcJqbrT1f8jBXzdC",
+          "symbol": "RTXx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "RXRX",
+      "name": "Recursion Pharmaceuticals",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "q16ZLSbANUhpcq15pRUXRxNFfEqgpde9mSBwRcyondo",
+          "symbol": "RXRXon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SAP",
+      "name": "SAP",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "bjbrNi96mXAzgvxSuGJ2SRJ5U4N8agbG7wUAKAjondo",
+          "symbol": "SAPon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SATA",
+      "name": "Strive Preferred",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "vZVGEJfSM1hS4XdFVAZL2Fr1cbPzJty9vWyax68ondo",
+          "symbol": "SATAon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsAxB3xLnt7xto5ChiSbVNHBoXcXzKuzS7FieiNYwtY",
+          "symbol": "SATAx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SBET",
+      "name": "SharpLink Gaming, Inc",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "iLDu2jjp2i3Uqc2Vm7K7GLiUj3hR4Un49MtD7c4ondo",
+          "symbol": "SBETon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsEoih2x6nZuUjFwzGoba6MFmtzCkzW2c4YAm6baQbq",
+          "symbol": "SBETx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SBUX",
+      "name": "Starbucks",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "iPFqjcZQTNMNXA4kbShbMhfAVD8yr8Uq9UtXMV6ondo",
+          "symbol": "SBUXon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs9gd8SGbYQn9kkUYQayn46BdqQbvvUshEF6ZpRAzM7",
+          "symbol": "SBUXx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SCCO",
+      "name": "Southern Copper",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "EANjzFjj3nPXHdzN5CE3Z8LLVn69Ce77FE8X4cvondo",
+          "symbol": "SCCOon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsQD8itHh5CdrWMiH8cZPB55KSATjdXsxcSJJ14YCFD",
+          "symbol": "SCCOx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SCHW",
+      "name": "Charles Schwab",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "cnc6M1zXLdrGR5LAQVcaJDfgezMiVWNtGQsVy1Kondo",
+          "symbol": "SCHWon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsK5U9qwT9ErPXnpgDzV9voTGASZbZnNTYTGVxCqPii",
+          "symbol": "SCHWx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SEDG",
+      "name": "SolarEdge Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "EAwP9LGNjTkQ2YeKE6CGKqBYtrJ6APFvRe7KCMmondo",
+          "symbol": "SEDGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SGOV",
+      "name": "iShares 0-3 Month Treasury Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "HjrN6ChZK2QRL6hMXayjGPLFvxhgjwKEy135VRjondo",
+          "symbol": "SGOVon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsYD72ntjj7ZwoFDZCDmN2gamTcLpnywqvG7PQN5vCN",
+          "symbol": "SGOVx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SHLD",
+      "name": "Global X Defense Tech ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "siVse6kjZb9ihaXHaqoG3mhHyTPEnNCkvSDTheoondo",
+          "symbol": "SHLDon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SHOP",
+      "name": "Shopify",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ivdDracs2s7jCP698dJXKSEQdVrNj9hasJL1Uq1ondo",
+          "symbol": "SHOPon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SHY",
+      "name": "iShares 1-3 Year Treasury Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "EEy57xbaLcUrN1HXj2vz8VWxeWFK1eZQZo4aWbrondo",
+          "symbol": "SHYon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SIL",
+      "name": "Global X Silver Miners ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "uiSLmtLdqxtbQq5gkwYBvBrZpnSNXZn8h6sjLsDondo",
+          "symbol": "SILon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SKHY",
+      "name": "SK Hynix",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Huyb2fyDDjSuDKCRWsN9ci2rmcgPo6NFiLbx9ZDondo",
+          "symbol": "SKHYon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsnhgGRQwhExfS2bmWzR6EYddKGPRGDEjeJsatkmKqU",
+          "symbol": "SKHYx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SLB",
+      "name": "SLB",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "i7ZS13SF6BCKbzvLujp2UqLNMgM1XVnZ7A7wC6tondo",
+          "symbol": "SLBon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SLV",
+      "name": "iShares Silver Trust",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "iy11ytbSGcUnrjE6Lfv78TFqxKyUESfku1FugS9ondo",
+          "symbol": "SLVon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsxAd6okt8y1RRK6gNg7iJaqiWNiq5Md5EDf3ZrF2dm",
+          "symbol": "SLVx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SMCI",
+      "name": "Super Micro Computer",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jLca79XzcewRuBZyaJxVxuKpUHcEix1X4CP1RP9ondo",
+          "symbol": "SMCIon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsMxAoJP47FQGLsVUvSS2QfBaHdNsd7DRU6nWRL8RSa",
+          "symbol": "SMCIx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SMR",
+      "name": "NuScale Power",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "bGy2covWNf5qyzoNdV1pWXuLmFi6Dq927o7JXzWondo",
+          "symbol": "SMRon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsrwdnwLHjVnyy7fgE2Pdwjp3czEm73jPjkSC5xzUBw",
+          "symbol": "SMRx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SNAP",
+      "name": "Snap",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "a2cXfonVgQ6cKB4Lm8YZsPry39VZSA562bwmRSiondo",
+          "symbol": "SNAPon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SNDK",
+      "name": "SanDisk",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "EJmUVvDqAdfH5zEohkdS4234bi3c6iunqEMobjmondo",
+          "symbol": "SNDKon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xswbpc8UqU6e1j9QZEWCjBMjyvz4twqD7PCy6j2e7jj",
+          "symbol": "SNDKx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SNOW",
+      "name": "Snowflake",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "JmFLCBwoNvcXy6B2VqABg6m784ubkXpaEx3p7S5ondo",
+          "symbol": "SNOWon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs3QCTNpPWTFYRQ9yPv9gsvWKNJGk45UQ1bb1w7xznc",
+          "symbol": "SNOWx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SO",
+      "name": "Southern",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "aKzjn2ZdWySSGPSSDTY2HUpcSCmemSahTXihrpyondo",
+          "symbol": "SOon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SOFI",
+      "name": "SoFi Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "mqL8yXQpeSvc7NgrAtLLPtRvUiWyLoG5RWLv16iondo",
+          "symbol": "SOFIon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsipo31rLh5EqPMR2cArn6kVPAD83C6rxbmCrT9Wu5u",
+          "symbol": "SOFIx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SOUN",
+      "name": "SoundHound AI",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "vE2qArmjto6VfeMngyGAnzp2ipLYeXsxiARDnnXondo",
+          "symbol": "SOUNon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SOXL",
+      "name": "Direxion Daily Semi Bull 3X ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "isRSJECP9yFPv9YejzGUdjzAGHbF2x5DpVeDqAiondo",
+          "symbol": "SOXLon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsdZDkoMdUb6iKDAKKappuM7C1Q2HmTqC8jNujbfmCu",
+          "symbol": "SOXLx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SOXQ",
+      "name": "Invesco PHLX Semiconductor ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "io3eLhnjT1a94JpzAUMWKqwMYHZRwvtGXjkkXsPondo",
+          "symbol": "SOXQon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SOXS",
+      "name": "Direxion Daily Semi Bear 3X ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "ivnSAcjCqEtWYTKFbqYe8YoqRZqCBfT4BGP5G1nondo",
+          "symbol": "SOXSon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsCucuUESBi3ZjRxmjwUzGYuf6ZrtZDUvK6XhRA4RR3",
+          "symbol": "SOXSx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SOXX",
+      "name": "iShares Semiconductor ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "EN5pHc1LccUSojxb7kkyQi7v7iJN5RpDq6qz3DHondo",
+          "symbol": "SOXXon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsEsHeiNZf88sABxu74TPuXbQThdaQGdzPVZUBicjtQ",
+          "symbol": "SOXXx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SPCX",
+      "name": "SpaceX",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "wzAyQTorWyoVXuJKj2x8EqKEGJpS13z6EWE9z5Aondo",
+          "symbol": "SPCXon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs3oZwbHvqis4NYcf4YKWmEia2eC84wSiVrcYcTqpH8",
+          "symbol": "SPCXx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SPGI",
+      "name": "S&P Global",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "JrTYw7A9jihX5TwpRStYviEbsYf2X2VJpZ13719ondo",
+          "symbol": "SPGIon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SPOT",
+      "name": "Spotify",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jzCvs2Pk8tDcfsFRqnEMjurgaQW4iQfEkandUR8ondo",
+          "symbol": "SPOTon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SPY",
+      "name": "SPDR S&P 500 ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "k18WJUULWheRkSpSquYGdNNmtuE2Vbw1hpuUi92ondo",
+          "symbol": "SPYon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsoCS1TfEyfFhfvj8EtZ528L3CaKBDBRqRapnBbDF2W",
+          "symbol": "SPYx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "SQQQ",
+      "name": "ProShares UltraPro Short QQQ",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "D1tu7Fnm3cCpKyyPXrqm5GXShPqMj7a2SEjjq9fondo",
+          "symbol": "SQQQon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "STLD",
+      "name": "Steel Dynamics",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "n7DwzSkv1SBkcA9qj8LU9sZ9sRn72Z6spU2w2b9ondo",
+          "symbol": "STLDon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsw7mKDicsyZ7dgSMfFxhX5nbgat3uG9V1nCxDy6Gvp",
+          "symbol": "STLDx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "STM",
+      "name": "STMicroelectronics",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "bM2VSRfbYPt29YRD9F2wTCSCSQaHtNCuz1znNDCondo",
+          "symbol": "STMon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "STNG",
+      "name": "Scorpio Tankers",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "mFyszXnJf8BFR8H4o33pCZS1T36BH9LjtG3gTpdondo",
+          "symbol": "STNGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "STRC",
+      "name": "Strategy Stretch Preferred",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "y6kSRF4i9tfMMjZziPHtQE1PeUS6bWEHTzZMFgXondo",
+          "symbol": "STRCon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs78JED6PFZxWc2wCEPspZW9kL3Se5J7L5TChKgsidH",
+          "symbol": "STRCx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "EXtprP1wzrNo2bByrU9JyzqEg2hQMSCVJakeHHYondo",
+          "symbol": "STXon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SWKS",
+      "name": "Skyworks Solutions",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "iJtKb1CWnWdgJhs7HgSZvLmSJABGGMc97QeuG7tondo",
+          "symbol": "SWKSon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SYM",
+      "name": "Symbotic",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "nP42LxpSZkUfnBUxiFsHxL5GKYWRZ1VxqGkMTNwondo",
+          "symbol": "SYMon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "SYSB",
+      "name": "iShares Systematic Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "5U9o49BoQNU6bBMswvmBs3R4GZmYSyrnTN4ncX4ondo",
+          "symbol": "SYSBon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "TASK",
+      "name": "TaskUs",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "nQysX1ZsRJ8yTJg8smZTZ91rWcVBabDRqdUEKZHondo",
+          "symbol": "TASKon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "TCOM",
+      "name": "Trip.com Group",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "9PMjLqd8zPdKkJUXarnit5t7tPL3cCscwHzy7ATondo",
+          "symbol": "TCOMon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "TEL",
+      "name": "TE Connectivity",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ZjYCwYeG85TbV5oXkCkvWQTNPh2PgTQ8X4nxpbyondo",
+          "symbol": "TELon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "TEN",
+      "name": "Tsakos Energy Navigation",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "micfqeFfvD9iDKKzuqRHXerFxG8K5VfY8CgrcQoondo",
+          "symbol": "TENon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ahvtJqt6pkzjnYTMaCKrvjPQszSKyWraiXKvuWKondo",
+          "symbol": "TERon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsbe4fwmjVQEWEPkzfyxqNdPUUK7X9dKfTJrZdDbNgx",
+          "symbol": "TERx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "TIP",
+      "name": "iShares TIPS Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "k6BPp2Xmf2TYgrZiUyWfUoZBKeqaDbvPoAVgSx2ondo",
+          "symbol": "TIPon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "TLN",
+      "name": "Talen Energy",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "RTb54gpqAx6RpLAHRGnqQ3ciQ845CHqhg21ZzEJondo",
+          "symbol": "TLNon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs8yLZVjsYmQ5Tu4e5JDVQeo4cbRRDCVERgtSGJFn3q",
+          "symbol": "TLNx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "TLT",
+      "name": "iShares 20+ Year Treasury Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "KaSLSWByKy6b9FrCYXPEJoHmLpuFZtTCJk1F1Z9ondo",
+          "symbol": "TLTon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "TM",
+      "name": "Toyota",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "kbmF7ERJWMaaDswMprrH9gHSLya5D2RMBNgKqg3ondo",
+          "symbol": "TMon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "TMO",
+      "name": "Thermo Fisher Scientific",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "T699bgtXQw4CJ59rQ4VzLsupVQUzoL5RmuhHnKrondo",
+          "symbol": "TMOon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs8drBWy3Sd5QY3aifG9kt9KFs2K3PGZmx7jWrsrk57",
+          "symbol": "TMOx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "TMUS",
+      "name": "T-Mobile US",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "pDY4GPJfZcNETPG7myXeafQfgJqqVkn81bMYDyfondo",
+          "symbol": "TMUSon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XswCi2U1G6Ppbw1QhG45yKb8UKuR1FKLJrquv2FZSD4",
+          "symbol": "TMUSx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "TNK",
+      "name": "Teekay Tankers",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "mPAqB3y5N7fWmEh1BoVtrLhZKBkQe7LjBCrYUNbondo",
+          "symbol": "TNKon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "TQQQ",
+      "name": "ProShares UltraPro QQQ",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "14W1itEkV7k1W819mLSknFTaMmkCtPokbF2tRkPUondo",
+          "symbol": "TQQQon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsjQP3iMAaQ3kQScQKthQpx9ALRbjKAjQtHg6TFomoc",
+          "symbol": "TQQQx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "TSEM",
+      "name": "Tower Semiconductor",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "cRx9VtwwPTZbVk1DjbMyKzrMWn7nJA22UpMyzFYondo",
+          "symbol": "TSEMon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "KeGv7bsfR4MheC1CkmnAVceoApjrkvBhHYjWb67ondo",
+          "symbol": "TSLAon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
+          "symbol": "TSLAx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "TSM",
+      "name": "Taiwan Semiconductor Manufacturing",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "keybg184d4vyXeQdFqs4o99YsMg7xBthxTJ6Ky3ondo",
+          "symbol": "TSMon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsafvsGtzFqqHgTnA3aPC83EAMkacU5mcGtcSayhpVV",
+          "symbol": "TSMx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "TT",
+      "name": "Trane Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "erp2t2My8UoFgyRt39EmnnSiDUwUM5aNKw5piBKondo",
+          "symbol": "TTon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "TTMI",
+      "name": "TTM Technologies",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "kWmjV2XdK5tbV6kZrM8grS6EGFmuH5i5HFW3YyLondo",
+          "symbol": "TTMIon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs1PSc6DL1cdDPTbyJevgYYU7uA1wiJQESzrpWM7JRv",
+          "symbol": "TTMIx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "TXN",
+      "name": "Texas Instruments",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "81xLFvCzFaUM3KDxSHC75pXu3RPCeSeCbmGBY8aondo",
+          "symbol": "TXNon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsU4fHhJEFcrwNh4RYuHmWdaoCfsrWKEm4UEs3zTJwH",
+          "symbol": "TXNx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "UAMY",
+      "name": "United States Antimony",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "nbwNoPaFYNY2c3u4iK6U59ySC2ehFrpjdpfbyLDondo",
+          "symbol": "UAMYon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "UBER",
+      "name": "Uber",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "KJNeFW3kk3ycPjXpC6cbuyckjeYHacc2ekhtAi5ondo",
+          "symbol": "UBERon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsAsZLF4MmsvS1sDxRMrUz7REjHfwbC9UAMXSRBqgEB",
+          "symbol": "UBERx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "UCTT",
+      "name": "Ultra Clean Holdings",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jCPs1JpVKAwevND3jzeDGAUBBFkJ5TUtiu2SxLbondo",
+          "symbol": "UCTTon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "UEC",
+      "name": "Uranium Energy",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "EYo8D3cLdF1CDeGms5M5VHyU52HJYinkMZ1cqvYondo",
+          "symbol": "UECon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "UMC",
+      "name": "United Microelectronics",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ieocA48cBX3oiVECgosMGxG649wnf7R8EkVrA5fondo",
+          "symbol": "UMCon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "UNG",
+      "name": "US Natural Gas Fund",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "Es2ipHL7qXBcLmZ4N7LP9PHBHaWaTMTAkxDwGGjondo",
+          "symbol": "UNGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "UNH",
+      "name": "UnitedHealth",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "kPBGL8vAwKN3UGmr9cjkM2dU79SC3nzTC9yu7F8ondo",
+          "symbol": "UNHon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XszvaiXGPwvk2nwb3o9C1CX4K6zH8sez11E6uyup6fe",
+          "symbol": "UNHx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "UNP",
+      "name": "Union Pacific Corporation",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "EvsME8gdnEwPLbTnhrGVDwrY35zBuB8hEGCq59Hondo",
+          "symbol": "UNPon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsehrw5hHiQ16Vfxxctj8ewUhtRCzbCrBYS278ctAAy",
+          "symbol": "UNPx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "URA",
+      "name": "Global X Uranium ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "EvzskrQ3vUUkiMGG1DzfSDyG6H2WCMy3v9G8fzzondo",
+          "symbol": "URAon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsq9sEQjYiUTSZ55RrbHAzVfz8HotwFGrqgxkgiv4LB",
+          "symbol": "URAx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "URNM",
+      "name": "Sprott Uranium Miners ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "hieZTEZNBU67bMGULK9hWCB9h5jBPKdpRWiXpwkondo",
+          "symbol": "URNMon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "USAR",
+      "name": "USA Rare Earth",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "aA1dRckexLmQyppFoWmjKDFjrNFUsZeGzZ7L5xpondo",
+          "symbol": "USARon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsJJneENiaBPqqcdK1gMsfwi9cbw111azigzRYHoctX",
+          "symbol": "USARx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "USFR",
+      "name": "WisdomTree Floating Rate Treasury Fund",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "o6U1Sm6Vd7EofMyCrL28mrp2QLzgYGgjveHiEQ5ondo",
+          "symbol": "USFRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "USHY",
+      "name": "iShares Broad USD High Yield Corporate Bond ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "aau4XCAZR6p9uC4vgdHdh4ip3oW5pr5PrNs3FJ8ondo",
+          "symbol": "USHYon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "USO",
+      "name": "United States Oil Fund",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "rpydAzWdCy85HEmoQkH5PVxYtDYQWjmLxgHHadxondo",
+          "symbol": "USOon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "UUUU",
+      "name": "Energy Fuels",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ey16y4Bk92zmPSvbRznuv3RioAXbVreBkQxrKGDondo",
+          "symbol": "UUUUon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsYHvpLWfTfqdLkPbCc4eUT21eH521BRTXBypgzpEDH",
+          "symbol": "UUUUx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "V",
+      "name": "Visa",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "kxEW4oJL75K37VeXaZF1ynbHQATQwhECQKN1374ondo",
+          "symbol": "Von",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsqgsbXwWogGJsNcVZ3TyVouy2MbTkfCFhCGGGcQZ2p",
+          "symbol": "Vx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "VDE",
+      "name": "Vanguard Energy ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "hKVpWfYwP1VJ9BcBTPRcovcSpEkvnaN8eXwFoCMondo",
+          "symbol": "VDEon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "VFS",
+      "name": "VinFast Auto",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "F3V1fKLKv7H8aNdt9TC6GQ3X4LayEfGHsPi8Umaondo",
+          "symbol": "VFSon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "VICR",
+      "name": "Vicor",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "f9nfUo4SdhCGfHmm81m3ArgDsatwo2jLjEcgCcYondo",
+          "symbol": "VICRon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "VNQ",
+      "name": "Vanguard Real Estate ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "F3dMJ9H137YUNc9cpN3gBWDSq4MSRbTFtojH65Uondo",
+          "symbol": "VNQon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "VPG",
+      "name": "Vishay Precision Group",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "dYF78b65HS62V3pku2uYFyektYzAhx9YACv4hWfondo",
+          "symbol": "VPGon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "VRSN",
+      "name": "VeriSign",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ja4bMvHL3Hw9Ey33VGWyDeXvrHvQWyBnK4GSmCUondo",
+          "symbol": "VRSNon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xsy4NX4cCf4YjN6iwypnQ8crXtNkyA2K3jypAX5NfQ6",
+          "symbol": "VRSNx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "MkN2TZSYTFBdMRLf9EVcfhstTwnazH8knd9hpepondo",
+          "symbol": "VRTon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsLUiVEwYeoneKpgR1C2Q4DBUZhX4xDktSCfQqq8zmn",
+          "symbol": "VRTx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "FL7QzUq58pvkDxkftJm7RqRWgqYEFZwXuvAMsUnondo",
+          "symbol": "VRTXon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsgCWpLUC3pv6JmNAFtkYmuwSaikShy8QZRuripgBzn",
+          "symbol": "VRTXx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "VSH",
+      "name": "Vishay Intertechnology",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jbzBdFNddeEiJXGcVH4DE2qUyYfTtyY2vaHJDEZondo",
+          "symbol": "VSHon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "VST",
+      "name": "Vistra",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "h6MW8GFpfzxFa1JNn6hZNnBF3t4fj9SHAXKy6LXondo",
+          "symbol": "VSTon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "VTI",
+      "name": "Vanguard Total Stock Market ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "jCCU4GwukjNxAXJowG2S4KCrr5g6YyUB61WHYvGondo",
+          "symbol": "VTIon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsssYEQjzxBCFgvYFFNuhJFBeHNdLWYeUSP8F45cDr9",
+          "symbol": "VTIx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "VTV",
+      "name": "Vanguard Value ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "KuiYLPVq65qixD9TgvxBC576C4gG6vVTCdbh2zFondo",
+          "symbol": "VTVon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "igu1coP6n3GPaWmbd8J9Z7UAyLpV254uQFFNfydondo",
+          "symbol": "VZon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs4VKGG8TTan8UN3mC1ufsDMamBtBLE4Ahfkyv2tfuy",
+          "symbol": "VZx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "WCC",
+      "name": "WESCO International",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "m3m2HAANsAf2Y3BkdBixDgtrrFHnZDp4NqVh9obondo",
+          "symbol": "WCCon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xspj4rFiCCXJyymfNgkwBG9AXZbyp69HGyHwfz6WHTE",
+          "symbol": "WCCx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "FLqH2jB2DZPJP5nnVFAakRKaNTcDZtq71Pnpp6Aondo",
+          "symbol": "WDCon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsmopJuh6C6uNFJa3KaVoYqEtrf3Y7M5LYwRLKLER3h",
+          "symbol": "WDCx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "WEN",
+      "name": "Wendy's",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "QwJ619MuDRvT1f29RH7tMdaqsUnaSNcvBEJAZkHondo",
+          "symbol": "WENon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs4uNhvBDAcp2mz3g9XR5q3vzLgmF1ANWxJgWk2d5u3",
+          "symbol": "WENx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "WFC",
+      "name": "Wells Fargo",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "L6ZE5qCpVVSqLePz64CrwkgyWoPF9M7tB8BeFH4ondo",
+          "symbol": "WFCon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XspHXejQ3A4VeimAqR1mAkvgTWgpmmoNR5CUhwCqzqr",
+          "symbol": "WFCx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "WLK",
+      "name": "Westlake",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "mrNSd1y72F7Dx2Uip4vidtsJKKd8iJatTKGX6Pvondo",
+          "symbol": "WLKon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "WM",
+      "name": "Waste Management",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "FPvKvWzSzDZqgYmSZUetrkpUXSwo2VtpR4BynVYondo",
+          "symbol": "WMon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XscZ13Vr2dH9GV8vxVAgFsXz2YMoDCAz3QanuCcwsr5",
+          "symbol": "WMx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "WMB",
+      "name": "Williams",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "bvjmEwQBqbMr6rnx5a74boBz6nmA1DNThujPnNAondo",
+          "symbol": "WMBon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xso4umc25VxszLT64SYNT7TMeZudAC75xwNo7qFjJFu",
+          "symbol": "WMBx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "LZddqAqKqJW9oMZSjTxCUmbmzBRQtv9gMkD9hZ3ondo",
+          "symbol": "WMTon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "Xs151QeqTCiuKtinzfRATnUESM2xTU6V9Wy8Vy538ci",
+          "symbol": "WMTx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "WOLF",
+      "name": "Wolfspeed",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "Zfb5PTVfGa8AV6VxrTQJuP8CjMXFPMVkVVNpcAWondo",
+          "symbol": "WOLFon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "WS",
+      "name": "Worthington Steel",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "ZpJpMhWKCr4m9ZzxApJJwDc5cHiHp2hG1RZdJyvondo",
+          "symbol": "WSon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "WULF",
+      "name": "Terawulf",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "exYfSJt6Fgfhfnp3bAD4roYy97hLF9npjYaLyEXondo",
+          "symbol": "WULFon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsuwUbQSzCJN2wZabD1Gxf1MER2Ypa7hMzVMYB2WawJ",
+          "symbol": "WULFx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "WYFI",
+      "name": "WhiteFiber",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "jtnRMv1U3bJHQCsi47E6Lf8Nzkaqsisef7SkHBgondo",
+          "symbol": "WYFIon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsLkMYrJVUPJv23tH3PB167BV6kpdubPe5F3KfVvSFN",
+          "symbol": "WYFIx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "XOM",
+      "name": "Exxon Mobil",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "qCYD74QnXzd9pzv6pGHQKJVwoibL6sNcPQDnpDiondo",
+          "symbol": "XOMon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsaHND8sHyfMfsWPj6kSdd5VwvCayZvjYgKmmcNL5qh",
+          "symbol": "XOMx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "XYLD",
+      "name": "Global X S&P 500 Covered Call ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "wCr7YFeYDWyYSebsoMY75g8c9pguGeVB3rT6kYjondo",
+          "symbol": "XYLDon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    },
+    {
+      "ticker": "XYZ",
+      "name": "Block",
+      "instrument": "stock",
+      "wrappers": [
+        {
+          "mint": "BWxe2FVciUbwrCUZQPUKiREBh5LmVa5AiUqNLAkondo",
+          "symbol": "XYZon",
+          "issuer": "ondo",
+          "decimals": 9
+        },
+        {
+          "mint": "XsDP3d7dBNMVVZT6W5abD9jxZPGbrenPaj322sWn9Ct",
+          "symbol": "XYZx",
+          "issuer": "xstocks",
+          "decimals": 8
+        }
+      ]
+    },
+    {
+      "ticker": "YEAR",
+      "name": "AB Ultra Short Income ETF",
+      "instrument": "etf",
+      "wrappers": [
+        {
+          "mint": "wxPFbh4dVrTWPGHHbVVeTHH7GK2uQwnTm5C8X3Fondo",
+          "symbol": "YEARon",
+          "issuer": "ondo",
+          "decimals": 9
+        }
+      ]
+    }
+  ]
+}
