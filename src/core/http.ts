@@ -12,6 +12,8 @@ interface FetchOptions {
   timeoutMs?: number;
   retries?: number;
   headers?: Record<string, string>;
+  method?: "GET" | "POST";
+  body?: unknown;
 }
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
@@ -37,7 +39,7 @@ function retryAfterMs(response: Response, attempt: number): number {
 }
 
 export async function fetchJson<T>(url: string, options: FetchOptions = {}): Promise<T> {
-  const { timeoutMs = 15_000, retries = 4, headers } = options;
+  const { timeoutMs = 15_000, retries = 4, headers, method = "GET", body } = options;
 
   let lastError: unknown;
   let backoffMs = 0;
@@ -46,7 +48,13 @@ export async function fetchJson<T>(url: string, options: FetchOptions = {}): Pro
 
     try {
       const response = await fetch(url, {
-        headers: { accept: "application/json", ...headers },
+        method,
+        headers: {
+          accept: "application/json",
+          ...(body === undefined ? {} : { "content-type": "application/json" }),
+          ...headers,
+        },
+        body: body === undefined ? undefined : JSON.stringify(body),
         signal: AbortSignal.timeout(timeoutMs),
       });
 

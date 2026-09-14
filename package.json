@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "registry:refresh": "tsx scripts/refresh-registry.mts"
+    "registry:refresh": "tsx scripts/refresh-registry.mts",
+    "check:multipliers": "tsx --env-file-if-exists=.env.local scripts/check-multipliers.mts"
   },
   "dependencies": {
     "next": "^15.5.4",
