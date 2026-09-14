@@ -14,7 +14,8 @@
     "registry:refresh": "tsx scripts/refresh-registry.mts",
     "check:multipliers": "tsx --env-file-if-exists=.env.local scripts/check-multipliers.mts",
     "check:prices": "tsx --env-file-if-exists=.env.local scripts/check-prices.mts",
-    "check:depth": "tsx --env-file-if-exists=.env.local scripts/check-depth.mts"
+    "check:depth": "tsx --env-file-if-exists=.env.local scripts/check-depth.mts",
+    "check:par": "tsx --env-file-if-exists=.env.local scripts/check-par.mts"
   },
   "dependencies": {
     "next": "^15.5.4",
