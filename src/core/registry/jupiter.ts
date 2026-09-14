@@ -1,9 +1,7 @@
-import { createRateLimiter, fetchJson } from "@/core/http";
+import { fetchJson } from "@/core/http";
+import { JUPITER_LITE, jupiterThrottle } from "@/core/jupiter";
 
-const SEARCH_URL = "https://lite-api.jup.ag/tokens/v2/search";
-
-// lite-api allows roughly 60 requests a minute; discovery walks hundreds of tickers
-const throttle = createRateLimiter(1_100);
+const SEARCH_URL = `${JUPITER_LITE}/tokens/v2/search`;
 
 export interface JupiterToken {
   id: string;
@@ -49,7 +47,7 @@ function normalize(raw: RawToken): JupiterToken | null {
 }
 
 export async function searchTokens(query: string): Promise<JupiterToken[]> {
-  await throttle();
+  await jupiterThrottle();
   const raw = await fetchJson<RawToken[]>(`${SEARCH_URL}?query=${encodeURIComponent(query)}`);
   return Array.isArray(raw) ? raw.flatMap((t) => normalize(t) ?? []) : [];
 }
