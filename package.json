@@ -16,9 +16,13 @@
     "check:prices": "tsx --env-file-if-exists=.env.local scripts/check-prices.mts",
     "check:depth": "tsx --env-file-if-exists=.env.local scripts/check-depth.mts",
     "check:par": "tsx --env-file-if-exists=.env.local scripts/check-par.mts",
-    "check:scan": "tsx --env-file-if-exists=.env.local scripts/check-scan.mts"
+    "check:scan": "tsx --env-file-if-exists=.env.local scripts/check-scan.mts",
+    "db:init": "tsx --dns-result-order=ipv4first --env-file-if-exists=.env.local scripts/db-init.mts",
+    "check:db": "tsx --dns-result-order=ipv4first --env-file-if-exists=.env.local scripts/check-db.mts",
+    "capture": "tsx --dns-result-order=ipv4first --env-file-if-exists=.env.local scripts/capture.mts"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^1.1.0",
     "next": "^15.5.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

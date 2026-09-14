@@ -1,0 +1,44 @@
+name: capture premium history
+
+on:
+  schedule:
+    # every 15 minutes; github queues these, so expect some drift
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      init_schema:
+        description: "Create tables before capturing"
+        type: boolean
+        default: false
+
+concurrency:
+  group: capture
+  cancel-in-progress: false
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY }}
+      FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - name: Initialise schema
+        if: inputs.init_schema
+        run: npm run db:init
+
+      - name: Capture snapshot
+        run: npm run capture
+
+      - name: Coverage
+        run: npm run check:db
