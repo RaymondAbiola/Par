@@ -65,9 +65,10 @@ export function spreadBps(wrappers: readonly WrapperPar[]): number | null {
 
 /**
  * Liquidity below this is treated as untradeable when we have not measured depth. Calibrated
- * against mainnet: AMDx holds about $12.7k and still slipped 14% on a $1,000 buy.
+ * against measured mainnet depth: AMDx holds about $12.7k and slipped 14% on a $1,000 buy, while
+ * WMTx holds about $29k and cleared $10,000 for 11bp. The line sits between them.
  */
-export const LIQUIDITY_FLOOR_USD = 50_000;
+export const LIQUIDITY_FLOOR_USD = 25_000;
 
 /**
  * Whether a wrapper is worth recommending. Measured depth is authoritative; the liquidity floor

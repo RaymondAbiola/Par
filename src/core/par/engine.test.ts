@@ -191,6 +191,12 @@ describe("isRecommendable", () => {
     expect(isRecommendable(wrapper({ symbol: "X", liquidityUsd: 2_000_000 }))).toBe(true);
   });
 
+  // both sides of the floor are real mainnet measurements, not guesses
+  it("sits between AMDx, which slips 14% on $1k, and WMTx, which clears $10k for 11bp", () => {
+    expect(isRecommendable(wrapper({ symbol: "AMDx", liquidityUsd: 12_703 }))).toBe(false);
+    expect(isRecommendable(wrapper({ symbol: "WMTx", liquidityUsd: 29_400 }))).toBe(true);
+  });
+
   it("treats unknown liquidity as untradeable", () => {
     expect(isRecommendable(wrapper({ symbol: "X" }))).toBe(false);
   });
