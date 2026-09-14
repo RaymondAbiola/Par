@@ -105,14 +105,14 @@ export interface ParOptions {
   depth?: { sizeUsd: number; side: Side };
 }
 
-type SpotMap = Awaited<ReturnType<typeof getOnchainPrices>>;
-type MultiplierMap = Awaited<ReturnType<typeof fetchMultipliers>>;
+export type SpotMap = Awaited<ReturnType<typeof getOnchainPrices>>;
+export type MultiplierMap = Awaited<ReturnType<typeof fetchMultipliers>>;
 
 async function loadMarketData(mints: readonly string[]): Promise<[SpotMap, MultiplierMap]> {
   return Promise.all([getOnchainPrices(mints), fetchMultipliers(mints)]);
 }
 
-async function buildWrappers(
+export async function buildWrappers(
   listing: EquityListing,
   reference: ReferencePrice | undefined,
   spots: SpotMap,

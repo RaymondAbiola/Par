@@ -15,7 +15,8 @@
     "check:multipliers": "tsx --env-file-if-exists=.env.local scripts/check-multipliers.mts",
     "check:prices": "tsx --env-file-if-exists=.env.local scripts/check-prices.mts",
     "check:depth": "tsx --env-file-if-exists=.env.local scripts/check-depth.mts",
-    "check:par": "tsx --env-file-if-exists=.env.local scripts/check-par.mts"
+    "check:par": "tsx --env-file-if-exists=.env.local scripts/check-par.mts",
+    "check:scan": "tsx --env-file-if-exists=.env.local scripts/check-scan.mts"
   },
   "dependencies": {
     "next": "^15.5.4",

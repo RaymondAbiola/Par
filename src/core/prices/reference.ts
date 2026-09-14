@@ -44,18 +44,30 @@ async function ondoImplied(): Promise<Map<string, number>> {
   });
 }
 
+export interface ReferenceOptions {
+  /**
+   * Cap on Finnhub lookups. Its free tier allows 60 a minute, so a wide scan has to fall back to
+   * Ondo's implied price for the tail. Pass the tickers that matter most first.
+   */
+  maxLiveQuotes?: number;
+}
+
+export const DEFAULT_MAX_LIVE_QUOTES = 40;
+
 export async function getReferencePrices(
   tickers: readonly string[],
+  options: ReferenceOptions = {},
 ): Promise<Map<string, ReferencePrice>> {
+  const { maxLiveQuotes = DEFAULT_MAX_LIVE_QUOTES } = options;
   const state = getSession();
   const now = Date.now();
 
   // when the market is shut the quote cannot move, so hold it far longer
   const ttl = state.live ? 30_000 : 300_000;
-  const key = [...tickers].sort().join(",");
+  const key = `${maxLiveQuotes}:${[...tickers].sort().join(",")}`;
 
   return cache.wrap(key, ttl, async () => {
-    const quotes = await fetchQuotes(tickers);
+    const quotes = await fetchQuotes(tickers.slice(0, maxLiveQuotes));
     const out = new Map<string, ReferencePrice>();
 
     for (const ticker of tickers) {
