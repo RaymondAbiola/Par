@@ -1,28 +1,80 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ground: #ffffff;
-  --color-surface: #f7f7f8;
-  --color-line: #e4e4e7;
-  --color-ink: #18181b;
-  --color-muted: #71717a;
-  --color-premium: #b91c1c;
-  --color-discount: #15803d;
+  --color-ground: var(--ground);
+  --color-surface: var(--surface);
+  --color-raised: var(--raised);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-premium: var(--premium);
+  --color-discount: var(--discount);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-face), ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+:root {
+  --ground: #fbfbfa;
+  --surface: #ffffff;
+  --raised: #f4f4f3;
+  --line: #e6e6e3;
+  --line-strong: #d4d4d0;
+  --ink: #17171a;
+  --muted: #6b6b73;
+  --subtle: #9a9aa2;
+  --accent: #2f5fd8;
+  --accent-soft: #e8eefc;
+  --premium: #b3341f;
+  --discount: #1f7a4d;
+  --warn: #9a6100;
+  --warn-soft: #fdf3e0;
 }
 
 @media (prefers-color-scheme: dark) {
-  @theme {
-    --color-ground: #0a0a0b;
-    --color-surface: #141416;
-    --color-line: #27272a;
-    --color-ink: #fafafa;
-    --color-muted: #a1a1aa;
-    --color-premium: #f87171;
-    --color-discount: #4ade80;
+  :root {
+    --ground: #0b0b0d;
+    --surface: #131316;
+    --raised: #1b1b1f;
+    --line: #26262b;
+    --line-strong: #35353c;
+    --ink: #f2f2f0;
+    --muted: #9b9ba4;
+    --subtle: #6c6c76;
+    --accent: #7ba2ff;
+    --accent-soft: #17203a;
+    --premium: #f08573;
+    --discount: #5fc78f;
+    --warn: #e0a64a;
+    --warn-soft: #2a2113;
   }
 }
 
+html {
+  color-scheme: light dark;
+}
+
 body {
-  background: var(--color-ground);
-  color: var(--color-ink);
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* numbers must line up in columns or a data table is unreadable */
+.tnum {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  letter-spacing: -0.01em;
+}
+
+::selection {
+  background: var(--accent-soft);
 }
