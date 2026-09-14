@@ -16,6 +16,7 @@ interface RawAsset {
   isTradingPaused?: boolean;
   isOffhoursTradable?: boolean;
   primaryMarket?: { price?: string };
+  underlyingMarket?: { marketCap?: string; sharesOutstanding?: string };
   assetTradingStatus?: {
     isAssetTradeable?: boolean;
     isMarketOpen?: boolean;
@@ -33,6 +34,8 @@ export interface OndoAsset {
   offhoursTradable: boolean;
   /** Ondo's own primary-market price: what they mint and redeem at. */
   primaryPrice: number | null;
+  /** Derived from market cap over shares outstanding. A coarse free fallback for the share price. */
+  impliedSharePrice: number | null;
   session: string | null;
   nextMarketOpen: string | null;
 }
@@ -52,6 +55,13 @@ function toNumber(value: string | undefined): number | null {
   return Number.isFinite(parsed) ? parsed : null;
 }
 
+function impliedPrice(asset: RawAsset): number | null {
+  const cap = toNumber(asset.underlyingMarket?.marketCap);
+  const shares = toNumber(asset.underlyingMarket?.sharesOutstanding);
+  if (cap === null || shares === null || shares === 0) return null;
+  return cap / shares;
+}
+
 export async function fetchOndoCatalog(): Promise<OndoAsset[]> {
   const data = await fetchJson<{ assets?: RawAsset[] }>(CATALOG_URL, { timeoutMs: 25_000 });
 
@@ -66,6 +76,7 @@ export async function fetchOndoCatalog(): Promise<OndoAsset[]> {
         tradingPaused: asset.isTradingPaused ?? false,
         offhoursTradable: asset.isOffhoursTradable ?? false,
         primaryPrice: toNumber(asset.primaryMarket?.price),
+        impliedSharePrice: impliedPrice(asset),
         session: asset.assetTradingStatus?.currentSession ?? null,
         nextMarketOpen: asset.assetTradingStatus?.nextMarketOpen ?? null,
       },

@@ -12,7 +12,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "registry:refresh": "tsx scripts/refresh-registry.mts",
-    "check:multipliers": "tsx --env-file-if-exists=.env.local scripts/check-multipliers.mts"
+    "check:multipliers": "tsx --env-file-if-exists=.env.local scripts/check-multipliers.mts",
+    "check:prices": "tsx --env-file-if-exists=.env.local scripts/check-prices.mts"
   },
   "dependencies": {
     "next": "^15.5.4",
