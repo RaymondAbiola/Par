@@ -15,6 +15,9 @@
   --color-discount: var(--discount);
   --color-warn: var(--warn);
   --color-warn-soft: var(--warn-soft);
+  --color-chart: var(--chart);
+  --color-chart-wash: var(--chart-wash);
+  --color-grid: var(--grid);
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-mono-face), ui-monospace, "SF Mono", Menlo, monospace;
@@ -35,6 +38,10 @@
   --discount: #1f7a4d;
   --warn: #9a6100;
   --warn-soft: #fdf3e0;
+  /* chart accent, validated against the light surface */
+  --chart: #2f5fd8;
+  --chart-wash: #2f5fd81a;
+  --grid: #ececea;
 }
 
 /* system preference, unless the reader has explicitly chosen light */
@@ -54,6 +61,13 @@
     --discount: #5fc78f;
     --warn: #e0a64a;
     --warn-soft: #2a2113;
+  --chart: #6690ee;
+  --chart-wash: #6690ee1f;
+  --grid: #222227;
+    /* re-stepped for the dark surface rather than reused from light */
+    --chart: #6690ee;
+    --chart-wash: #6690ee1f;
+    --grid: #222227;
   }
 }
 

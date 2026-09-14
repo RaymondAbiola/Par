@@ -172,3 +172,17 @@ export async function getCoverage(): Promise<{ rows: number; runs: number; since
     since: row?.since ? new Date(row.since as string).toISOString() : null,
   };
 }
+
+/** Tickers that actually have history, most-sampled first. */
+export async function getTrackedTickers(limit = 24): Promise<string[]> {
+  const rows = await sql().query(
+    `select ticker, count(*)::int as n
+       from premium_snapshots
+      where premium_bps is not null
+      group by ticker
+      order by n desc, ticker
+      limit $1`,
+    [limit],
+  );
+  return (rows as Record<string, unknown>[]).map((r) => String(r.ticker));
+}

@@ -3,7 +3,10 @@ import type { ReactNode } from "react";
 import { SessionBadge } from "@/components/session-badge";
 import { ThemeToggle } from "@/components/theme-toggle";
 
-const NAV = [{ href: "/", label: "Monitor" }];
+const NAV = [
+  { href: "/", label: "Monitor" },
+  { href: "/history", label: "History" },
+];
 
 export function Shell({ children }: { children: ReactNode }) {
   return (
