@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { SessionBadge } from "@/components/session-badge";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const NAV = [{ href: "/", label: "Monitor" }];
 
@@ -30,6 +31,7 @@ export function Shell({ children }: { children: ReactNode }) {
             >
               API
             </a>
+            <ThemeToggle />
           </div>
         </div>
       </header>
