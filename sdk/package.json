@@ -1,0 +1,14 @@
+{
+  "name": "@par/sdk",
+  "version": "0.1.0",
+  "description": "Typed client for Par: fair value and best execution for tokenized equities on Solana",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "files": ["dist", "README.md"],
+  "scripts": { "build": "tsc -p tsconfig.json" },
+  "keywords": ["solana", "tokenized-equities", "xstocks", "ondo", "token-2022"],
+  "devDependencies": { "typescript": "^5.9.2" }
+}
