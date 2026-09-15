@@ -10,6 +10,12 @@ describe("formatUsd", () => {
     expect(formatUsd(25833686, true)).toBe("$25.8M");
   });
 
+  it("does not compact small values into something that looks truncated", () => {
+    expect(formatUsd(19.8, true)).toBe("$19.80");
+    expect(formatUsd(999, true)).toBe("$999.00");
+    expect(formatUsd(1000, true)).toBe("$1K");
+  });
+
   it("handles non-finite input", () => {
     expect(formatUsd(Number.NaN)).toBe("--");
   });

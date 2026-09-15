@@ -14,7 +14,9 @@ const usdCompact = new Intl.NumberFormat("en-US", {
 
 export function formatUsd(value: number, compact = false): string {
   if (!Number.isFinite(value)) return "--";
-  return compact ? usdCompact.format(value) : usd.format(value);
+  // compact notation below a thousand reads as a truncation bug: $19.8 instead of $19.80
+  if (compact && Math.abs(value) >= 1000) return usdCompact.format(value);
+  return usd.format(value);
 }
 
 /** Premium and discount always carry an explicit sign so direction reads at a glance. */
