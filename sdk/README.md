@@ -1,7 +1,7 @@
 # @par/sdk
 
-Typed client for [Par](https://par-sigma.vercel.app) — fair value and best execution for tokenized
-equities on Solana. No dependencies.
+Typed client for [Par](https://par-sigma.vercel.app), giving fair value and best execution for
+tokenized equities on Solana. No dependencies.
 
 ```bash
 npm install @par/sdk
@@ -58,7 +58,7 @@ Point it elsewhere with `new Par({ baseUrl: "http://localhost:3000" })`, or supp
 ## Reading a premium honestly
 
 `premiumBps` is measured against the **real share price**. Outside regular US trading hours that
-price is the last close, not a live quote — `reference.live` says which, and `reference.basis`
+price is the last close, not a live quote. `reference.live` says which, and `reference.basis`
 spells it out (`"live"` or `"Mon, Sep 14 close"`). Any number you surface from this API should carry
 that qualifier too.
 
@@ -66,7 +66,7 @@ that qualifier too.
 
 `premiumBps` is a headline. A wrapper can show the better price and be untradeable: on mainnet,
 CRCLon has shown a 2.9% discount on $224 of liquidity while CRCLx held $2.1M. Call `bestVenue()`
-when it matters — it routes a real quote at your size and returns `execution.allInBps` plus an
+when it matters. It routes a real quote at your size and returns `execution.allInBps` plus an
 `excludedBecause` reason for anything it rules out.
 
 ## OpenAPI
