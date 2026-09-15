@@ -6,6 +6,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 const NAV = [
   { href: "/", label: "Monitor" },
   { href: "/history", label: "History" },
+  { href: "/check", label: "Check" },
 ];
 
 export function Shell({ children }: { children: ReactNode }) {
