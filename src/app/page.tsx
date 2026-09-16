@@ -190,9 +190,12 @@ export default async function Home() {
             <p className="mt-1 text-xs leading-relaxed text-muted">
               Dependency-free client, plus the two pure functions that stop you being 10x wrong.
             </p>
-            <Link href="/check" className="mt-2 inline-block font-mono text-xs text-accent hover:underline">
-              effectiveMultiplier()
-            </Link>
+            <a
+              href="https://github.com/RaymondAbiola/Par/tree/main/sdk"
+              className="mt-2 inline-block font-mono text-xs text-accent hover:underline"
+            >
+              @par/sdk
+            </a>
           </div>
         </div>
       </Card>
