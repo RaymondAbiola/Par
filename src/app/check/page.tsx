@@ -32,9 +32,9 @@ export default async function CheckPage() {
           Tokenized equities on Solana handle splits and dividends with the Token-2022 scaled-UI
           multiplier. The RPC applies it to <code className="font-mono text-xs">uiAmount</code>, so
           reading that is safe. Anything touching the raw{" "}
-          <code className="font-mono text-xs">amount</code> — routing, pool maths, your own
-          accounting — has to apply it by hand. And the multiplier stored on the mint is not the one
-          in force.
+          <code className="font-mono text-xs">amount</code>, which means routing, pool maths and your
+          own accounting, has to apply it by hand. And the multiplier stored on the mint is not the
+          one in force.
         </p>
       </section>
 
@@ -95,6 +95,24 @@ export default async function CheckPage() {
                 this account, matching the correct column.
               </p>
             ) : null}
+
+            <div className="rounded border border-line bg-raised px-3 py-2.5">
+              <div className="text-xs font-medium">Where this actually bites</div>
+              <p className="mt-1 text-xs leading-relaxed text-muted">
+                Not in wallets. Solana applies the multiplier to{" "}
+                <code className="font-mono">uiAmount</code>, so a holder sees the right balance and the
+                market prices the raw token correctly when they trade.
+              </p>
+              <p className="mt-1.5 text-xs leading-relaxed text-muted">
+                It bites on chain, where balances are raw and oracles quote per share. A lending
+                protocol computing{" "}
+                <code className="font-mono">raw_amount &times; oracle_price</code> values this position
+                at a tenth of its worth, so a borrower who should draw $19,000 against it draws
+                $1,900. Invert the same mistake and the protocol lends ten times too much. Indexers
+                and analytics hit it too, because{" "}
+                <code className="font-mono">getProgramAccounts</code> hands you raw amounts.
+              </p>
+            </div>
           </div>
         </Card>
       ) : (

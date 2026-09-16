@@ -80,18 +80,28 @@ export function WalletLookup() {
 
       {result && result.positions.length > 0 ? (
         <div className="mt-4 space-y-3">
-          <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1">
-            <span className="text-sm text-muted">
-              Correct value <span className="tnum text-base font-medium text-ink">{formatUsd(result.totalValue)}</span>
-            </span>
-            <span className="text-sm text-muted">
-              Ignoring multipliers <span className="tnum text-base font-medium text-premium">{formatUsd(result.naiveTotal)}</span>
-            </span>
-            {gap > 0.005 ? (
-              <span className="text-sm">
-                understated by <span className="tnum font-medium text-premium">{formatUsd(gap)}</span>
+          <div className="space-y-2">
+            <div className="flex flex-wrap items-baseline gap-x-6 gap-y-1">
+              <span className="text-sm text-muted">
+                True holding{" "}
+                <span className="tnum text-base font-medium text-ink">{formatUsd(result.totalValue)}</span>
               </span>
-            ) : null}
+              <span className="text-sm text-muted">
+                Computed from raw amounts{" "}
+                <span className="tnum text-base font-medium text-premium">{formatUsd(result.naiveTotal)}</span>
+              </span>
+              {gap > 0.005 ? (
+                <span className="text-sm text-muted">
+                  a <span className="tnum font-medium text-premium">{formatUsd(gap)}</span> error
+                </span>
+              ) : null}
+            </div>
+            <p className="max-w-2xl text-xs leading-relaxed text-subtle">
+              The owner sees the true figure. Wallets read <code className="font-mono">uiAmount</code>,
+              which Solana applies the multiplier to, and the market prices the raw token correctly
+              too. The second number is what <em>your code</em> produces if it values raw balances
+              against a per-share price, which is what every on-chain program has to work with.
+            </p>
           </div>
 
           <div className="overflow-x-auto">
@@ -100,7 +110,7 @@ export function WalletLookup() {
                 <tr className="border-y border-line text-left text-[11px] tracking-wide text-subtle uppercase">
                   <th className="py-2 pr-4 font-medium">Token</th>
                   <th className="py-2 pr-4 text-right font-medium">Shares</th>
-                  <th className="py-2 pr-4 text-right font-medium">Naive</th>
+                  <th className="py-2 pr-4 text-right font-medium">If read raw</th>
                   <th className="py-2 pr-4 text-right font-medium">Value</th>
                   <th className="py-2 text-right font-medium">Multiplier</th>
                 </tr>

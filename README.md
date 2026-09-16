@@ -58,6 +58,12 @@ const multiplier =
 
 `GET /api/v1/multipliers` returns every wrapper currently in this state.
 
+This does not hurt the holder. Solana applies the multiplier to `uiAmount`, so wallets show the
+right balance, and the market prices one raw NFLXx at roughly ten shares' worth, so a swap fills
+correctly. It hurts on chain, where balances are raw and oracles quote per share. A lending
+protocol computing `raw_amount * oracle_price` values a Netflix position at a tenth of its worth.
+Invert the same mistake and it lends ten times too much.
+
 ### 2. `uiAmount` is safe, raw `amount` is not
 
 Solana's RPC applies the multiplier when it reports `uiAmount`, so reading that gives you the right
