@@ -23,7 +23,16 @@ function WrapperCell({ wrapper, best }: { wrapper: WireWrapper | undefined; best
       <div className="flex items-center gap-1.5">
         <span className={`text-xs ${best ? "text-ink" : "text-muted"}`}>{wrapper.symbol}</span>
         {wrapper.recommendable === false ? (
-          <span className="text-[10px] text-subtle" title={wrapper.excludedBecause ?? undefined}>
+          <span
+            className="text-[10px] text-subtle"
+            title={
+              wrapper.excludedBecause === "unroutable"
+                ? "No route exists at the size tested"
+                : wrapper.excludedBecause === "no-price"
+                  ? "No on-chain price available"
+                  : "Too little liquidity to fill at size, whatever the price says"
+            }
+          >
             {wrapper.excludedBecause === "unroutable" ? "no route" : "thin"}
           </span>
         ) : null}
@@ -87,8 +96,8 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
             <tr className="border-b border-line text-left text-[11px] tracking-wide text-subtle uppercase">
               <th className="px-4 py-2 font-medium">Stock</th>
               <th className="px-4 py-2 text-right font-medium">Real share</th>
-              <th className="px-4 py-2 font-medium">Cheapest</th>
-              <th className="px-4 py-2 font-medium">Alternative</th>
+              <th className="px-4 py-2 font-medium">Best to buy</th>
+              <th className="px-4 py-2 font-medium">Other</th>
               <th className="px-4 py-2 text-right font-medium">Spread</th>
               <th className="px-4 py-2 text-right font-medium">Liquidity</th>
             </tr>
@@ -134,9 +143,11 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
         <p className="px-4 py-8 text-center text-sm text-muted">Nothing matches that filter.</p>
       ) : null}
 
-      <p className="border-t border-line px-4 py-2.5 text-xs text-subtle">
-        Issuers: {Object.values(ISSUER_LABEL).join(", ")}. A wrapper marked thin or no route cannot be
-        traded at size, whatever its headline price says.
+      <p className="border-t border-line px-4 py-2.5 text-xs leading-relaxed text-subtle">
+        Ranked by what you can actually fill, not by headline price. A wrapper marked{" "}
+        <span className="text-muted">thin</span> or <span className="text-muted">no route</span> sits
+        on too little liquidity to trade at size, so it loses to a dearer wrapper you can buy. Issuers:{" "}
+        {Object.values(ISSUER_LABEL).join(", ")}.
       </p>
     </div>
   );
