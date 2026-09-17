@@ -2,13 +2,17 @@ name: capture premium history
 
 on:
   schedule:
-    # asks for every 15 minutes, but github heavily throttles scheduled runs on free
-    # runners and in practice honours roughly one in fifteen. odd minutes are less contended.
+    # github throttles scheduled runs hard on shared runners and honours roughly one
+    # trigger every few hours, so each run captures repeatedly instead of once
     - cron: "3,18,33,48 * * * *"
   workflow_dispatch:
     inputs:
       init_schema:
         description: "Create tables before capturing"
+        type: boolean
+        default: false
+      once:
+        description: "Capture a single snapshot and exit"
         type: boolean
         default: false
 
@@ -19,7 +23,8 @@ concurrency:
 jobs:
   capture:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # a single run covers ~3.5h, which closes most of the gap between triggers
+    timeout-minutes: 240
     env:
       HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY }}
       FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
@@ -38,8 +43,16 @@ jobs:
         if: inputs.init_schema
         run: npm run db:init
 
-      - name: Capture snapshot
-        run: npm run capture
+      - name: Capture on a loop
+        run: |
+          ITERATIONS=${{ inputs.once && '1' || '14' }}
+          for i in $(seq 1 "$ITERATIONS"); do
+            echo "--- snapshot $i of $ITERATIONS ---"
+            # one bad snapshot should not end the run; the next is 15 minutes away
+            npm run capture || echo "capture $i failed, continuing"
+            if [ "$i" -lt "$ITERATIONS" ]; then sleep 900; fi
+          done
 
       - name: Coverage
+        if: always()
         run: npm run check:db
