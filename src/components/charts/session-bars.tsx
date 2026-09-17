@@ -30,10 +30,10 @@ export function SessionBars({ data }: { data: SessionDatum[] }) {
   const height = data.length * (BAR + GAP) + GAP;
 
   return (
-    <div className="px-4 py-4">
+    <div className="overflow-x-auto px-4 py-4">
       <svg
         viewBox={`0 0 ${LABEL_W + plotW + VALUE_W} ${height}`}
-        className="w-full"
+        className="w-full min-w-[26rem]"
         style={{ maxHeight: height * 1.6 }}
         role="img"
         aria-label="Median cross-issuer spread by market session"

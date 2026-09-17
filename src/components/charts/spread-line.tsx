@@ -62,7 +62,13 @@ export function SpreadLine({ points, ticker }: { points: SpreadPointView[]; tick
 
   return (
     <div className="px-4 py-4">
-      <svg viewBox={`0 0 ${W} ${H}`} className="w-full" role="img" aria-label={`Cross-issuer spread for ${ticker} over time`}>
+      <div className="-mx-4 overflow-x-auto px-4 md:mx-0 md:px-0">
+      <svg
+        viewBox={`0 0 ${W} ${H}`}
+        className="w-[42rem] md:w-full"
+        role="img"
+        aria-label={`Cross-issuer spread for ${ticker} over time`}
+      >
         {bands.map((b, i) => (
           <rect key={i} x={b.from} y={PAD.top} width={Math.max(1, b.to - b.from)} height={H - PAD.top - PAD.bottom} fill="var(--color-raised)" />
         ))}
@@ -115,6 +121,7 @@ export function SpreadLine({ points, ticker }: { points: SpreadPointView[]; tick
           }}
         />
       </svg>
+      </div>
 
       <p className="mt-1 text-xs text-subtle">
         {active

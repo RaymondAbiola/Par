@@ -32,8 +32,8 @@ function WrapperCell({
   if (!wrapper) return <span className="text-subtle">--</span>;
 
   return (
-    <div className="whitespace-nowrap">
-      <div className="flex items-center gap-1.5">
+    <div className="whitespace-nowrap text-right md:text-left">
+      <div className="flex items-center justify-end gap-1.5 md:justify-start">
         <span className={`text-sm ${best ? "text-ink" : "text-muted"}`}>{wrapper.symbol}</span>
         {extra > 0 ? <span className="text-[11px] text-subtle">+{extra} more</span> : null}
         {wrapper.recommendable === false ? (
@@ -51,7 +51,7 @@ function WrapperCell({
           </span>
         ) : null}
       </div>
-      <div className="mt-0.5 flex items-baseline gap-2">
+      <div className="mt-0.5 flex items-baseline justify-end gap-2 md:justify-start">
         <span className="tnum text-sm text-muted">
           {wrapper.pricePerShare === null ? "--" : formatUsd(wrapper.pricePerShare)}
         </span>
@@ -104,7 +104,7 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
         </div>
       </div>
 
-      <div className="overflow-x-auto">
+      <div className="hidden overflow-x-auto md:block">
         <table className="w-full min-w-[52rem] text-sm">
           <thead>
             <tr className="border-b border-line text-left text-xs tracking-wide text-subtle uppercase">
@@ -153,6 +153,45 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
           </tbody>
         </table>
       </div>
+
+      <ul className="md:hidden">
+        {rows.map((t) => {
+          const ranked = [...t.wrappers].sort((a, b) => (a.rank ?? 99) - (b.rank ?? 99));
+          const [best, alt] = ranked;
+          const extra = Math.max(0, ranked.length - 2);
+          const stale = t.wrappers.some((w) => w.multiplier?.stale);
+
+          return (
+            <li key={t.ticker} className="border-b border-line/60 last:border-0">
+              <Link href={`/s/${t.ticker}`} className="block px-4 py-3">
+                <div className="flex items-baseline justify-between gap-3">
+                  <div className="flex min-w-0 items-baseline gap-2">
+                    <span className="font-medium">{t.ticker}</span>
+                    <span className="truncate text-xs text-subtle">{t.name}</span>
+                    {stale ? <Badge tone="warn">stale</Badge> : null}
+                  </div>
+                  <Spread bps={t.spreadBps} />
+                </div>
+
+                <div className="tnum mt-0.5 text-xs text-subtle">
+                  real share {t.reference ? formatUsd(t.reference.price) : "--"}
+                </div>
+
+                <div className="mt-2.5 space-y-1.5">
+                  {[best, alt].map((w, i) =>
+                    w ? (
+                      <div key={w.mint} className="flex items-baseline justify-between gap-3">
+                        <span className="text-xs text-subtle">{i === 0 ? "Best to buy" : "Other"}</span>
+                        <WrapperCell wrapper={w} best={i === 0} extra={i === 1 ? extra : 0} />
+                      </div>
+                    ) : null,
+                  )}
+                </div>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
 
       {rows.length === 0 ? (
         <p className="px-4 py-8 text-center text-sm text-muted">Nothing matches that filter.</p>
