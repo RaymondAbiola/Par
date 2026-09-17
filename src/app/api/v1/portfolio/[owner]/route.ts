@@ -5,10 +5,31 @@ export const revalidate = 30;
 
 const BASE58 = /^[1-9A-HJ-NP-Za-km-z]{32,44}$/;
 
+const ALPHABET = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
+
+/** Charset alone is not enough: a pubkey must decode to exactly 32 bytes. */
+function isPubkey(value: string): boolean {
+  if (!BASE58.test(value)) return false;
+
+  let num = 0n;
+  for (const char of value) {
+    const digit = ALPHABET.indexOf(char);
+    if (digit < 0) return false;
+    num = num * 58n + BigInt(digit);
+  }
+
+  let bytes = 0;
+  for (let n = num; n > 0n; n >>= 8n) bytes++;
+
+  // a leading '1' encodes a leading zero byte, which the numeric value drops
+  const leadingZeros = value.length - value.replace(/^1+/, "").length;
+  return bytes + leadingZeros === 32;
+}
+
 export async function GET(_request: Request, context: { params: Promise<{ owner: string }> }) {
   const { owner } = await context.params;
 
-  if (!BASE58.test(owner)) {
+  if (!isPubkey(owner)) {
     return fail(400, "bad_address", "That does not look like a Solana address");
   }
 

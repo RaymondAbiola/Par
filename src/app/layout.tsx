@@ -10,10 +10,19 @@ export const metadata: Metadata = {
   title: { default: "Par", template: "%s · Par" },
   description:
     "Fair-value and best-execution for tokenized equities on Solana. See what every stock token trades at relative to the real share, and which wrapper is actually cheapest.",
+  metadataBase: new URL("https://par-sigma.vercel.app"),
   openGraph: {
     title: "Par",
-    description: "Fair-value and best-execution for tokenized equities on Solana.",
+    description:
+      "The same stock has more than one price on Solana. Par measures every tokenized wrapper against the real share, and says which one you can actually buy.",
     type: "website",
+    siteName: "Par",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Par",
+    description:
+      "The same stock has more than one price on Solana. Fair value and best execution for tokenized equities.",
   },
 };
 

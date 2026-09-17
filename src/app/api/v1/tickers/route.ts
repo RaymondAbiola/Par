@@ -4,7 +4,8 @@ import { scanDislocations } from "@/core/par/scan";
 import { toWireTicker } from "@/core/par/wire";
 import { fail, intParam, ok, preflight } from "@/lib/api";
 
-export const revalidate = 30;
+// the scan costs ~35s cold, so a short window guarantees most callers pay it
+export const revalidate = 300;
 
 export async function GET(request: Request) {
   const params = new URL(request.url).searchParams;

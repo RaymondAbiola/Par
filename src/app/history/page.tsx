@@ -106,7 +106,8 @@ export default async function HistoryPage({
         />
         <SessionBars data={sessions} />
 
-        <table className="w-full border-t border-line text-sm">
+        <div className="overflow-x-auto border-t border-line">
+        <table className="w-full min-w-[30rem] text-sm">
           <caption className="sr-only">Median spread and sample count by market session</caption>
           <thead>
             <tr className="text-left text-xs tracking-wide text-subtle uppercase">
@@ -127,6 +128,7 @@ export default async function HistoryPage({
             ))}
           </tbody>
         </table>
+        </div>
       </Card>
 
       <Card>

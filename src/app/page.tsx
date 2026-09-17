@@ -175,8 +175,13 @@ export default async function Home() {
             <p className="mt-1.5 text-sm leading-relaxed text-muted">
               Open, no key. Dislocations, venue decisions, stale multipliers, wallet valuation.
             </p>
-            <a href="/api/v1/tickers?limit=5" className="mt-2 inline-block font-mono text-sm text-accent hover:underline">
-              /api/v1/tickers
+            {/* an api route returning json, not a page: Link would try a client navigation */}
+            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
+            <a
+              href="/api/v1/ticker/NVDA"
+              className="mt-2 inline-block font-mono text-sm text-accent hover:underline"
+            >
+              /api/v1/ticker/NVDA
             </a>
           </div>
           <div className="bg-surface px-4 py-3">
