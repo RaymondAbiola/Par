@@ -46,7 +46,7 @@ export default async function HistoryPage({
         <section className="py-4">
           <h1 className="text-3xl font-semibold tracking-tight">History</h1>
           <p className="mt-3 max-w-xl leading-relaxed text-muted">
-            Par snapshots every tracked wrapper every 15 minutes, so the dislocation can be measured
+            Par snapshots every tracked wrapper on a schedule, so the dislocation can be measured
             over time rather than guessed at.
           </p>
         </section>
@@ -71,8 +71,8 @@ export default async function HistoryPage({
       <section className="py-4">
         <h1 className="text-3xl font-semibold tracking-tight">History</h1>
         <p className="mt-3 max-w-xl leading-relaxed text-muted">
-          Par snapshots every tracked wrapper every 15 minutes. The question this page answers: does
-          the gap between issuers widen when the underlying market is shut?
+          Par snapshots every tracked wrapper on a schedule. The question this page answers: does the
+          gap between issuers widen when the underlying market is shut?
         </p>
       </section>
 
@@ -80,11 +80,17 @@ export default async function HistoryPage({
         <StatRow>
           <Stat label="Snapshots" value={coverage.runs.toLocaleString()} detail="capture runs" />
           <Stat label="Rows" value={coverage.rows.toLocaleString()} detail="wrapper observations" />
-          <Stat label="Tickers" value={tickers.length} detail="with history" />
+          <Stat label="Tickers" value={coverage.tickers} detail="with history" />
           <Stat
             label="Since"
             value={coverage.since ? new Date(coverage.since).toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : "--"}
-            detail="first snapshot"
+            detail={
+              coverage.medianGapMinutes === null
+                ? "first snapshot"
+                : coverage.medianGapMinutes >= 90
+                  ? `roughly every ${(coverage.medianGapMinutes / 60).toFixed(1)}h`
+                  : `roughly every ${Math.round(coverage.medianGapMinutes)}m`
+            }
           />
         </StatRow>
       </Card>
@@ -94,7 +100,7 @@ export default async function HistoryPage({
           title="Dislocation by market session"
           hint={
             regular && closedMedian !== null
-              ? `Market open: ${(regular.medianSpreadBps / 100).toFixed(2)}pp. Closed sessions average ${(closedMedian / 100).toFixed(2)}pp.`
+              ? `Market open: ${(regular.medianSpreadBps / 100).toFixed(2)}pp. Closed sessions average ${(closedMedian / 100).toFixed(2)}pp. Across ${coverage.runs} capture runs, so treat it as a direction rather than a settled figure.`
               : "Median cross-issuer spread in each session"
           }
         />

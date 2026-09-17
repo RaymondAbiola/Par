@@ -157,19 +157,38 @@ export async function getSessionStats(hours = 168): Promise<SessionStat[]> {
   }));
 }
 
-export async function getCoverage(): Promise<{ rows: number; runs: number; since: string | null }> {
+export interface Coverage {
+  rows: number;
+  runs: number;
+  tickers: number;
+  since: string | null;
+  /** Median gap between runs, in minutes. GitHub drops scheduled runs, so this is measured. */
+  medianGapMinutes: number | null;
+}
+
+export async function getCoverage(): Promise<Coverage> {
   const result = await sql().query(
-    `select count(*)::int as rows,
-            count(distinct captured_at)::int as runs,
-            min(captured_at) as since
-       from premium_snapshots`,
+    `with runs as (
+        select distinct captured_at from premium_snapshots
+     ),
+     gaps as (
+        select extract(epoch from captured_at - lag(captured_at) over (order by captured_at)) / 60 as gap
+          from runs
+     )
+     select (select count(*)::int from premium_snapshots) as rows,
+            (select count(*)::int from runs) as runs,
+            (select count(distinct ticker)::int from premium_snapshots) as tickers,
+            (select min(captured_at) from premium_snapshots) as since,
+            (select percentile_cont(0.5) within group (order by gap) from gaps where gap is not null) as median_gap`,
   );
   const row = (result as Record<string, unknown>[])[0];
 
   return {
     rows: Number(row?.rows ?? 0),
     runs: Number(row?.runs ?? 0),
+    tickers: Number(row?.tickers ?? 0),
     since: row?.since ? new Date(row.since as string).toISOString() : null,
+    medianGapMinutes: row?.median_gap === null || row?.median_gap === undefined ? null : Number(row.median_gap),
   };
 }
 

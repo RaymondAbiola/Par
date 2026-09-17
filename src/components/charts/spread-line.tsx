@@ -26,7 +26,7 @@ export function SpreadLine({ points, ticker }: { points: SpreadPointView[]; tick
   if (points.length < 2) {
     return (
       <p className="px-4 py-8 text-center text-sm text-muted">
-        Not enough history for {ticker} yet. Capture runs every 15 minutes.
+        Not enough history for {ticker} yet. More arrives with each capture run.
       </p>
     );
   }

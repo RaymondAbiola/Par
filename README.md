@@ -32,7 +32,7 @@ a genuine quote through each wrapper, then tells you the all in cost and which v
 multiplier. Right now 100 of 216 xStocks wrappers store a multiplier that is no longer the one in
 force. Read the stored value and you can be wrong by a factor of ten.
 
-**Keeps history.** A collector snapshots every tracked wrapper every fifteen minutes, so the
+**Keeps history.** A collector snapshots every tracked wrapper on a schedule, so the
 question "does the gap widen when the market is shut" has an answer measured rather than assumed.
 
 ## Three things that are easy to get wrong

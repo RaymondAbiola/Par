@@ -2,8 +2,9 @@ name: capture premium history
 
 on:
   schedule:
-    # every 15 minutes; github queues these, so expect some drift
-    - cron: "*/15 * * * *"
+    # asks for every 15 minutes, but github heavily throttles scheduled runs on free
+    # runners and in practice honours roughly one in fifteen. odd minutes are less contended.
+    - cron: "3,18,33,48 * * * *"
   workflow_dispatch:
     inputs:
       init_schema:
