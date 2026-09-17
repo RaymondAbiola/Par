@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { Logo } from "@/components/logo";
 import { SessionBadge } from "@/components/session-badge";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -14,7 +15,8 @@ export function Shell({ children }: { children: ReactNode }) {
     <div className="flex min-h-screen flex-col">
       <header className="sticky top-0 z-10 border-b border-line bg-ground/85 backdrop-blur">
         <div className="mx-auto flex w-full max-w-6xl items-center gap-6 px-4 py-3">
-          <Link href="/" className="flex items-baseline gap-2">
+          <Link href="/" className="flex items-center gap-2">
+            <Logo size={20} className="shrink-0" />
             <span className="text-lg font-semibold tracking-tight">Par</span>
             <span className="hidden text-xs text-subtle sm:inline">tokenized equities, priced honestly</span>
           </Link>
