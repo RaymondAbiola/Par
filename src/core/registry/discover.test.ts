@@ -33,6 +33,17 @@ describe("classify", () => {
     expect(classify(t, "NVDA")).toBe("ondo");
   });
 
+  it("identifies a backpack wrapper by issuer name", () => {
+    const t = token({ id: "SomeMint", symbol: "AMD", name: "Advanced Micro Devices - Backpack Securities", decimals: 6 });
+    expect(classify(t, "AMD")).toBe("backpack");
+  });
+
+  // a bare ticker is a weak signal, so without the issuer name it must not match
+  it("rejects a bare ticker with no issuer signal", () => {
+    const t = token({ id: "SomeMint", symbol: "AMD", name: "Advanced Micro Devices" });
+    expect(classify(t, "AMD")).toBeNull();
+  });
+
   it("rejects a lookalike whose symbol does not match the ticker", () => {
     const t = token({ id: "Xsomething", symbol: "NVDIAx", tags: ["xstocks"] });
     expect(classify(t, "NVDA")).toBeNull();

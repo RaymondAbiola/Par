@@ -3,9 +3,11 @@ import { searchTokens, type JupiterToken } from "@/core/registry/jupiter";
 import { fetchOndoCatalog, type OndoAsset } from "@/core/registry/ondo";
 import type { EquityListing, Issuer, Registry, Wrapper } from "@/core/types";
 
-// both issuers use vanity mints, which is a sturdier signal than tags or names alone
+// xStocks and Ondo use vanity mints, which is a sturdier signal than tags or names alone.
+// Backpack has no vanity prefix and its symbols are bare tickers, so it is matched on issuer name.
 const XSTOCKS_MINT_PREFIX = "Xs";
 const ONDO_MINT_SUFFIX = "ondo";
+const BACKPACK_NAME = "Backpack Securities";
 
 function classify(token: JupiterToken, ticker: string): Issuer | null {
   const symbol = token.symbol.toUpperCase();
@@ -15,6 +17,9 @@ function classify(token: JupiterToken, ticker: string): Issuer | null {
 
   const looksOndo = token.name.includes("Ondo Tokenized") || token.id.endsWith(ONDO_MINT_SUFFIX);
   if (looksOndo && symbol === `${ticker}ON`) return "ondo";
+
+  // a bare ticker symbol is weak on its own, so the issuer name has to carry this one
+  if (token.name.includes(BACKPACK_NAME) && symbol === ticker) return "backpack";
 
   return null;
 }

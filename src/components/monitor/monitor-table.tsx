@@ -9,19 +9,33 @@ import type { WireTicker, WireWrapper } from "@/core/par/wire";
 
 type SortKey = "spread" | "liquidity" | "ticker";
 
-const ISSUER_LABEL: Record<string, string> = { xstocks: "xStocks", ondo: "Ondo" };
+const ISSUER_LABEL: Record<string, string> = {
+  xstocks: "xStocks",
+  ondo: "Ondo",
+  backpack: "Backpack",
+};
 
 function deepest(t: WireTicker): number {
   return Math.max(0, ...t.wrappers.map((w) => w.liquidityUsd ?? 0));
 }
 
-function WrapperCell({ wrapper, best }: { wrapper: WireWrapper | undefined; best?: boolean }) {
+function WrapperCell({
+  wrapper,
+  best,
+  extra = 0,
+}: {
+  wrapper: WireWrapper | undefined;
+  best?: boolean;
+  /** How many further wrappers exist beyond this one, so a third issuer is never silently dropped. */
+  extra?: number;
+}) {
   if (!wrapper) return <span className="text-subtle">--</span>;
 
   return (
     <div className="whitespace-nowrap">
       <div className="flex items-center gap-1.5">
         <span className={`text-sm ${best ? "text-ink" : "text-muted"}`}>{wrapper.symbol}</span>
+        {extra > 0 ? <span className="text-[11px] text-subtle">+{extra} more</span> : null}
         {wrapper.recommendable === false ? (
           <span
             className="text-[11px] text-subtle"
@@ -106,6 +120,7 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
             {rows.map((t) => {
               const ranked = [...t.wrappers].sort((a, b) => (a.rank ?? 99) - (b.rank ?? 99));
               const [best, alt] = ranked;
+              const extra = Math.max(0, ranked.length - 2);
               const stale = t.wrappers.some((w) => w.multiplier?.stale);
 
               return (
@@ -124,7 +139,7 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
                     <WrapperCell wrapper={best} best />
                   </td>
                   <td className="px-4 py-2.5">
-                    <WrapperCell wrapper={alt} />
+                    <WrapperCell wrapper={alt} extra={extra} />
                   </td>
                   <td className="px-4 py-2.5 text-right">
                     <Spread bps={t.spreadBps} />

@@ -8,6 +8,7 @@ const NAV = [
   { href: "/", label: "Monitor" },
   { href: "/history", label: "History" },
   { href: "/check", label: "Check" },
+  { href: "/about", label: "About" },
 ];
 
 export function Shell({ children }: { children: ReactNode }) {
@@ -50,11 +51,16 @@ export function Shell({ children }: { children: ReactNode }) {
         <div className="mx-auto w-full max-w-6xl px-4 py-5 text-sm leading-relaxed text-subtle">
           <p>
             Reference prices from Finnhub, on-chain prices and routing from Jupiter, mint state from
-            Solana via Helius, issuer data from Ondo. Not investment advice.
+            Solana via Helius, issuer data from Ondo.
           </p>
           <p className="mt-1">
             Outside regular trading hours the reference price is the last close, labelled as such.
-            Finnhub&rsquo;s free tier is non-commercial.
+          </p>
+          <p className="mt-2">
+            <Link href="/about" className="text-muted underline underline-offset-2 hover:text-ink">
+              Not investment advice
+            </Link>
+            . Par measures prices. It holds no funds and executes no trades.
           </p>
         </div>
       </footer>

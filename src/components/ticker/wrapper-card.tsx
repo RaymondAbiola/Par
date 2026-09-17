@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { formatUsd, truncateAddress } from "@/lib/format";
 import type { WireWrapper } from "@/core/par/wire";
 
-const ISSUER: Record<string, string> = { xstocks: "xStocks", ondo: "Ondo" };
+const ISSUER: Record<string, string> = { xstocks: "xStocks", ondo: "Ondo", backpack: "Backpack" };
 
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   return (

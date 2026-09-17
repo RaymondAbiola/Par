@@ -1,4 +1,4 @@
-export type Issuer = "xstocks" | "ondo";
+export type Issuer = "xstocks" | "ondo" | "backpack";
 
 export type InstrumentType = "stock" | "etf" | "other";
 
@@ -26,4 +26,5 @@ export interface Registry {
 export const ISSUER_LABEL: Record<Issuer, string> = {
   xstocks: "xStocks",
   ondo: "Ondo",
+  backpack: "Backpack",
 };
