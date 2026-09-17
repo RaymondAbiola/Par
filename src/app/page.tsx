@@ -165,7 +165,10 @@ export default async function Home() {
       </Card>
 
       <Card>
-        <CardHeader title="Built on" hint="Everything here is a public endpoint" />
+        <CardHeader
+          title="Build on Par"
+          hint="Every number on this page is available to your own app. No key, no rate limit"
+        />
         <div className="grid gap-px bg-line sm:grid-cols-3">
           <div className="bg-surface px-4 py-3">
             <div className="text-sm font-medium">REST API</div>
