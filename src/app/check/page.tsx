@@ -55,21 +55,21 @@ export default async function CheckPage() {
 
             <div className="grid gap-px overflow-hidden rounded border border-line bg-line sm:grid-cols-3">
               <div className="bg-surface px-3 py-2.5">
-                <div className="text-[11px] tracking-wide text-subtle uppercase">Correct</div>
+                <div className="text-xs tracking-wide text-subtle uppercase">Correct</div>
                 <div className="mt-1 text-lg">
                   <Num tone="good">{fmt(example.correctShares)}</Num>
                 </div>
                 <div className="mt-0.5 text-xs text-subtle">multiplier {example.effective}</div>
               </div>
               <div className="bg-surface px-3 py-2.5">
-                <div className="text-[11px] tracking-wide text-subtle uppercase">Raw ÷ decimals</div>
+                <div className="text-xs tracking-wide text-subtle uppercase">Raw ÷ decimals</div>
                 <div className="mt-1 text-lg">
                   <Num tone="bad">{fmt(example.naiveShares)}</Num>
                 </div>
                 <div className="mt-0.5 text-xs text-subtle">multiplier ignored</div>
               </div>
               <div className="bg-surface px-3 py-2.5">
-                <div className="text-[11px] tracking-wide text-subtle uppercase">Mint&rsquo;s stored field</div>
+                <div className="text-xs tracking-wide text-subtle uppercase">Mint&rsquo;s stored field</div>
                 <div className="mt-1 text-lg">
                   <Num tone="bad">{fmt(example.storedFieldShares)}</Num>
                 </div>
@@ -98,12 +98,12 @@ export default async function CheckPage() {
 
             <div className="rounded border border-line bg-raised px-3 py-2.5">
               <div className="text-xs font-medium">Where this actually bites</div>
-              <p className="mt-1 text-xs leading-relaxed text-muted">
+              <p className="mt-1 text-sm leading-relaxed text-muted">
                 Not in wallets. Solana applies the multiplier to{" "}
                 <code className="font-mono">uiAmount</code>, so a holder sees the right balance and the
                 market prices the raw token correctly when they trade.
               </p>
-              <p className="mt-1.5 text-xs leading-relaxed text-muted">
+              <p className="mt-1.5 text-sm leading-relaxed text-muted">
                 It bites on chain, where balances are raw and oracles quote per share. A lending
                 protocol computing{" "}
                 <code className="font-mono">raw_amount &times; oracle_price</code> values this position
@@ -133,7 +133,7 @@ export default async function CheckPage() {
 
       <Card>
         <CardHeader title="Getting it right" />
-        <pre className="overflow-x-auto px-4 py-4 font-mono text-xs leading-relaxed text-muted">
+        <pre className="overflow-x-auto px-4 py-4 font-mono text-sm leading-relaxed text-muted">
 {`const now = Math.floor(Date.now() / 1000);
 
 // the stored field is only current until the scheduled change lands

@@ -70,7 +70,7 @@ export function SpreadLine({ points, ticker }: { points: SpreadPointView[]; tick
         {ticks.map((t) => (
           <g key={t}>
             <line x1={PAD.left} x2={W - PAD.right} y1={y(t)} y2={y(t)} stroke="var(--color-grid)" strokeWidth={1} />
-            <text x={PAD.left - 8} y={y(t)} dy="0.32em" textAnchor="end" className="fill-subtle text-[10px]" style={{ fontVariantNumeric: "tabular-nums" }}>
+            <text x={PAD.left - 8} y={y(t)} dy="0.32em" textAnchor="end" className="fill-subtle text-[11px]" style={{ fontVariantNumeric: "tabular-nums" }}>
               {(t / 100).toFixed(t >= 100 ? 0 : 1)}
             </text>
           </g>
@@ -84,7 +84,7 @@ export function SpreadLine({ points, ticker }: { points: SpreadPointView[]; tick
         </text>
 
         {peak !== last ? (
-          <text x={x(peak.capturedAt)} y={y(peak.spreadBps) - 8} textAnchor="middle" className="fill-muted text-[10px]" style={{ fontVariantNumeric: "tabular-nums" }}>
+          <text x={x(peak.capturedAt)} y={y(peak.spreadBps) - 8} textAnchor="middle" className="fill-muted text-[11px]" style={{ fontVariantNumeric: "tabular-nums" }}>
             {(peak.spreadBps / 100).toFixed(2)}
           </text>
         ) : null}

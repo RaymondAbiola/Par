@@ -18,7 +18,7 @@ export function SessionBadge() {
     return () => clearInterval(timer);
   }, []);
 
-  if (!state) return <span className="h-5 w-24 rounded bg-raised" aria-hidden />;
+  if (!state) return <span className="h-6 w-24 rounded bg-raised" aria-hidden />;
 
   return (
     <Badge tone={state.live ? "discount" : "neutral"}>

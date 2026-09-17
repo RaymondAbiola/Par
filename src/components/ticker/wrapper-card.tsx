@@ -8,8 +8,8 @@ const ISSUER: Record<string, string> = { xstocks: "xStocks", ondo: "Ondo" };
 function Row({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <div className="flex items-baseline justify-between gap-4 py-1">
-      <span className="text-xs text-subtle">{label}</span>
-      <span className="tnum text-xs text-ink">{children}</span>
+      <span className="text-sm text-subtle">{label}</span>
+      <span className="tnum text-sm text-ink">{children}</span>
     </div>
   );
 }
@@ -60,7 +60,7 @@ export function WrapperCard({ wrapper }: { wrapper: WireWrapper }) {
           <div className="flex items-center gap-2">
             <Badge tone="warn">stale multiplier</Badge>
           </div>
-          <p className="mt-1.5 text-xs leading-relaxed text-warn">
+          <p className="mt-1.5 text-sm leading-relaxed text-warn">
             The mint still stores <span className="tnum">{m.stored.toFixed(6)}</span>, but{" "}
             <span className="tnum">{m.effective.toFixed(6)}</span> has been in force since{" "}
             {m.effectiveFrom ? new Date(m.effectiveFrom).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }) : "an earlier date"}.

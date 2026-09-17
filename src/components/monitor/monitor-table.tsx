@@ -21,10 +21,10 @@ function WrapperCell({ wrapper, best }: { wrapper: WireWrapper | undefined; best
   return (
     <div className="whitespace-nowrap">
       <div className="flex items-center gap-1.5">
-        <span className={`text-xs ${best ? "text-ink" : "text-muted"}`}>{wrapper.symbol}</span>
+        <span className={`text-sm ${best ? "text-ink" : "text-muted"}`}>{wrapper.symbol}</span>
         {wrapper.recommendable === false ? (
           <span
-            className="text-[10px] text-subtle"
+            className="text-[11px] text-subtle"
             title={
               wrapper.excludedBecause === "unroutable"
                 ? "No route exists at the size tested"
@@ -38,10 +38,10 @@ function WrapperCell({ wrapper, best }: { wrapper: WireWrapper | undefined; best
         ) : null}
       </div>
       <div className="mt-0.5 flex items-baseline gap-2">
-        <span className="tnum text-xs text-muted">
+        <span className="tnum text-sm text-muted">
           {wrapper.pricePerShare === null ? "--" : formatUsd(wrapper.pricePerShare)}
         </span>
-        <Premium bps={wrapper.premiumBps} size="sm" />
+        <Premium bps={wrapper.premiumBps} size="base" />
       </div>
     </div>
   );
@@ -91,9 +91,9 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
       </div>
 
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[46rem] text-sm">
+        <table className="w-full min-w-[52rem] text-sm">
           <thead>
-            <tr className="border-b border-line text-left text-[11px] tracking-wide text-subtle uppercase">
+            <tr className="border-b border-line text-left text-xs tracking-wide text-subtle uppercase">
               <th className="px-4 py-2 font-medium">Stock</th>
               <th className="px-4 py-2 text-right font-medium">Real share</th>
               <th className="px-4 py-2 font-medium">Best to buy</th>
@@ -113,7 +113,7 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
                   <td className="px-4 py-2.5">
                     <Link href={`/s/${t.ticker}`} className="flex items-baseline gap-2">
                       <span className="font-medium">{t.ticker}</span>
-                      <span className="hidden max-w-40 truncate text-xs text-subtle sm:inline">{t.name}</span>
+                      <span className="hidden max-w-40 truncate text-sm text-subtle sm:inline">{t.name}</span>
                       {stale ? <Badge tone="warn">stale</Badge> : null}
                     </Link>
                   </td>
@@ -129,7 +129,7 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
                   <td className="px-4 py-2.5 text-right">
                     <Spread bps={t.spreadBps} />
                   </td>
-                  <td className="tnum px-4 py-2.5 text-right text-xs text-muted">
+                  <td className="tnum px-4 py-2.5 text-right text-sm text-muted">
                     {formatUsd(deepest(t), true)}
                   </td>
                 </tr>
@@ -143,7 +143,7 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
         <p className="px-4 py-8 text-center text-sm text-muted">Nothing matches that filter.</p>
       ) : null}
 
-      <p className="border-t border-line px-4 py-2.5 text-xs leading-relaxed text-subtle">
+      <p className="border-t border-line px-4 py-2.5 text-sm leading-relaxed text-subtle">
         Ranked by what you can actually fill, not by headline price. A wrapper marked{" "}
         <span className="text-muted">thin</span> or <span className="text-muted">no route</span> sits
         on too little liquidity to trade at size, so it loses to a dearer wrapper you can buy. Issuers:{" "}

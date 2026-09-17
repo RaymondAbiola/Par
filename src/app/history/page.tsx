@@ -109,7 +109,7 @@ export default async function HistoryPage({
         <table className="w-full border-t border-line text-sm">
           <caption className="sr-only">Median spread and sample count by market session</caption>
           <thead>
-            <tr className="text-left text-[11px] tracking-wide text-subtle uppercase">
+            <tr className="text-left text-xs tracking-wide text-subtle uppercase">
               <th className="px-4 py-2 font-medium">Session</th>
               <th className="px-4 py-2 text-right font-medium">Samples</th>
               <th className="px-4 py-2 text-right font-medium">Median spread</th>

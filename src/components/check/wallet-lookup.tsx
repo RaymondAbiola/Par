@@ -70,7 +70,7 @@ export function WalletLookup() {
         </button>
       </form>
 
-      {error ? <p className="mt-3 text-xs text-premium">{error}</p> : null}
+      {error ? <p className="mt-3 text-sm text-premium">{error}</p> : null}
 
       {result && result.positions.length === 0 ? (
         <p className="mt-3 text-sm text-muted">
@@ -96,7 +96,7 @@ export function WalletLookup() {
                 </span>
               ) : null}
             </div>
-            <p className="max-w-2xl text-xs leading-relaxed text-subtle">
+            <p className="max-w-2xl text-sm leading-relaxed text-subtle">
               The owner sees the true figure. Wallets read <code className="font-mono">uiAmount</code>,
               which Solana applies the multiplier to, and the market prices the raw token correctly
               too. The second number is what <em>your code</em> produces if it values raw balances
@@ -107,7 +107,7 @@ export function WalletLookup() {
           <div className="overflow-x-auto">
             <table className="w-full min-w-[34rem] text-sm">
               <thead>
-                <tr className="border-y border-line text-left text-[11px] tracking-wide text-subtle uppercase">
+                <tr className="border-y border-line text-left text-xs tracking-wide text-subtle uppercase">
                   <th className="py-2 pr-4 font-medium">Token</th>
                   <th className="py-2 pr-4 text-right font-medium">Shares</th>
                   <th className="py-2 pr-4 text-right font-medium">If read raw</th>

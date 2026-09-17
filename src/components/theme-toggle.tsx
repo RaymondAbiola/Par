@@ -12,8 +12,8 @@ function systemTheme(): Theme {
 
 function Icon({ theme }: { theme: Theme }) {
   const common = {
-    width: 15,
-    height: 15,
+    width: 16,
+    height: 16,
     viewBox: "0 0 24 24",
     fill: "none",
     stroke: "currentColor",
@@ -60,7 +60,7 @@ export function ThemeToggle() {
     }
   }
 
-  if (!theme) return <span className="size-7" aria-hidden />;
+  if (!theme) return <span className="size-8" aria-hidden />;
 
   return (
     <button
@@ -68,7 +68,7 @@ export function ThemeToggle() {
       onClick={toggle}
       title={theme === "dark" ? "Switch to light" : "Switch to dark"}
       aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
-      className="flex size-7 items-center justify-center rounded border border-line text-muted transition-colors hover:border-line-strong hover:text-ink"
+      className="flex size-8 items-center justify-center rounded border border-line text-muted transition-colors hover:border-line-strong hover:text-ink"
     >
       <Icon theme={theme} />
     </button>

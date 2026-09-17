@@ -90,7 +90,7 @@ export default async function Home() {
       <div className="grid gap-4 sm:grid-cols-3">
         <Card className="flex flex-col p-4">
           <h2 className="text-sm font-semibold">Two prices, one company</h2>
-          <p className="mt-1.5 flex-1 text-xs leading-relaxed text-muted">
+          <p className="mt-1.5 flex-1 text-sm leading-relaxed text-muted">
             {widestTicker
               ? `${widestTicker.ticker}'s wrappers are trading this far apart right now, on the same underlying share.`
               : "Wrappers of the same stock drift apart, especially when the market is shut."}
@@ -102,7 +102,7 @@ export default async function Home() {
 
         <Card className="flex flex-col p-4">
           <h2 className="text-sm font-semibold">Stored multipliers rot</h2>
-          <p className="mt-1.5 flex-1 text-xs leading-relaxed text-muted">
+          <p className="mt-1.5 flex-1 text-sm leading-relaxed text-muted">
             {stalePct}% of xStocks wrappers store a scaled-UI multiplier that is no longer the one in
             force. NFLXx reads 1 and is really 10.
           </p>
@@ -110,14 +110,14 @@ export default async function Home() {
             {staleXstocks}
             <span className="text-base text-subtle">/{xstocksTotal}</span>
           </div>
-          <Link href="/check" className="mt-2 text-xs text-accent hover:underline">
+          <Link href="/check" className="mt-2 text-sm text-accent hover:underline">
             See the arithmetic →
           </Link>
         </Card>
 
         <Card className="flex flex-col p-4">
           <h2 className="text-sm font-semibold">Cheapest is often untradeable</h2>
-          <p className="mt-1.5 flex-1 text-xs leading-relaxed text-muted">
+          <p className="mt-1.5 flex-1 text-sm leading-relaxed text-muted">
             {trap
               ? `${trap.trap.symbol} shows the better headline on ${formatUsd(trap.trap.liquidityUsd ?? 0, true)} of liquidity. ${trap.best.symbol} is the one you can fill.`
               : "A wrapper can show the better price and have no liquidity behind it."}
@@ -125,11 +125,11 @@ export default async function Home() {
           {trap ? (
             <div className="mt-3 flex items-baseline gap-2">
               <Premium bps={trap.trap.premiumBps} size="lg" />
-              <span className="text-xs text-subtle">unfillable</span>
+              <span className="text-sm text-subtle">unfillable</span>
             </div>
           ) : null}
           {trap ? (
-            <Link href={`/s/${trap.ticker}`} className="mt-2 text-xs text-accent hover:underline">
+            <Link href={`/s/${trap.ticker}`} className="mt-2 text-sm text-accent hover:underline">
               Route a real quote →
             </Link>
           ) : null}
@@ -172,30 +172,30 @@ export default async function Home() {
         <div className="grid gap-px bg-line sm:grid-cols-3">
           <div className="bg-surface px-4 py-3">
             <div className="text-sm font-medium">REST API</div>
-            <p className="mt-1 text-xs leading-relaxed text-muted">
+            <p className="mt-1.5 text-sm leading-relaxed text-muted">
               Open, no key. Dislocations, venue decisions, stale multipliers, wallet valuation.
             </p>
-            <a href="/api/v1/tickers?limit=5" className="mt-2 inline-block font-mono text-xs text-accent hover:underline">
+            <a href="/api/v1/tickers?limit=5" className="mt-2 inline-block font-mono text-sm text-accent hover:underline">
               /api/v1/tickers
             </a>
           </div>
           <div className="bg-surface px-4 py-3">
             <div className="text-sm font-medium">OpenAPI</div>
-            <p className="mt-1 text-xs leading-relaxed text-muted">
+            <p className="mt-1.5 text-sm leading-relaxed text-muted">
               3.1 spec covering every endpoint, including what a premium is measured against.
             </p>
-            <a href="/api/v1/openapi" className="mt-2 inline-block font-mono text-xs text-accent hover:underline">
+            <a href="/api/v1/openapi" className="mt-2 inline-block font-mono text-sm text-accent hover:underline">
               /api/v1/openapi
             </a>
           </div>
           <div className="bg-surface px-4 py-3">
             <div className="text-sm font-medium">SDK</div>
-            <p className="mt-1 text-xs leading-relaxed text-muted">
+            <p className="mt-1.5 text-sm leading-relaxed text-muted">
               Dependency-free client, plus the two pure functions that stop you being 10x wrong.
             </p>
             <a
               href="https://github.com/RaymondAbiola/Par/tree/main/sdk"
-              className="mt-2 inline-block font-mono text-xs text-accent hover:underline"
+              className="mt-2 inline-block font-mono text-sm text-accent hover:underline"
             >
               @par/sdk
             </a>

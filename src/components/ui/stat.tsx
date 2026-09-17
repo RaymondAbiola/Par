@@ -16,9 +16,9 @@ export function Stat({
 
   return (
     <div className="px-4 py-3">
-      <div className="text-[11px] font-medium tracking-wide text-subtle uppercase">{label}</div>
+      <div className="text-xs font-medium tracking-wide text-subtle uppercase">{label}</div>
       <div className={`tnum mt-1 text-2xl leading-none font-medium ${colour}`}>{value}</div>
-      {detail ? <div className="mt-1.5 text-xs text-muted">{detail}</div> : null}
+      {detail ? <div className="mt-1.5 text-sm text-muted">{detail}</div> : null}
     </div>
   );
 }

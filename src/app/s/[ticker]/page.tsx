@@ -51,7 +51,7 @@ export default async function TickerPage({ params }: { params: Promise<{ ticker:
         </div>
 
         <div className="text-right">
-          <div className="text-[11px] tracking-wide text-subtle uppercase">Real share price</div>
+          <div className="text-xs tracking-wide text-subtle uppercase">Real share price</div>
           <div className="tnum text-2xl font-medium">
             {wire.reference ? formatUsd(wire.reference.price) : "--"}
           </div>
@@ -82,7 +82,7 @@ export default async function TickerPage({ params }: { params: Promise<{ ticker:
       </Card>
 
       {stale.length > 0 ? (
-        <p className="text-xs leading-relaxed text-subtle">
+        <p className="text-sm leading-relaxed text-subtle">
           {stale.length === 1
             ? "One wrapper here stores a scaled-UI multiplier that no longer matches the one in force."
             : `${stale.length} wrappers here store scaled-UI multipliers that no longer match the ones in force.`}{" "}
