@@ -19,14 +19,21 @@ function WrapperCell({ wrapper, best }: { wrapper: WireWrapper | undefined; best
   if (!wrapper) return <span className="text-subtle">--</span>;
 
   return (
-    <div className="flex items-center gap-2 whitespace-nowrap">
-      <span className={`text-xs ${best ? "text-ink" : "text-muted"}`}>{wrapper.symbol}</span>
-      <Premium bps={wrapper.premiumBps} size="sm" />
-      {wrapper.recommendable === false ? (
-        <span className="text-[10px] text-subtle" title={wrapper.excludedBecause ?? undefined}>
-          {wrapper.excludedBecause === "unroutable" ? "no route" : "thin"}
+    <div className="whitespace-nowrap">
+      <div className="flex items-center gap-1.5">
+        <span className={`text-xs ${best ? "text-ink" : "text-muted"}`}>{wrapper.symbol}</span>
+        {wrapper.recommendable === false ? (
+          <span className="text-[10px] text-subtle" title={wrapper.excludedBecause ?? undefined}>
+            {wrapper.excludedBecause === "unroutable" ? "no route" : "thin"}
+          </span>
+        ) : null}
+      </div>
+      <div className="mt-0.5 flex items-baseline gap-2">
+        <span className="tnum text-xs text-muted">
+          {wrapper.pricePerShare === null ? "--" : formatUsd(wrapper.pricePerShare)}
         </span>
-      ) : null}
+        <Premium bps={wrapper.premiumBps} size="sm" />
+      </div>
     </div>
   );
 }
@@ -79,7 +86,7 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
           <thead>
             <tr className="border-b border-line text-left text-[11px] tracking-wide text-subtle uppercase">
               <th className="px-4 py-2 font-medium">Stock</th>
-              <th className="px-4 py-2 text-right font-medium">Share</th>
+              <th className="px-4 py-2 text-right font-medium">Real share</th>
               <th className="px-4 py-2 font-medium">Cheapest</th>
               <th className="px-4 py-2 font-medium">Alternative</th>
               <th className="px-4 py-2 text-right font-medium">Spread</th>
