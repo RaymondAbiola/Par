@@ -162,7 +162,10 @@ export interface Coverage {
   runs: number;
   tickers: number;
   since: string | null;
-  /** Median gap between runs, in minutes. GitHub drops scheduled runs, so this is measured. */
+  /**
+   * Median gap between runs over the last day, in minutes. Measured rather than assumed, because
+   * GitHub's scheduler decides how often we actually get to run.
+   */
   medianGapMinutes: number | null;
 }
 
@@ -172,14 +175,18 @@ export async function getCoverage(): Promise<Coverage> {
         select distinct captured_at from premium_snapshots
      ),
      gaps as (
-        select extract(epoch from captured_at - lag(captured_at) over (order by captured_at)) / 60 as gap
+        select captured_at,
+               extract(epoch from captured_at - lag(captured_at) over (order by captured_at)) / 60 as gap
           from runs
      )
      select (select count(*)::int from premium_snapshots) as rows,
             (select count(*)::int from runs) as runs,
             (select count(distinct ticker)::int from premium_snapshots) as tickers,
             (select min(captured_at) from premium_snapshots) as since,
-            (select percentile_cont(0.5) within group (order by gap) from gaps where gap is not null) as median_gap`,
+            (select percentile_cont(0.5) within group (order by gap)
+               from gaps
+              where gap is not null
+                and captured_at > now() - interval '24 hours') as median_gap`,
   );
   const row = (result as Record<string, unknown>[])[0];
 

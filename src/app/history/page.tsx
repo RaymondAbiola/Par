@@ -71,8 +71,14 @@ export default async function HistoryPage({
       <section className="py-4">
         <h1 className="text-3xl font-semibold tracking-tight">History</h1>
         <p className="mt-3 max-w-xl leading-relaxed text-muted">
-          Par snapshots every tracked wrapper on a schedule. The question this page answers: does the
-          gap between issuers widen when the underlying market is shut?
+          Par snapshots every tracked wrapper{" "}
+          {coverage.medianGapMinutes === null
+            ? "on a schedule"
+            : coverage.medianGapMinutes >= 90
+              ? `roughly every ${(coverage.medianGapMinutes / 60).toFixed(1)} hours`
+              : `roughly every ${Math.round(coverage.medianGapMinutes)} minutes`}
+          . The question this page answers: does the gap between issuers widen when the underlying
+          market is shut?
         </p>
       </section>
 
@@ -88,8 +94,8 @@ export default async function HistoryPage({
               coverage.medianGapMinutes === null
                 ? "first snapshot"
                 : coverage.medianGapMinutes >= 90
-                  ? `roughly every ${(coverage.medianGapMinutes / 60).toFixed(1)}h`
-                  : `roughly every ${Math.round(coverage.medianGapMinutes)}m`
+                  ? `now every ${(coverage.medianGapMinutes / 60).toFixed(1)}h`
+                  : `now every ${Math.round(coverage.medianGapMinutes)}m`
             }
           />
         </StatRow>
