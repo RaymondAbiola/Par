@@ -138,14 +138,26 @@ export default async function Home() {
 
       <Card>
         <StatRow>
-          <Stat label="Listings" value={allListings().length} detail="tokenized equities tracked" />
-          <Stat label="Wrappers" value={allMints().length} detail={`${rebasingCount} rebasing`} />
-          <Stat label="Stale multipliers" value={staleCount} tone={staleCount > 0 ? "warn" : undefined} detail="across both issuers" />
           <Stat
-            label="Widest spread"
-            value={widest > 0 ? `${(widest / 100).toFixed(2)}pp` : "--"}
-            tone={widest >= 200 ? "warn" : undefined}
-            detail={widestTicker?.ticker ?? "same stock, two prices"}
+            label="Tracked"
+            value={allListings().length}
+            detail={`${allMints().length} tokens, ${rebasingCount} of them rebasing`}
+          />
+          <Stat
+            label="Issued twice"
+            value={multiIssuerListings().length}
+            detail="same stock, two tokens"
+          />
+          <Stat
+            label="Worth comparing"
+            value={tickers.length}
+            detail="both sides deep enough to trade"
+          />
+          <Stat
+            label="Stale multipliers"
+            value={staleCount}
+            tone={staleCount > 0 ? "warn" : undefined}
+            detail="stored value no longer correct"
           />
         </StatRow>
       </Card>
@@ -153,7 +165,7 @@ export default async function Home() {
       <Card>
         <CardHeader
           title="Cross-issuer dislocations"
-          hint={basis ? `Premium measured against the real share price (${basis})` : "Premium measured against the real share price"}
+          hint={`${tickers.length} of ${multiIssuerListings().length} stocks issued by both issuers have enough liquidity on each side to compare. Premium measured against the real share price${basis ? ` (${basis})` : ""}.`}
         />
         {failed ? (
           <p className="px-4 py-10 text-center text-sm text-muted">
