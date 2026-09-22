@@ -4,6 +4,7 @@ import { scanDislocations } from "@/core/par/scan";
 import { toWireTicker, type WireTicker } from "@/core/par/wire";
 import { allListings, allMints, multiIssuerListings } from "@/core/registry";
 import { fetchMultipliers } from "@/core/solana/multiplier";
+import { LiquidityScatter } from "@/components/charts/liquidity-scatter";
 import { MonitorTable } from "@/components/monitor/monitor-table";
 import { Card, CardHeader } from "@/components/ui/card";
 import { Premium, Spread } from "@/components/premium";
@@ -12,6 +13,9 @@ import { formatUsd } from "@/lib/format";
 export const revalidate = 300;
 
 interface Snapshot {
+  /** Everything scanned, including wrappers too thin to trade. */
+  all: WireTicker[];
+  /** Only those with a fillable side, which is what the table shows. */
   tickers: WireTicker[];
   staleCount: number;
   staleXstocks: number;
@@ -25,7 +29,8 @@ async function load(): Promise<Snapshot> {
 
   try {
     const [results, multipliers] = await Promise.all([
-      scanDislocations({ maxTickers: 60, maxLiveQuotes: 30, minLiquidityUsd: 25_000 }),
+      // no floor here: the scatter needs the thin tail, and the table filters it out below
+      scanDislocations({ maxTickers: 110, maxLiveQuotes: 30, minLiquidityUsd: 0 }),
       fetchMultipliers(allMints()),
     ]);
 
@@ -34,8 +39,11 @@ async function load(): Promise<Snapshot> {
     );
     const states = [...multipliers.entries()];
 
+    const all = results.map((par) => toWireTicker(par, annotate(par.wrappers, "buy")));
+
     return {
-      tickers: results.map((par) => toWireTicker(par, annotate(par.wrappers, "buy"))),
+      all,
+      tickers: all.filter((t) => t.wrappers.some((w) => w.recommendable)),
       staleCount: states.filter(([, s]) => s.stale).length,
       staleXstocks: states.filter(([m, s]) => s.stale && byMint.get(m) === "xstocks").length,
       xstocksTotal,
@@ -44,7 +52,7 @@ async function load(): Promise<Snapshot> {
     };
   } catch {
     // never fail the build over a rate-limited upstream
-    return { tickers: [], staleCount: 0, staleXstocks: 0, xstocksTotal, basis: null, failed: true };
+    return { all: [], tickers: [], staleCount: 0, staleXstocks: 0, xstocksTotal, basis: null, failed: true };
   }
 }
 
@@ -64,7 +72,7 @@ function trapExample(tickers: WireTicker[]) {
 }
 
 export default async function Home() {
-  const { tickers, staleCount, staleXstocks, xstocksTotal, basis, failed } = await load();
+  const { all, tickers, staleCount, staleXstocks, xstocksTotal, basis, failed } = await load();
   const widest = tickers.reduce((max, t) => Math.max(max, t.spreadBps ?? 0), 0);
   const widestTicker = tickers.find((t) => (t.spreadBps ?? 0) === widest);
   const trap = trapExample(tickers);
@@ -163,6 +171,16 @@ export default async function Home() {
           ) : null}
         </Card>
       </div>
+
+      {all.length > 0 ? (
+        <Card>
+          <CardHeader
+            title="Where the wild prices live"
+            hint="Every tracked token, plotted by how much liquidity stands behind it against how far it sits from the real share price. The extremes are not opportunities, they are tokens nobody can fill."
+          />
+          <LiquidityScatter tickers={all} />
+        </Card>
+      ) : null}
 
       <Card>
         <CardHeader

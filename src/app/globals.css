@@ -20,6 +20,9 @@
   --color-chart: var(--chart);
   --color-chart-wash: var(--chart-wash);
   --color-grid: var(--grid);
+  --color-iss-1: var(--iss-1);
+  --color-iss-2: var(--iss-2);
+  --color-iss-3: var(--iss-3);
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-mono-face), ui-monospace, "SF Mono", Menlo, monospace;
@@ -55,6 +58,11 @@
   --chart-wash: #2f5fd81a;
   --grid: #ededea;
 
+  /* three issuers, fixed order, validated for lightness, chroma, CVD and contrast */
+  --iss-1: #2f5fd8;
+  --iss-2: #b8620a;
+  --iss-3: #6b2fb8;
+
   --card-shadow: 0 1px 2px rgb(16 16 26 / 0.04), 0 1px 1px rgb(16 16 26 / 0.03);
   --lift-shadow: 0 4px 16px rgb(16 16 26 / 0.07), 0 1px 2px rgb(16 16 26 / 0.04);
 }
@@ -84,6 +92,11 @@
     --chart: #6690ee;
     --chart-wash: #6690ee1f;
     --grid: #1f1f25;
+
+    /* re-stepped for the dark surface, not lightened from the light steps */
+    --iss-1: #5d8ae8;
+    --iss-2: #c98338;
+    --iss-3: #9265d2;
 
     --card-shadow: 0 1px 2px rgb(0 0 0 / 0.5);
     --lift-shadow: 0 4px 20px rgb(0 0 0 / 0.55), 0 1px 2px rgb(0 0 0 / 0.4);
@@ -180,6 +193,23 @@ body {
     radial-gradient(45% 45% at 78% 10%, color-mix(in oklab, var(--chart) 9%, transparent), transparent 70%);
 }
 
+@keyframes settle {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.settle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: settle 0.55s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
 @keyframes rise {
   from {
     opacity: 0;
@@ -192,7 +222,7 @@ body {
 }
 
 .rise {
-  animation: rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation: rise 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
 }
 
 @keyframes livePulse {
@@ -206,6 +236,7 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .rise,
+  .settle,
   .live-dot {
     animation: none;
   }
