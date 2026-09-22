@@ -57,28 +57,6 @@ export function allInBps(premium: number | null, slippage: number | null, side: 
   return directional + (slippage ?? 0);
 }
 
-export function spreadBps(wrappers: readonly WrapperPar[]): number | null {
-  const values = wrappers.flatMap((w) => (w.premiumBps === null ? [] : [w.premiumBps]));
-  if (values.length < 2) return null;
-  return Math.max(...values) - Math.min(...values);
-}
-
-/**
- * Liquidity below this is treated as untradeable when we have not measured depth. Calibrated
- * against measured mainnet depth: AMDx holds about $12.7k and slipped 14% on a $1,000 buy, while
- * WMTx holds about $29k and cleared $10,000 for 11bp. The line sits between them.
- */
-export const LIQUIDITY_FLOOR_USD = 25_000;
-
-/**
- * Whether a wrapper is worth recommending. Measured depth is authoritative; the liquidity floor
- * is only a stand-in for the cheap path, where quoting every wrapper would be too expensive.
- */
-export function isRecommendable(wrapper: WrapperPar, floorUsd = LIQUIDITY_FLOOR_USD): boolean {
-  if (wrapper.execution) return wrapper.execution.routable;
-  return (wrapper.liquidityUsd ?? 0) >= floorUsd;
-}
-
 /**
  * Cheapest wrapper first. Anything untradeable sorts last regardless of headline price: a token
  * you cannot trade is not a better deal than one you can.
@@ -99,6 +77,46 @@ export function rankWrappers(
     if (bCost === null) return -1;
     return aCost - bCost;
   });
+}
+
+/**
+ * A quote standing on a few hundred dollars is not a price, and differencing against one produces
+ * a headline number nobody could ever transact at. MCDon has shown 36% below the real share on
+ * $102 of liquidity and $2 of daily volume. Only wrappers you could actually deal on count.
+ */
+export function spreadBps(
+  wrappers: readonly WrapperPar[],
+  floorUsd = LIQUIDITY_FLOOR_USD,
+): number | null {
+  const values = wrappers.flatMap((w) =>
+    w.premiumBps === null || !isRecommendable(w, floorUsd) ? [] : [w.premiumBps],
+  );
+  if (values.length < 2) return null;
+  return Math.max(...values) - Math.min(...values);
+}
+
+/** How many wrappers of this stock you could actually fill. */
+export function tradeableCount(
+  wrappers: readonly WrapperPar[],
+  floorUsd = LIQUIDITY_FLOOR_USD,
+): number {
+  return wrappers.filter((w) => w.premiumBps !== null && isRecommendable(w, floorUsd)).length;
+}
+
+/**
+ * Liquidity below this is treated as untradeable when we have not measured depth. Calibrated
+ * against measured mainnet depth: AMDx holds about $12.7k and slipped 14% on a $1,000 buy, while
+ * WMTx holds about $29k and cleared $10,000 for 11bp. The line sits between them.
+ */
+export const LIQUIDITY_FLOOR_USD = 25_000;
+
+/**
+ * Whether a wrapper is worth recommending. Measured depth is authoritative; the liquidity floor
+ * is only a stand-in for the cheap path, where quoting every wrapper would be too expensive.
+ */
+export function isRecommendable(wrapper: WrapperPar, floorUsd = LIQUIDITY_FLOOR_USD): boolean {
+  if (wrapper.execution) return wrapper.execution.routable;
+  return (wrapper.liquidityUsd ?? 0) >= floorUsd;
 }
 
 export interface ParOptions {

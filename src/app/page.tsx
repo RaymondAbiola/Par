@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { annotate } from "@/core/par/normalize";
+import { tradeableCount } from "@/core/par/engine";
 import { scanDislocations } from "@/core/par/scan";
 import { toWireTicker, type WireTicker } from "@/core/par/wire";
 import { allListings, allMints, multiIssuerListings } from "@/core/registry";
@@ -17,6 +18,8 @@ interface Snapshot {
   all: WireTicker[];
   /** Only those with a fillable side, which is what the table shows. */
   tickers: WireTicker[];
+  /** Stocks where more than one wrapper can actually be filled, so a comparison exists. */
+  comparable: number;
   staleCount: number;
   staleXstocks: number;
   xstocksTotal: number;
@@ -44,6 +47,7 @@ async function load(): Promise<Snapshot> {
     return {
       all,
       tickers: all.filter((t) => t.wrappers.some((w) => w.recommendable)),
+      comparable: results.filter((par) => tradeableCount(par.wrappers) >= 2).length,
       staleCount: states.filter(([, s]) => s.stale).length,
       staleXstocks: states.filter(([m, s]) => s.stale && byMint.get(m) === "xstocks").length,
       xstocksTotal,
@@ -52,7 +56,7 @@ async function load(): Promise<Snapshot> {
     };
   } catch {
     // never fail the build over a rate-limited upstream
-    return { all: [], tickers: [], staleCount: 0, staleXstocks: 0, xstocksTotal, basis: null, failed: true };
+    return { all: [], tickers: [], comparable: 0, staleCount: 0, staleXstocks: 0, xstocksTotal, basis: null, failed: true };
   }
 }
 
@@ -72,7 +76,7 @@ function trapExample(tickers: WireTicker[]) {
 }
 
 export default async function Home() {
-  const { all, tickers, staleCount, staleXstocks, xstocksTotal, basis, failed } = await load();
+  const { all, tickers, comparable, staleCount, staleXstocks, xstocksTotal, basis, failed } = await load();
   const widest = tickers.reduce((max, t) => Math.max(max, t.spreadBps ?? 0), 0);
   const widestTicker = tickers.find((t) => (t.spreadBps ?? 0) === widest);
   const trap = trapExample(tickers);
@@ -91,16 +95,20 @@ export default async function Home() {
         </h1>
 
         <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-          Apple, Nvidia and {multiIssuerListings().length - 2} other US equities are each issued as
-          several competing tokens here, with separate liquidity and separate prices. Par measures
-          every one against the real share and says which you can actually buy.
+          {multiIssuerListings().length} US equities are issued here by more than one issuer, which
+          looks like a market with competing prices. Measure it and most of those prices turn out to
+          be unfillable. Par tells you which wrapper is real, and what it truly costs.
         </p>
 
         <div className="mt-8 grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-line bg-line shadow-card sm:grid-cols-4">
           {[
             { label: "Tracked", value: allListings().length, detail: `${allMints().length} tokens` },
             { label: "Issued twice", value: multiIssuerListings().length, detail: "or more" },
-            { label: "Worth comparing", value: tickers.length, detail: "deep on both sides" },
+            {
+              label: "Truly competing",
+              value: comparable,
+              detail: `of ${tickers.length} with any fillable venue`,
+            },
             {
               label: "Stale multipliers",
               value: staleCount,

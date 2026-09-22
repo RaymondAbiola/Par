@@ -5,6 +5,7 @@ import {
   premiumBps,
   rankWrappers,
   spreadBps,
+  tradeableCount,
   type WrapperPar,
 } from "@/core/par/engine";
 
@@ -79,20 +80,48 @@ describe("allInBps", () => {
 });
 
 describe("spreadBps", () => {
-  it("measures the cross-issuer gap", () => {
+  it("measures the gap between two fillable wrappers", () => {
     const gap = spreadBps([
-      wrapper({ symbol: "AMDx", premiumBps: -448 }),
-      wrapper({ symbol: "AMDon", premiumBps: -153 }),
+      wrapper({ symbol: "AMDx", premiumBps: -448, liquidityUsd: 1e6 }),
+      wrapper({ symbol: "AMDon", premiumBps: -153, liquidityUsd: 1e6 }),
     ]);
     expect(gap).toBeCloseTo(295, 0);
   });
 
+  /**
+   * MCD on mainnet: MCDx held $446k while MCDon showed 36% below the real share on $102 of
+   * liquidity and $2 of daily volume. Differencing against that produced a 34pp headline that
+   * nobody could ever have traded.
+   */
+  it("ignores a quote standing on dust", () => {
+    const gap = spreadBps([
+      wrapper({ symbol: "MCDx", premiumBps: -147, liquidityUsd: 446_810 }),
+      wrapper({ symbol: "MCDon", premiumBps: -3590, liquidityUsd: 102 }),
+    ]);
+    expect(gap).toBeNull();
+  });
+
   it("is null with a single wrapper", () => {
-    expect(spreadBps([wrapper({ symbol: "TSLAx", premiumBps: -59 })])).toBeNull();
+    expect(spreadBps([wrapper({ symbol: "TSLAx", premiumBps: -59, liquidityUsd: 1e6 })])).toBeNull();
   });
 
   it("is null when prices are missing", () => {
     expect(spreadBps([wrapper({ symbol: "A" }), wrapper({ symbol: "B" })])).toBeNull();
+  });
+});
+
+describe("tradeableCount", () => {
+  it("counts only wrappers you could fill", () => {
+    const n = tradeableCount([
+      wrapper({ symbol: "A", premiumBps: 10, liquidityUsd: 1e6 }),
+      wrapper({ symbol: "B", premiumBps: 20, liquidityUsd: 102 }),
+      wrapper({ symbol: "C", premiumBps: 30, liquidityUsd: 5e5 }),
+    ]);
+    expect(n).toBe(2);
+  });
+
+  it("is zero when nothing is fillable", () => {
+    expect(tradeableCount([wrapper({ symbol: "A", premiumBps: 10, liquidityUsd: 50 })])).toBe(0);
   });
 });
 

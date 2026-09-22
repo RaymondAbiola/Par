@@ -142,7 +142,11 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
                     <WrapperCell wrapper={alt} extra={extra} />
                   </td>
                   <td className="px-4 py-2.5 text-right">
-                    <Spread bps={t.spreadBps} />
+                    {t.spreadBps === null ? (
+                      <span className="text-xs text-subtle">sole venue</span>
+                    ) : (
+                      <Spread bps={t.spreadBps} />
+                    )}
                   </td>
                   <td className="tnum px-4 py-2.5 text-right text-sm text-muted">
                     {formatUsd(deepest(t), true)}
@@ -170,7 +174,11 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
                     <span className="truncate text-xs text-subtle">{t.name}</span>
                     {stale ? <Badge tone="warn">stale</Badge> : null}
                   </div>
-                  <Spread bps={t.spreadBps} />
+                  {t.spreadBps === null ? (
+                    <span className="text-xs text-subtle">sole venue</span>
+                  ) : (
+                    <Spread bps={t.spreadBps} />
+                  )}
                 </div>
 
                 <div className="tnum mt-0.5 text-xs text-subtle">
@@ -200,7 +208,9 @@ export function MonitorTable({ tickers }: { tickers: WireTicker[] }) {
       <p className="border-t border-line px-4 py-2.5 text-sm leading-relaxed text-subtle">
         Ranked by what you can actually fill, not by headline price. A wrapper marked{" "}
         <span className="text-muted">thin</span> or <span className="text-muted">no route</span> sits
-        on too little liquidity to trade at size, so it loses to a dearer wrapper you can buy. Issuers:{" "}
+        on too little liquidity to trade at size. Where only one wrapper is fillable there is no real
+        spread to quote, so the column reads <span className="text-muted">sole venue</span> rather
+        than differencing against a price nobody can get. Issuers:{" "}
         {Object.values(ISSUER_LABEL).join(", ")}.
       </p>
     </div>
