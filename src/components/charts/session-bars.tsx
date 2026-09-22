@@ -7,7 +7,10 @@ export interface SessionDatum {
   session: string;
   samples: number;
   medianSpreadBps: number;
+  meanAbsPremiumBps: number;
 }
+
+export type Measure = "spread" | "premium";
 
 const BAR = 20;
 const GAP = 14;
@@ -18,16 +21,26 @@ const VALUE_W = 64;
  * One measure across nominal categories, so every bar carries the same hue. Colouring by
  * magnitude would double-encode bar length and burn the only free channel.
  */
-export function SessionBars({ data }: { data: SessionDatum[] }) {
+export function SessionBars({
+  data,
+  measure = "spread",
+}: {
+  data: SessionDatum[];
+  measure?: Measure;
+}) {
   const [hover, setHover] = useState<number | null>(null);
+  const pick = (d: SessionDatum) =>
+    measure === "spread" ? d.medianSpreadBps : d.meanAbsPremiumBps;
+  const unit = measure === "spread" ? "pp" : "%";
 
   if (data.length === 0) {
     return <p className="px-4 py-8 text-center text-sm text-muted">No sessions captured yet.</p>;
   }
 
-  const max = Math.max(...data.map((d) => d.medianSpreadBps), 1);
+  const ordered = [...data].sort((a, b) => pick(b) - pick(a));
+  const max = Math.max(...ordered.map(pick), 1);
   const plotW = 280;
-  const height = data.length * (BAR + GAP) + GAP;
+  const height = ordered.length * (BAR + GAP) + GAP;
 
   return (
     <div className="overflow-x-auto px-4 py-4">
@@ -36,7 +49,11 @@ export function SessionBars({ data }: { data: SessionDatum[] }) {
         className="w-full min-w-[26rem]"
         style={{ maxHeight: height * 1.6 }}
         role="img"
-        aria-label="Median cross-issuer spread by market session"
+        aria-label={
+          measure === "spread"
+            ? "Median spread between issuers by market session"
+            : "Mean drift from the real share price by market session"
+        }
       >
         {[0, 0.5, 1].map((t) => (
           <line
@@ -50,9 +67,9 @@ export function SessionBars({ data }: { data: SessionDatum[] }) {
           />
         ))}
 
-        {data.map((d, i) => {
+        {ordered.map((d, i) => {
           const y = GAP + i * (BAR + GAP);
-          const w = Math.max(2, (d.medianSpreadBps / max) * plotW);
+          const w = Math.max(2, (pick(d) / max) * plotW);
           const label = SESSION_LABEL[d.session as MarketSession] ?? d.session;
 
           return (
@@ -78,7 +95,8 @@ export function SessionBars({ data }: { data: SessionDatum[] }) {
                 className="fill-ink text-[11px]"
                 style={{ fontVariantNumeric: "tabular-nums" }}
               >
-                {(d.medianSpreadBps / 100).toFixed(2)}pp
+                {(pick(d) / 100).toFixed(2)}
+                {unit}
               </text>
             </g>
           );
@@ -87,8 +105,10 @@ export function SessionBars({ data }: { data: SessionDatum[] }) {
 
       <p className="mt-1 text-xs text-subtle">
         {hover === null
-          ? "Median cross-issuer spread, by session."
-          : `${SESSION_LABEL[data[hover]?.session as MarketSession] ?? data[hover]?.session}: ${data[hover]?.samples.toLocaleString()} samples`}
+          ? measure === "spread"
+            ? "How far apart the issuers are from each other."
+            : "How far the tokens sit from the real share price."
+          : `${SESSION_LABEL[ordered[hover]?.session as MarketSession] ?? ordered[hover]?.session}: ${ordered[hover]?.samples.toLocaleString()} samples`}
       </p>
     </div>
   );

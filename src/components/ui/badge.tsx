@@ -4,7 +4,7 @@ type Tone = "neutral" | "accent" | "warn" | "premium" | "discount";
 
 const TONES: Record<Tone, string> = {
   neutral: "border-line bg-raised text-muted",
-  accent: "border-transparent bg-accent-soft text-accent",
+  accent: "border-accent-line bg-accent-soft text-accent",
   warn: "border-transparent bg-warn-soft text-warn",
   premium: "border-transparent bg-raised text-premium",
   discount: "border-transparent bg-raised text-discount",
@@ -21,7 +21,7 @@ export function Badge({
 }) {
   return (
     <span
-      className={`inline-flex items-center gap-1 rounded border px-1.5 py-0.5 text-[11px] font-medium whitespace-nowrap ${TONES[tone]} ${mono ? "tnum" : ""}`}
+      className={`inline-flex items-center gap-1 rounded-full border px-2 py-0.5 text-[11px] font-medium whitespace-nowrap ${TONES[tone]} ${mono ? "tnum" : ""}`}
     >
       {children}
     </span>

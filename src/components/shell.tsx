@@ -34,9 +34,7 @@ export function Shell({ children }: { children: ReactNode }) {
           </nav>
 
           <div className="ml-auto flex shrink-0 items-center gap-2 sm:gap-3">
-            <span className="hidden sm:inline">
-              <SessionBadge />
-            </span>
+            <SessionBadge compact />
             {/* an api route returning json, not a page */}
             {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
             <a

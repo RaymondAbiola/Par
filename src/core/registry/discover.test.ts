@@ -71,6 +71,7 @@ describe("toListing", () => {
     tradingPaused: false,
     offhoursTradable: true,
     primaryPrice: 215.69,
+    impliedSharePrice: 215.5,
     session: "offhours",
     nextMarketOpen: null,
   };

@@ -16,19 +16,38 @@ export const metadata: Metadata = {
     "How cross-issuer dislocation in tokenized equities changes between market sessions on Solana.",
 };
 
-async function load(ticker: string | null) {
-  if (!hasDatabase()) return null;
+type LoadResult =
+  | { status: "no-database" }
+  | { status: "error"; message: string }
+  | { status: "empty" }
+  | {
+      status: "ok";
+      coverage: Awaited<ReturnType<typeof getCoverage>>;
+      sessions: Awaited<ReturnType<typeof getSessionStats>>;
+      tickers: string[];
+      selected: string | null;
+      series: Awaited<ReturnType<typeof getSpreadSeries>>;
+    };
+
+async function load(ticker: string | null): Promise<LoadResult> {
+  if (!hasDatabase()) return { status: "no-database" };
+
   try {
     const [coverage, sessions, tickers] = await Promise.all([
       getCoverage(),
       getSessionStats(168),
       getTrackedTickers(12),
     ]);
+
+    if (coverage.runs === 0) return { status: "empty" };
+
     const selected = ticker && tickers.includes(ticker) ? ticker : (tickers[0] ?? null);
     const series = selected ? await getSpreadSeries(selected, 168) : [];
-    return { coverage, sessions, tickers, selected, series };
-  } catch {
-    return null;
+    return { status: "ok", coverage, sessions, tickers, selected, series };
+  } catch (error) {
+    // swallowing this silently is how a broken connection string looks identical to no data
+    console.error("[history] load failed:", error);
+    return { status: "error", message: error instanceof Error ? error.message : "unknown error" };
   }
 }
 
@@ -40,31 +59,41 @@ export default async function HistoryPage({
   const { ticker } = await searchParams;
   const data = await load(ticker?.toUpperCase() ?? null);
 
-  if (!data || data.coverage.runs === 0) {
+  if (data.status !== "ok") {
+    const copy =
+      data.status === "no-database"
+        ? "History needs a database connection, and none is configured here."
+        : data.status === "empty"
+          ? "No history captured yet. Once the collector has run a few times this page shows how dislocation behaves in each market session."
+          : "History is temporarily unavailable. The collector keeps running and this page recovers on its own.";
+
     return (
       <div className="space-y-6">
         <section className="py-4">
           <h1 className="text-3xl font-semibold tracking-tight">History</h1>
           <p className="mt-3 max-w-xl leading-relaxed text-muted">
-            Par snapshots every tracked wrapper on a schedule, so the dislocation can be measured
-            over time rather than guessed at.
+            Par snapshots every tracked wrapper on a schedule, so dislocation can be measured over
+            time rather than guessed at.
           </p>
         </section>
         <Card>
-          <p className="px-4 py-12 text-center text-sm text-muted">
-            No history captured yet. Once the collector has run a few times this page shows how the
-            spread behaves in each market session.
-          </p>
+          <p className="px-4 py-12 text-center text-sm text-muted">{copy}</p>
+          {data.status === "error" && process.env.NODE_ENV !== "production" ? (
+            <p className="border-t border-line px-4 py-3 font-mono text-xs text-premium">
+              {data.message}
+            </p>
+          ) : null}
         </Card>
       </div>
     );
   }
 
   const { coverage, sessions, tickers, selected, series } = data;
-  const closed = sessions.filter((s) => s.session !== "regular");
-  const regular = sessions.find((s) => s.session === "regular");
-  const closedMedian =
-    closed.length > 0 ? closed.reduce((n, s) => n + s.medianSpreadBps, 0) / closed.length : null;
+  const weekend = sessions.find((s) => s.session === "weekend");
+  const busiest = sessions.reduce<typeof sessions[number] | null>(
+    (best, s) => (best === null || s.samples > best.samples ? s : best),
+    null,
+  );
 
   return (
     <div className="space-y-6">
@@ -77,8 +106,8 @@ export default async function HistoryPage({
             : coverage.medianGapMinutes >= 90
               ? `roughly every ${(coverage.medianGapMinutes / 60).toFixed(1)} hours`
               : `roughly every ${Math.round(coverage.medianGapMinutes)} minutes`}
-          . The question this page answers: does the gap between issuers widen when the underlying
-          market is shut?
+          . We expected the gap between issuers to widen when the market shut. It does not. What
+          widens is something else.
         </p>
       </section>
 
@@ -103,24 +132,57 @@ export default async function HistoryPage({
 
       <Card>
         <CardHeader
-          title="Dislocation by market session"
-          hint={
-            regular && closedMedian !== null
-              ? `Market open: ${(regular.medianSpreadBps / 100).toFixed(2)}pp. Closed sessions average ${(closedMedian / 100).toFixed(2)}pp. Across ${coverage.runs} capture runs, so treat it as a direction rather than a settled figure.`
-              : "Median cross-issuer spread in each session"
-          }
+          title="Two kinds of dislocation, and they disagree"
+          hint={`Across ${coverage.runs.toLocaleString()} capture runs. Issuers agree with each other most when nothing is moving, and the whole market drifts furthest from fair value when nobody can arbitrage it.`}
         />
-        <SessionBars data={sessions} />
+
+        <div className="grid gap-px bg-line md:grid-cols-2">
+          <div className="bg-surface">
+            <div className="border-b border-line px-4 py-2.5">
+              <h3 className="text-sm font-medium">Spread between issuers</h3>
+              <p className="mt-0.5 text-xs text-subtle">
+                How much the wrappers of one stock disagree with each other
+              </p>
+            </div>
+            <SessionBars data={sessions} measure="spread" />
+          </div>
+
+          <div className="bg-surface">
+            <div className="border-b border-line px-4 py-2.5">
+              <h3 className="text-sm font-medium">Drift from the real share</h3>
+              <p className="mt-0.5 text-xs text-subtle">
+                How far they collectively sit from the underlying price
+              </p>
+            </div>
+            <SessionBars data={sessions} measure="premium" />
+          </div>
+        </div>
+
+        {weekend && busiest ? (
+          <div className="border-t border-line bg-raised px-4 py-3.5 sm:px-5">
+            <p className="text-sm leading-relaxed text-muted">
+              The weekend has the{" "}
+              <span className="font-medium text-ink">narrowest spread between issuers</span> at{" "}
+              <span className="tnum text-ink">{(weekend.medianSpreadBps / 100).toFixed(2)}pp</span>,
+              and the <span className="font-medium text-ink">largest drift from fair value</span> at{" "}
+              <span className="tnum text-ink">{(weekend.meanAbsPremiumBps / 100).toFixed(2)}%</span>.
+              Nothing trades, so every wrapper sits still and they all agree, while the price they
+              agree on slides further from Friday&rsquo;s close. During the session the underlying
+              moves, wrappers re-price at different speeds, and they disagree with each other most
+              while tracking the real share most closely.
+            </p>
+          </div>
+        ) : null}
 
         <div className="overflow-x-auto border-t border-line">
         <table className="w-full min-w-[30rem] text-sm">
-          <caption className="sr-only">Median spread and sample count by market session</caption>
+          <caption className="sr-only">Spread, drift and sample count by market session</caption>
           <thead>
             <tr className="text-left text-xs tracking-wide text-subtle uppercase">
               <th className="px-4 py-2 font-medium">Session</th>
               <th className="px-4 py-2 text-right font-medium">Samples</th>
-              <th className="px-4 py-2 text-right font-medium">Median spread</th>
-              <th className="px-4 py-2 text-right font-medium">Mean premium</th>
+              <th className="px-4 py-2 text-right font-medium">Spread</th>
+              <th className="px-4 py-2 text-right font-medium">Drift</th>
             </tr>
           </thead>
           <tbody>

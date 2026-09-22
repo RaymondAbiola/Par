@@ -85,6 +85,16 @@ export function getSession(at: Date = new Date()): SessionState {
   return { ...base, session: "overnight", live: false };
 }
 
+/** Abbreviated for the mobile header, where the full label will not fit. */
+export const SESSION_SHORT: Record<MarketSession, string> = {
+  regular: "Open",
+  premarket: "Pre",
+  afterhours: "After",
+  overnight: "Night",
+  weekend: "Weekend",
+  holiday: "Holiday",
+};
+
 export const SESSION_LABEL: Record<MarketSession, string> = {
   regular: "Market open",
   premarket: "Pre-market",

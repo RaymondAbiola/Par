@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { SessionBadge } from "@/components/session-badge";
 
 export interface NavItem {
   href: string;
@@ -59,9 +58,7 @@ export function MobileNav({ items }: { items: readonly NavItem[] }) {
             <a href="/api/v1/ticker/NVDA" className="border-t border-line/60 py-3 font-mono text-sm text-muted">
               API
             </a>
-            <div className="flex items-center gap-2 py-3 text-sm text-subtle">
-              <SessionBadge />
-            </div>
+
           </nav>
         </div>
       ) : null}
