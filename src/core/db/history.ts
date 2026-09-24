@@ -123,26 +123,33 @@ export interface SessionStat {
   session: string;
   samples: number;
   medianSpreadBps: number;
-  meanAbsPremiumBps: number;
+  /** Median, not mean. One glitched row once reported a price a million percent off. */
+  medianAbsPremiumBps: number;
 }
 
 /** The point of the whole history: does the dislocation widen when the market is shut? */
 export async function getSessionStats(hours = 168): Promise<SessionStat[]> {
   const rows = await sql().query(
-    `with spreads as (
-        select session, ticker, captured_at,
-               max(premium_bps) - min(premium_bps) as spread_bps,
-               avg(abs(premium_bps)) as abs_premium_bps
+    `with clean as (
+        select *
           from premium_snapshots
          where captured_at > now() - ($1 || ' hours')::interval
            and premium_bps is not null
+           -- a tokenized share is never 100% from its underlying; beyond that is upstream garbage
+           and abs(premium_bps) < 10000
+     ),
+     spreads as (
+        select session, ticker, captured_at,
+               max(premium_bps) - min(premium_bps) as spread_bps,
+               percentile_cont(0.5) within group (order by abs(premium_bps)) as abs_premium_bps
+          from clean
          group by session, ticker, captured_at
         having count(*) > 1
      )
      select session,
             count(*) as samples,
             percentile_cont(0.5) within group (order by spread_bps) as median_spread_bps,
-            avg(abs_premium_bps) as mean_abs_premium_bps
+            percentile_cont(0.5) within group (order by abs_premium_bps) as median_abs_premium_bps
        from spreads
       group by session
       order by median_spread_bps desc`,
@@ -153,7 +160,7 @@ export async function getSessionStats(hours = 168): Promise<SessionStat[]> {
     session: String(r.session),
     samples: Number(r.samples),
     medianSpreadBps: Number(r.median_spread_bps),
-    meanAbsPremiumBps: Number(r.mean_abs_premium_bps),
+    medianAbsPremiumBps: Number(r.median_abs_premium_bps),
   }));
 }
 

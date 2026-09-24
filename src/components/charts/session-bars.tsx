@@ -7,7 +7,7 @@ export interface SessionDatum {
   session: string;
   samples: number;
   medianSpreadBps: number;
-  meanAbsPremiumBps: number;
+  medianAbsPremiumBps: number;
 }
 
 export type Measure = "spread" | "premium";
@@ -30,7 +30,7 @@ export function SessionBars({
 }) {
   const [hover, setHover] = useState<number | null>(null);
   const pick = (d: SessionDatum) =>
-    measure === "spread" ? d.medianSpreadBps : d.meanAbsPremiumBps;
+    measure === "spread" ? d.medianSpreadBps : d.medianAbsPremiumBps;
   const unit = measure === "spread" ? "pp" : "%";
 
   if (data.length === 0) {

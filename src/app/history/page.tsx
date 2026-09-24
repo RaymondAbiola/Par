@@ -90,10 +90,7 @@ export default async function HistoryPage({
 
   const { coverage, sessions, tickers, selected, series } = data;
   const weekend = sessions.find((s) => s.session === "weekend");
-  const busiest = sessions.reduce<typeof sessions[number] | null>(
-    (best, s) => (best === null || s.samples > best.samples ? s : best),
-    null,
-  );
+  const busiest = sessions.find((s) => s.session === "regular") ?? null;
 
   return (
     <div className="space-y-6">
@@ -133,7 +130,7 @@ export default async function HistoryPage({
       <Card>
         <CardHeader
           title="Two kinds of dislocation, and they disagree"
-          hint={`Across ${coverage.runs.toLocaleString()} capture runs. Issuers agree with each other most when nothing is moving, and the whole market drifts furthest from fair value when nobody can arbitrage it.`}
+          hint={`Across ${coverage.runs.toLocaleString()} capture runs, using medians so a single glitched quote cannot move the answer. The busier the session, the more the issuers disagree with each other and the closer they all track the real share.`}
         />
 
         <div className="grid gap-px bg-line md:grid-cols-2">
@@ -161,15 +158,15 @@ export default async function HistoryPage({
         {weekend && busiest ? (
           <div className="border-t border-line bg-raised px-4 py-3.5 sm:px-5">
             <p className="text-sm leading-relaxed text-muted">
-              The weekend has the{" "}
-              <span className="font-medium text-ink">narrowest spread between issuers</span> at{" "}
+              During market hours the issuers disagree with each other the most, at{" "}
+              <span className="tnum text-ink">{(busiest.medianSpreadBps / 100).toFixed(2)}pp</span>,
+              while tracking the real share most closely. At the weekend they{" "}
+              <span className="font-medium text-ink">agree with each other</span> at{" "}
               <span className="tnum text-ink">{(weekend.medianSpreadBps / 100).toFixed(2)}pp</span>,
-              and the <span className="font-medium text-ink">largest drift from fair value</span> at{" "}
-              <span className="tnum text-ink">{(weekend.meanAbsPremiumBps / 100).toFixed(2)}%</span>.
-              Nothing trades, so every wrapper sits still and they all agree, while the price they
-              agree on slides further from Friday&rsquo;s close. During the session the underlying
-              moves, wrappers re-price at different speeds, and they disagree with each other most
-              while tracking the real share most closely.
+              the narrowest of any session, and sit{" "}
+              <span className="tnum text-ink">{(weekend.medianAbsPremiumBps / 100).toFixed(2)}%</span>{" "}
+              from fair value. Nothing trades, so every wrapper sits still and they all agree, while
+              the price they agree on slides away from Friday&rsquo;s close.
             </p>
           </div>
         ) : null}
@@ -191,7 +188,7 @@ export default async function HistoryPage({
                 <td className="px-4 py-2">{SESSION_LABEL[s.session as MarketSession] ?? s.session}</td>
                 <td className="tnum px-4 py-2 text-right text-muted">{s.samples.toLocaleString()}</td>
                 <td className="tnum px-4 py-2 text-right">{(s.medianSpreadBps / 100).toFixed(2)}pp</td>
-                <td className="tnum px-4 py-2 text-right text-muted">{(s.meanAbsPremiumBps / 100).toFixed(2)}%</td>
+                <td className="tnum px-4 py-2 text-right text-muted">{(s.medianAbsPremiumBps / 100).toFixed(2)}%</td>
               </tr>
             ))}
           </tbody>
